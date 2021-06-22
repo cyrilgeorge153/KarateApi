@@ -1,0 +1,6 @@
+examples\calljava\JavaClassTestRunner.class
+examples\reqres\ReqresTestRunner.class
+examples\TestRunner.class
+examples\calljava\jsonbody.class
+examples\TestRunnerParallel.class
+examples\token\TokenTestRunner.class
