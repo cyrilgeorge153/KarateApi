@@ -1,21 +1,6 @@
-20:46:59.175 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-20:46:59.204 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
-20:47:01.313 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-20:47:01.315 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-20:47:01.315 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-20:47:01.316 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-20:47:01.316 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-20:47:01.474 [pool-1-thread-1] INFO  com.intuit.karate - [print] {"title":"Java Feature File","body":"Karate Framework","userId":"50"} 
-20:47:01.481 [pool-1-thread-2] INFO  com.intuit.karate - [print] {"title":"Welcome","body":"Karate Framework","userId":"10"} 
-20:47:02.691 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-1 > GET https://reqres.in/api/users?page=2
-1 > Host: reqres.in
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-1 > Accept-Encoding: gzip,deflate
-
-
-20:47:02.691 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+23:11:15.543 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:11:17.522 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:11:18.361 [main] DEBUG com.intuit.karate - request:
 1 > GET https://reqres.in/api/users/2
 1 > Host: reqres.in
 1 > Connection: Keep-Alive
@@ -23,39 +8,9 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-20:47:02.692 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-1 > POST https://jsonplaceholder.typicode.com/posts
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 59
-1 > Host: jsonplaceholder.typicode.com
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-1 > Accept-Encoding: gzip,deflate
-{"title":"Welcome","body":"Karate Framework","userId":"10"}
-
-20:47:02.693 [pool-1-thread-5] DEBUG com.intuit.karate - request:
-1 > POST https://reqres.in/api/users
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 34
-1 > Host: reqres.in
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-1 > Accept-Encoding: gzip,deflate
-{"name":"morpheus","job":"leader"}
-
-20:47:02.692 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-1 > POST https://jsonplaceholder.typicode.com/posts
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 69
-1 > Host: jsonplaceholder.typicode.com
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-1 > Accept-Encoding: gzip,deflate
-{"title":"Java Feature File","body":"Karate Framework","userId":"50"}
-
-20:47:03.314 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 619
+23:11:19.459 [main] DEBUG com.intuit.karate - response time in milliseconds: 1023
 1 < 200
-1 < Date: Mon, 21 Jun 2021 15:17:02 GMT
+1 < Date: Tue, 22 Jun 2021 17:41:19 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
@@ -65,39 +20,17 @@
 1 < Via: 1.1 vegur
 1 < Cache-Control: max-age=14400
 1 < CF-Cache-Status: HIT
-1 < Age: 5445
-1 < cf-request-id: 0ad0be8ff000000eadbe2a5000000001
+1 < Age: 4230
+1 < cf-request-id: 0ad669053e0000321dd598f000000001
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=sD1Ef8rg81sdRV709AV44IZ4SOo7JBlq91%2Bw7INnp6e990Yso%2FllenU026gY81pBA8jh5l4oFCahpkmWt6hF%2BBI1SLoAjsEWxc6fW%2FXkwswFW9AGYR0L"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=jJJ3POPJPczyuAquYwjbO3PEP%2BNYPJYsTwyfvSbxwOMT8QZ%2Fi04W%2FypC8e%2FxifY4bU%2F8mAqwSw%2FL7X7QyuSmFTXbElAiGch94AWPS%2B3cXew1oDGjLpOm"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
 1 < Vary: Accept-Encoding
 1 < Server: cloudflare
-1 < CF-RAY: 662e3393190a0ead-BOM
+1 < CF-RAY: 6637444ec93d321d-BOM
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
 {"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
-20:47:03.315 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 619
-1 < 200
-1 < Date: Mon, 21 Jun 2021 15:17:02 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Transfer-Encoding: chunked
-1 < Connection: keep-alive
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
-1 < Via: 1.1 vegur
-1 < Cache-Control: max-age=14400
-1 < CF-Cache-Status: HIT
-1 < Age: 4770
-1 < cf-request-id: 0ad0be8fef00002e2826065000000001
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=W8DCy0dirQp0InZG9mIL3PT6oJXVPeBZnRlAB4bc0x3dq%2FciFTcWCows1qWTJzqU8rKmPI0Gc64BvXKdk5qLihV9KWGqKq8jUQoouxxfKPcRCU%2BmwleS"}],"group":"cf-nel","max_age":604800}
-1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Vary: Accept-Encoding
-1 < Server: cloudflare
-1 < CF-RAY: 662e33931e292e28-BOM
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
-20:47:03.319 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+23:11:19.477 [main] INFO  com.intuit.karate - [print] {
   "data": {
     "last_name": "Weaver",
     "id": 2,
@@ -111,7 +44,38 @@
   }
 }
  
-20:47:03.319 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+23:11:19.576 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:11:19.586 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:11:19.831 [main] DEBUG com.intuit.karate - response time in milliseconds: 241
+1 < 200
+1 < Date: Tue, 22 Jun 2021 17:41:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 6092
+1 < cf-request-id: 0ad669070b00002e348f2e9000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=jXpNQSBAjXAmpu%2F6vOcrnZr8Y6ZA1XbOd0Xrff6UXmLrmfMBNSZkJpi76YWuz%2F1UW0sRN0wMMlJyTHbP9TSJLSO7T8twELxKZU0M5zWtE9X8jGYNjgwP"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 66374451a91c2e34-BOM
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+23:11:19.837 [main] INFO  com.intuit.karate - [print] {
   "per_page": 6,
   "total": 12,
   "data": [
@@ -166,9 +130,8 @@
   }
 }
  
-20:47:03.357 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-20:47:03.363 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-20:47:03.367 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+23:11:19.857 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:11:20.001 [main] DEBUG com.intuit.karate - request:
 1 > POST https://reqres.in/api/users
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 34
@@ -178,81 +141,71 @@
 1 > Accept-Encoding: gzip,deflate
 {"name":"morpheus","job":"leader"}
 
-20:47:03.371 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-1 > PUT https://reqres.in/api/users
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 41
-1 > Host: reqres.in
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-1 > Accept-Encoding: gzip,deflate
-{"name":"morpheus","job":"zion resident"}
-
-20:47:03.608 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 914
+23:11:20.522 [main] DEBUG com.intuit.karate - response time in milliseconds: 519
 1 < 201
-1 < Date: Mon, 21 Jun 2021 15:17:02 GMT
+1 < Date: Tue, 22 Jun 2021 17:41:20 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Content-Length: 84
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"54-pn5kc7Kzm1dX5U2lvTnBfg9UevI"
+1 < Etag: W/"54-La3aKd57v5gM+s9aFdyQnM720jQ"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
-1 < cf-request-id: 0ad0be8ff200002e6adf3ac000000001
+1 < cf-request-id: 0ad66908620000318d3c3cf000000001
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=kF%2BTiMKrxij%2BHED90KJAcgAIw8oG1Jcuu8uUE%2F9fffZK5prsXggQog09ePjzhoKArEuFXdwhjeX1XmBpvrk0R9UkqbsAjcQk1LHary41H9Qh%2FzZ2lIZ4"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=9j4GECHu2UqS6NWdbyMaeyjDOwaki%2Bffqdv2370Sr9RmQ9VHrSwkTUwRUyz5B6ivvXmh8gNc2cuucd%2FUMv%2B9qD1I0%2FhG2Uij22nZ5n%2BjghZ%2FJwje2lOB"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 662e339319902e6a-BOM
+1 < CF-RAY: 66374453ca09318d-BOM
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"createdAt":"2021-06-21T15:17:02.832Z","name":"morpheus","id":"447","job":"leader"}
-20:47:03.612 [pool-1-thread-5] INFO  com.intuit.karate - [print] {
-  "createdAt": "2021-06-21T15:17:02.832Z",
+{"createdAt":"2021-06-22T17:41:20.889Z","name":"morpheus","id":"430","job":"leader"}
+23:11:20.532 [main] INFO  com.intuit.karate - [print] {
+  "createdAt": "2021-06-22T17:41:20.889Z",
   "name": "morpheus",
-  "id": "447",
+  "id": "430",
   "job": "leader"
 }
  
-20:47:03.632 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-20:47:03.638 [pool-1-thread-5] DEBUG com.intuit.karate - request:
-1 > PUT https://reqres.in/api/users
+23:11:20.616 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:11:20.642 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
 1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 41
+1 > Content-Length: 34
 1 > Host: reqres.in
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 > Accept-Encoding: gzip,deflate
-{"name":"morpheus","job":"zion resident"}
+{"name":"morpheus","job":"leader"}
 
-20:47:03.774 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 406
+23:11:21.067 [main] DEBUG com.intuit.karate - response time in milliseconds: 422
 1 < 201
-1 < Date: Mon, 21 Jun 2021 15:17:03 GMT
+1 < Date: Tue, 22 Jun 2021 17:41:21 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Content-Length: 84
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"54-mMCE3E7kfoAvrufUqfD4zrvdpro"
+1 < Etag: W/"54-ajWYwJ5CJFN1j959Un8+aTYSczA"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
-1 < cf-request-id: 0ad0be90d500000ea4d605e000000001
+1 < cf-request-id: 0ad6690aeb00000db062a7f000000001
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=%2Fa%2FYpdejrMNHvtN6VmEQXZ1%2FtkX57AxhxXmsJ%2FHqiHsJh7ffr3LbFJHobf8A5qO4%2FhyTUtgmpJ52BL69JrENrQFq2gYaue8ki0Ap8HdhYPiamN2hx6a%2F"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=I86pAlT9Z3v%2BXYUEUZGDxwONeEWk6naRhTy8g1IMP6JXC2pfJ4He8n%2FPd0%2BBjpjxd4v97%2FZAGQMZz%2BtFgblX8JDsAuEUiQ4z7OxlM0iR1RMO7m6HP5sg"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 662e33948e930ea4-BOM
+1 < CF-RAY: 66374457decd0db0-BOM
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"createdAt":"2021-06-21T15:17:02.996Z","name":"morpheus","id":"429","job":"leader"}
-20:47:03.778 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
-  "createdAt": "2021-06-21T15:17:02.996Z",
+{"createdAt":"2021-06-22T17:41:21.462Z","name":"morpheus","id":"114","job":"leader"}
+23:11:21.081 [main] INFO  com.intuit.karate - [print] {
+  "createdAt": "2021-06-22T17:41:21.462Z",
   "name": "morpheus",
-  "id": "429",
+  "id": "114",
   "job": "leader"
 }
  
-20:47:03.790 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-20:47:03.795 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+23:11:21.117 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:11:21.128 [main] DEBUG com.intuit.karate - request:
 1 > PUT https://reqres.in/api/users
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 41
@@ -262,34 +215,108 @@
 1 > Accept-Encoding: gzip,deflate
 {"name":"morpheus","job":"zion resident"}
 
-20:47:03.811 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 439
+23:11:21.573 [main] DEBUG com.intuit.karate - response time in milliseconds: 442
 1 < 200
-1 < Date: Mon, 21 Jun 2021 15:17:03 GMT
+1 < Date: Tue, 22 Jun 2021 17:41:22 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"50-RtGCcQ8KlilIG3nZGrAngquAOTQ"
+1 < Etag: W/"50-gKhTDb7yJElq6ogroRFT2Y6u2I0"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
-1 < cf-request-id: 0ad0be90df00000dac57957000000001
+1 < cf-request-id: 0ad6690cbf00000ead5e335000000001
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=Gi5cH6F0ZaNyf6lxkr5Uf4nstdWoP%2FqRPuIQkNfp2VbDHioiem7RwIX1ya9neKIsjK5A79RcR1cKtXs1GpPTQt2M4tSmqcnkRfWV%2FiwyXgz1PvOYae03"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=wCZLD3Kly1nDupyvdaVqyI55wrnkDn%2FyXo%2FeWbpqoGDfm86j3GtAXOVD0u56yqMYRLTxhsqtxI7F8%2FD3oRJ0uzPfD%2By7dkl8DwXhHggHYo0ikEZOt7gQ"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
 1 < Vary: Accept-Encoding
 1 < Server: cloudflare
-1 < CF-RAY: 662e33949fca0dac-BOM
+1 < CF-RAY: 6637445aca950ead-BOM
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"name":"morpheus","job":"zion resident","updatedAt":"2021-06-21T15:17:03.025Z"}
-20:47:03.813 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+{"name":"morpheus","job":"zion resident","updatedAt":"2021-06-22T17:41:21.949Z"}
+23:11:21.585 [main] INFO  com.intuit.karate - [print] {
   "name": "morpheus",
   "job": "zion resident",
-  "updatedAt": "2021-06-21T15:17:03.025Z"
+  "updatedAt": "2021-06-22T17:41:21.949Z"
 }
  
-20:47:03.824 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-20:47:03.829 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+23:11:21.657 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:11:21.682 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+23:11:22.135 [main] DEBUG com.intuit.karate - response time in milliseconds: 446
+1 < 200
+1 < Date: Tue, 22 Jun 2021 17:41:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"50-plS5Rosd1I1MNGmQglOfQDPcBRg"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad6690f00000031b184232000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=PvBGIKMa57deTLx1XQoPgpUznI2lv0Vh6UgSxWlZZZBHpyCSjXKj9FDCTmmkGEj9ivsu4RzccKv%2FRUEAriUJO7PvqkB%2Ba35TfMqNm4g%2BmwtNDqWF7Wi3"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6637445e6a6931b1-BOM
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"name":"morpheus","job":"zion resident","updatedAt":"2021-06-22T17:41:22.515Z"}
+23:11:22.147 [main] INFO  com.intuit.karate - [print] {
+  "name": "morpheus",
+  "job": "zion resident",
+  "updatedAt": "2021-06-22T17:41:22.515Z"
+}
+ 
+23:11:22.223 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:11:22.255 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+23:11:22.676 [main] DEBUG com.intuit.karate - response time in milliseconds: 420
+1 < 200
+1 < Date: Tue, 22 Jun 2021 17:41:23 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-up5Avfuicf4SLpcPvyha34fC/w0"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad669113900002e0b20948000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=qgNzeOSzUdViIqIgXYdKirQ%2BqcZJvrgI%2BYGIIKQq%2FIRPYwAvCNfDvXomTAGNzPBBP1KfaZFKBPN3WX3cz0eIh8iNO9SNkDK6yH%2BFy9T3lWZexFIU87Ze"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 66374461fce22e0b-BOM
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"name":"morpheus","job":"zion resident","updatedAt":"2021-06-22T17:41:23.073Z"}
+23:11:22.679 [main] INFO  com.intuit.karate - [print] {
+  "name": "morpheus",
+  "job": "zion resident",
+  "updatedAt": "2021-06-22T17:41:23.073Z"
+}
+ 
+23:11:22.691 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:11:22.696 [main] DEBUG com.intuit.karate - request:
 1 > DELETE https://reqres.in/api/users/2
 1 > Host: reqres.in
 1 > Connection: Keep-Alive
@@ -297,16 +324,95 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-20:47:03.831 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1138
+23:11:23.131 [main] DEBUG com.intuit.karate - response time in milliseconds: 435
+1 < 204
+1 < Date: Tue, 22 Jun 2021 17:41:23 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad66912d600000de0ba9dd000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=EgqguzBGqXn8fFFPaztDu9Hklm4YgtqJ%2FdAL7pw92UwjMVahnj6Odf%2B2G%2Bph4QXagHnS6WcUJg1ChlqthvpZnZC46Fa%2BEwuVrmvhcQUuZUQFBuwnuHz%2B"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 663744648aff0de0-BOM
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+
+23:11:23.148 [main] INFO  com.intuit.karate - [print]  
+10:41:32.368 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:41:34.415 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:41:34.516 [main] INFO  com.intuit.karate - [print] {"title":"Java Feature File","body":"Karate Framework","userId":"50"} 
+10:41:36.098 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 > Accept-Encoding: gzip,deflate
+{"title":"Java Feature File","body":"Karate Framework","userId":"50"}
+
+10:41:37.462 [main] DEBUG com.intuit.karate - response time in milliseconds: 1358
 1 < 201
-1 < Date: Mon, 21 Jun 2021 15:17:03 GMT
+1 < Date: Mon, 05 Jul 2021 05:11:37 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 95
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1625461939
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: http://jsonplaceholder.typicode.com/posts/101
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"5f-NpfW6DXbP9s9XSk+igjjrlBe6t8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=0JLKXsZIhvjvOqd%2FPX%2Bgh2sbsVEC9%2BjqTTR8WzAj0id9x4LaIEnYcl6%2Bu5XzAkfjzEYp5cKJQpDbstnhHX7JSwqsr3YUhJ4M4vKN1WNfjJo18fiV0cKiLnhFKtNVOxXyOYPz8pKr3blgHA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 669e17f8287c4b05-HYD
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"id":101,"title":"Java Feature File","body":"Karate Framework","userId":"50"}
+10:41:37.496 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "id": 101,
+  "title": "Java Feature File",
+  "body": "Karate Framework",
+  "userId": "50"
+}
+ 
+10:41:37.843 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:41:37.874 [main] INFO  com.intuit.karate - [print] {"title":"Welcome","body":"Karate Framework","userId":"10"} 
+10:41:37.878 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 > Accept-Encoding: gzip,deflate
+{"title":"Welcome","body":"Karate Framework","userId":"10"}
+
+10:41:38.577 [main] DEBUG com.intuit.karate - response time in milliseconds: 697
+1 < 201
+1 < Date: Mon, 05 Jul 2021 05:11:38 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Content-Length: 85
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < X-Ratelimit-Limit: 1000
-1 < X-Ratelimit-Remaining: 999
-1 < X-Ratelimit-Reset: 1624288665
+1 < X-Ratelimit-Remaining: 998
+1 < X-Ratelimit-Reset: 1625461939
 1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 < Access-Control-Allow-Credentials: true
 1 < Cache-Control: no-cache
@@ -318,196 +424,17 @@
 1 < Etag: W/"55-ado8H4CXM9gruGbklc+Zwr09vJo"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
-1 < cf-request-id: 0ad0be8ff3000031dca331e000000001
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=AixtgEyCYDKbXhbATk8EhbzuDHq%2BTlx%2FXzLdEeJW4tac9%2FLifDXGIeLOie85Yp09W8CPnE9e4mQqPT3F%2BO8CViEovHQ8DzbXXmUJlwa0sgrFFzGWzHQUZhKquc5JvB6t5Vyr1hVQqOwEAg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=nfrCRJV%2F%2FZeHnjYRI11s4ws%2FD%2BOl%2BbOYjh3MKIzT2a9XDKHQzpvX%2BZrlgDJ%2BEsY9%2FwiNvu0%2FVl6TkbGjyAdai8qIQchG%2FCDcda4DB8DQTOAujljVN0hkwYljCboo2PeAAfdA0aDtvGNZyw%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 662e33931e2d31dc-BOM
+1 < CF-RAY: 669e180098364b05-HYD
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
 {"id":101,"title":"Welcome","body":"Karate Framework","userId":"10"}
-20:47:03.845 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1149
-1 < 201
-1 < Date: Mon, 21 Jun 2021 15:17:03 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 95
-1 < Connection: keep-alive
-1 < x-powered-by: Express
-1 < x-ratelimit-limit: 1000
-1 < x-ratelimit-remaining: 998
-1 < x-ratelimit-reset: 1624288665
-1 < vary: Origin, X-HTTP-Method-Override, Accept-Encoding
-1 < access-control-allow-credentials: true
-1 < cache-control: no-cache
-1 < pragma: no-cache
-1 < expires: -1
-1 < access-control-expose-headers: Location
-1 < location: http://jsonplaceholder.typicode.com/posts/101
-1 < x-content-type-options: nosniff
-1 < etag: W/"5f-NpfW6DXbP9s9XSk+igjjrlBe6t8"
-1 < via: 1.1 vegur
-1 < CF-Cache-Status: DYNAMIC
-1 < cf-request-id: 0ad0be8ff400000e10fd04a000000001
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=iLUvsrecPoGhRsSPxTFAJs9yh8RvI%2BN2B%2BrIEXCyF9THeVkC%2BdbUM3Ij4i5Gh9wTlOiU23xkVqHbf9OSjJQBD7ab9GhJUugY8ogSKlcKmKkhhL7IwNnMP5XLlZNHjam58oRT7v%2FYPCUSAg%3D%3D"}],"group":"cf-nel","max_age":604800}
-1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Server: cloudflare
-1 < CF-RAY: 662e339318030e10-BOM
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"id":101,"title":"Java Feature File","body":"Karate Framework","userId":"50"}
-20:47:03.864 [pool-1-thread-1] INFO  com.intuit.karate - [print] Response is:  {
-  "id": 101,
-  "title": "Java Feature File",
-  "body": "Karate Framework",
-  "userId": "50"
-}
- 
-20:47:03.874 [pool-1-thread-2] INFO  com.intuit.karate - [print] Response is:  {
+10:41:38.587 [main] INFO  com.intuit.karate - [print] Response is:  {
   "id": 101,
   "title": "Welcome",
   "body": "Karate Framework",
   "userId": "10"
 }
  
-20:47:03.879 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-20:47:04.074 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 435
-1 < 200
-1 < Date: Mon, 21 Jun 2021 15:17:03 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Transfer-Encoding: chunked
-1 < Connection: keep-alive
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"50-7yhC6vEDu5psE9y1/dr5NSrkXsk"
-1 < Via: 1.1 vegur
-1 < CF-Cache-Status: DYNAMIC
-1 < cf-request-id: 0ad0be91da00002e319231f000000001
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=yruT7bKrBy%2FnbnHhfs7sEcLkfTarfpf0smnjKGSX6sVwZiGEuD6eIs374owz19%2BhjNgt1T9I4m8wAZskWOMLlY028Ivhg3aNKe82SuwJJw2u2Pp%2FRTg9"}],"group":"cf-nel","max_age":604800}
-1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Vary: Accept-Encoding
-1 < Server: cloudflare
-1 < CF-RAY: 662e33962c4f2e31-BOM
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"name":"morpheus","job":"zion resident","updatedAt":"2021-06-21T15:17:03.274Z"}
-20:47:04.076 [pool-1-thread-5] INFO  com.intuit.karate - [print] {
-  "name": "morpheus",
-  "job": "zion resident",
-  "updatedAt": "2021-06-21T15:17:03.274Z"
-}
- 
-20:47:04.161 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-1 > POST https://login.salesforce.com/services/oauth2/token
-1 > Content-Type: application/x-www-form-urlencoded
-1 > Content-Length: 246
-1 > Host: login.salesforce.com
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-1 > Accept-Encoding: gzip,deflate
-grant_type=password&username=apptest%40katzion.com&password=Ganesh%4018&client_id=3MVG9fe4g9fhX0E58aNIy03f0wE8LKYfhIVnt1P2lh1eXPIesU.oNmSdI_6CnKaM7S8dLgmwsm5TRxqjvfOl3&client_secret=98E209043DE1BD69CBE2FF78724FF5BD12888AE257DBA1E79E08EDDEF75E5B17
-
-20:47:04.220 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 425
-1 < 200
-1 < Date: Mon, 21 Jun 2021 15:17:03 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Transfer-Encoding: chunked
-1 < Connection: keep-alive
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"50-PIglUuybf74umE8D5ib2gcYFToA"
-1 < Via: 1.1 vegur
-1 < CF-Cache-Status: DYNAMIC
-1 < cf-request-id: 0ad0be928100000ee087800000000001
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=nWWcHfAmO1qH21K21ACDPYY7v%2FaeSeiE3ma%2Fel%2FMNNgCkaqt1QchUiX0sCoUJFnaUXBd0018%2BOKzQzXR9VbnRW0R0vfwRS5kcH8LkunrkKMN5N%2FIOoWZ"}],"group":"cf-nel","max_age":604800}
-1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Vary: Accept-Encoding
-1 < Server: cloudflare
-1 < CF-RAY: 662e33973e2a0ee0-BOM
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"name":"morpheus","job":"zion resident","updatedAt":"2021-06-21T15:17:03.434Z"}
-20:47:04.224 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
-  "name": "morpheus",
-  "job": "zion resident",
-  "updatedAt": "2021-06-21T15:17:03.434Z"
-}
- 
-20:47:04.238 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 409
-1 < 204
-1 < Date: Mon, 21 Jun 2021 15:17:03 GMT
-1 < Content-Length: 0
-1 < Connection: keep-alive
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
-1 < Via: 1.1 vegur
-1 < CF-Cache-Status: DYNAMIC
-1 < cf-request-id: 0ad0be92a60000319384b44000000001
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=ynOv%2FBRj37zUNi%2FV0Mg5cPKo%2F648kicNUrRBl8pMMQxARTiJs2%2F7ztsMozsk76HeSmGDV8bbkcc8EtYHXLEW%2F3bqr7zQD2tMlLrZhAdOTEiBEuNn4MHs"}],"group":"cf-nel","max_age":604800}
-1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Server: cloudflare
-1 < CF-RAY: 662e339769463193-BOM
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-
-20:47:04.242 [pool-1-thread-3] INFO  com.intuit.karate - [print]  
-20:47:05.603 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1429
-1 < 200
-1 < Date: Mon, 21 Jun 2021 15:17:04 GMT
-1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
-1 < X-Content-Type-Options: nosniff
-1 < X-XSS-Protection: 1; mode=block
-1 < Cache-Control: no-cache,must-revalidate,max-age=0,no-store,private
-1 < Expires: Thu, 01 Jan 1970 00:00:00 GMT
-1 < X-ReadOnlyMode: false
-1 < Content-Type: application/json;charset=UTF-8
-1 < Vary: Accept-Encoding
-1 < Transfer-Encoding: chunked
-1 < Set-Cookie: BrowserId=vAMJ8NKjEeuHoJOvH5voZw; Max-Age=1655824624000; Expires=Wed, 18 Jun 54492 11:43:45 GMT; Domain=salesforce.com
-{"access_token":"00D5g000005EPAg!ASAAQO6BQfJxpFk5Y6Gs1wchbeVGxAQ2ShI3fH2_9ImmzA1dJfxCo0J6.kGwykcL94XXII5DTHuhpt5lO927WWJ8VRt6tOMN","signature":"Jd0\/UXQqBLIOpXuzagLVtoY4jVCjnxP7+v00rmG7Wxc=","instance_url":"https:\/\/katzapptest.my.salesforce.com","id":"https:\/\/login.salesforce.com\/id\/00D5g000005EPAgEAO\/0055g000008wDcIAAU","token_type":"Bearer","issued_at":"1624288624788"}
-20:47:05.609 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
-  "access_token": "00D5g000005EPAg!ASAAQO6BQfJxpFk5Y6Gs1wchbeVGxAQ2ShI3fH2_9ImmzA1dJfxCo0J6.kGwykcL94XXII5DTHuhpt5lO927WWJ8VRt6tOMN",
-  "signature": "Jd0/UXQqBLIOpXuzagLVtoY4jVCjnxP7+v00rmG7Wxc=",
-  "instance_url": "https://katzapptest.my.salesforce.com",
-  "id": "https://login.salesforce.com/id/00D5g000005EPAgEAO/0055g000008wDcIAAU",
-  "token_type": "Bearer",
-  "issued_at": "1624288624788"
-}
- 
-20:47:05.612 [pool-1-thread-1] INFO  com.intuit.karate - [print] access token is:00D5g000005EPAg!ASAAQO6BQfJxpFk5Y6Gs1wchbeVGxAQ2ShI3fH2_9ImmzA1dJfxCo0J6.kGwykcL94XXII5DTHuhpt5lO927WWJ8VRt6tOMN 
-20:47:05.621 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-2 > POST https://katzapptest.my.salesforce.com/services/data/v51.0/sobjects/katzion__Matchscore_Profile__c
-2 > Authorization: Bearer 00D5g000005EPAg!ASAAQO6BQfJxpFk5Y6Gs1wchbeVGxAQ2ShI3fH2_9ImmzA1dJfxCo0J6.kGwykcL94XXII5DTHuhpt5lO927WWJ8VRt6tOMN
-2 > Cookie: BrowserId=vAMJ8NKjEeuHoJOvH5voZw
-2 > Content-Type: application/json; charset=UTF-8
-2 > Content-Length: 26
-2 > Host: katzapptest.my.salesforce.com
-2 > Connection: Keep-Alive
-2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2 > Accept-Encoding: gzip,deflate
-{"katzion__Score__c":"80"}
-
-20:47:05.737 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:examples/calljava/calljavaclass.feature
-20:47:06.223 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:examples/reqres/reqres.feature
-20:47:06.696 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1074
-2 < 201
-2 < Date: Mon, 21 Jun 2021 15:17:05 GMT
-2 < Strict-Transport-Security: max-age=31536000; includeSubDomains
-2 < X-Content-Type-Options: nosniff
-2 < X-XSS-Protection: 1; mode=block
-2 < X-Robots-Tag: none
-2 < Cache-Control: no-cache,must-revalidate,max-age=0,no-store,private
-2 < Sforce-Limit-Info: api-usage=1/101002
-2 < Location: /services/data/v51.0/sobjects/katzion__Matchscore_Profile__c/a025g000004YjcMAAS
-2 < Content-Type: application/json;charset=UTF-8
-2 < Vary: Accept-Encoding
-2 < Transfer-Encoding: chunked
-{"success":true,"id":"a025g000004YjcMAAS","errors":[]}
-20:47:06.699 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
-  "success": true,
-  "id": "a025g000004YjcMAAS",
-  "errors": [
-  ]
-}
- 
-20:47:06.870 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/token/token.feature

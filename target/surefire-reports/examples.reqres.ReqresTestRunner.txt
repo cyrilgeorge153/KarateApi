@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: examples.TestRunnerParallel
+Test set: examples.reqres.ReqresTestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.417 s - in examples.TestRunnerParallel
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.798 s - in examples.reqres.ReqresTestRunner

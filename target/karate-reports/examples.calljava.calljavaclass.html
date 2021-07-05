@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-06-21 08:47:03 PM</div>
+    <div>2021-07-05 10:41:38 AM</div>
   </div>        
 </div>
 
@@ -65,7 +65,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2448</span>
+              <span>ms:</span>&nbsp;<span>3247</span>
             </div>
           </div>
           
@@ -91,7 +91,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.11">20:47:01.323 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.11">10:41:34.419 karate.env system property was: null 
 </div>   
 
   
@@ -111,7 +111,7 @@
         <span>*</span>&nbsp;<span>def JavaDemo = Java.type(&#39;examples.calljava.jsonbody&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell passed">14</div>
   </div>
 
    
@@ -139,7 +139,7 @@
         <span>*</span>&nbsp;<span>def result = JavaDemo.bodyis(&#39;Java Feature File&#39; , &#39;Karate Framework&#39; , 50)</span>
       </div>
     </div>
-    <div class="time-cell passed">24</div>
+    <div class="time-cell passed">13</div>
   </div>
 
    
@@ -167,7 +167,7 @@
         <span>And</span>&nbsp;<span>print result</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -176,7 +176,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.14">20:47:01.479 [print] {&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;} 
+  <div class="preformatted" data-parent="1.14">10:41:34.517 [print] {&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;} 
 </div>   
 
   
@@ -252,7 +252,7 @@
         <span>And</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2368</div>
+    <div class="time-cell passed">2951</div>
   </div>
 
    
@@ -261,43 +261,42 @@
 
   
 
-  <div class="preformatted" data-parent="1.17">20:47:02.694 request:
+  <div class="preformatted" data-parent="1.17">10:41:36.099 request:
 1 &gt; POST https://jsonplaceholder.typicode.com/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 69
 1 &gt; Host: jsonplaceholder.typicode.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;}
 
-20:47:03.847 response time in milliseconds: 1149
+10:41:37.463 response time in milliseconds: 1358
 1 &lt; 201
-1 &lt; Date: Mon, 21 Jun 2021 15:17:03 GMT
+1 &lt; Date: Mon, 05 Jul 2021 05:11:37 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 95
 1 &lt; Connection: keep-alive
-1 &lt; x-powered-by: Express
-1 &lt; x-ratelimit-limit: 1000
-1 &lt; x-ratelimit-remaining: 998
-1 &lt; x-ratelimit-reset: 1624288665
-1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
-1 &lt; access-control-allow-credentials: true
-1 &lt; cache-control: no-cache
-1 &lt; pragma: no-cache
-1 &lt; expires: -1
-1 &lt; access-control-expose-headers: Location
-1 &lt; location: http://jsonplaceholder.typicode.com/posts/101
-1 &lt; x-content-type-options: nosniff
-1 &lt; etag: W/&quot;5f-NpfW6DXbP9s9XSk+igjjrlBe6t8&quot;
-1 &lt; via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1625461939
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; Location: http://jsonplaceholder.typicode.com/posts/101
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Etag: W/&quot;5f-NpfW6DXbP9s9XSk+igjjrlBe6t8&quot;
+1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; cf-request-id: 0ad0be8ff400000e10fd04a000000001
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=iLUvsrecPoGhRsSPxTFAJs9yh8RvI%2BN2B%2BrIEXCyF9THeVkC%2BdbUM3Ij4i5Gh9wTlOiU23xkVqHbf9OSjJQBD7ab9GhJUugY8ogSKlcKmKkhhL7IwNnMP5XLlZNHjam58oRT7v%2FYPCUSAg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=0JLKXsZIhvjvOqd%2FPX%2Bgh2sbsVEC9%2BjqTTR8WzAj0id9x4LaIEnYcl6%2Bu5XzAkfjzEYp5cKJQpDbstnhHX7JSwqsr3YUhJ4M4vKN1WNfjJo18fiV0cKiLnhFKtNVOxXyOYPz8pKr3blgHA%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 662e339318030e10-BOM
+1 &lt; CF-RAY: 669e17f8287c4b05-HYD
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
 {&quot;id&quot;:101,&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;}
 </div>   
@@ -347,7 +346,7 @@
         <span>And</span>&nbsp;<span>assert responseTime &lt; 3000</span>
       </div>
     </div>
-    <div class="time-cell passed">11</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -375,7 +374,7 @@
         <span>And</span>&nbsp;<span>match responseType == &#39;json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">13</div>
   </div>
 
    
@@ -403,7 +402,7 @@
         <span>And</span>&nbsp;<span>print &#39;Response is: &#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -412,7 +411,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.21">20:47:03.865 [print] Response is:  {
+  <div class="preformatted" data-parent="1.21">10:41:37.497 [print] Response is:  {
   &quot;id&quot;: 101,
   &quot;title&quot;: &quot;Java Feature File&quot;,
   &quot;body&quot;: &quot;Karate Framework&quot;,
@@ -438,7 +437,7 @@
         <span>Then</span>&nbsp;<span>match response.title == &#39;Java Feature File&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">222</div>
   </div>
 
    
@@ -466,7 +465,7 @@
         <span>Then</span>&nbsp;<span>match response.body == &#39;Karate Framework&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">14</div>
   </div>
 
    
@@ -523,7 +522,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2453</span>
+              <span>ms:</span>&nbsp;<span>736</span>
             </div>
           </div>
           
@@ -540,7 +539,7 @@
         <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/posts&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -549,7 +548,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.11">20:47:01.322 karate.env system property was: null 
+  <div class="preformatted" data-parent="2.11">10:41:37.845 karate.env system property was: null 
 </div>   
 
   
@@ -569,7 +568,7 @@
         <span>*</span>&nbsp;<span>def JavaDemo = Java.type(&#39;examples.calljava.jsonbody&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">28</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -597,7 +596,7 @@
         <span>*</span>&nbsp;<span>def result = JavaDemo.bodyis(&#39;Welcome&#39; , &#39;Karate Framework&#39; , 10)</span>
       </div>
     </div>
-    <div class="time-cell passed">27</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -625,7 +624,7 @@
         <span>And</span>&nbsp;<span>print result</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -634,7 +633,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.14">20:47:01.482 [print] {&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;} 
+  <div class="preformatted" data-parent="2.14">10:41:37.874 [print] {&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;} 
 </div>   
 
   
@@ -710,7 +709,7 @@
         <span>And</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2351</div>
+    <div class="time-cell passed">704</div>
   </div>
 
    
@@ -719,26 +718,26 @@
 
   
 
-  <div class="preformatted" data-parent="2.17">20:47:02.693 request:
+  <div class="preformatted" data-parent="2.17">10:41:37.880 request:
 1 &gt; POST https://jsonplaceholder.typicode.com/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 59
 1 &gt; Host: jsonplaceholder.typicode.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;}
 
-20:47:03.832 response time in milliseconds: 1138
+10:41:38.577 response time in milliseconds: 697
 1 &lt; 201
-1 &lt; Date: Mon, 21 Jun 2021 15:17:03 GMT
+1 &lt; Date: Mon, 05 Jul 2021 05:11:38 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 85
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; X-Ratelimit-Limit: 1000
-1 &lt; X-Ratelimit-Remaining: 999
-1 &lt; X-Ratelimit-Reset: 1624288665
+1 &lt; X-Ratelimit-Remaining: 998
+1 &lt; X-Ratelimit-Reset: 1625461939
 1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Cache-Control: no-cache
@@ -750,12 +749,11 @@
 1 &lt; Etag: W/&quot;55-ado8H4CXM9gruGbklc+Zwr09vJo&quot;
 1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; cf-request-id: 0ad0be8ff3000031dca331e000000001
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=AixtgEyCYDKbXhbATk8EhbzuDHq%2BTlx%2FXzLdEeJW4tac9%2FLifDXGIeLOie85Yp09W8CPnE9e4mQqPT3F%2BO8CViEovHQ8DzbXXmUJlwa0sgrFFzGWzHQUZhKquc5JvB6t5Vyr1hVQqOwEAg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=nfrCRJV%2F%2FZeHnjYRI11s4ws%2FD%2BOl%2BbOYjh3MKIzT2a9XDKHQzpvX%2BZrlgDJ%2BEsY9%2FwiNvu0%2FVl6TkbGjyAdai8qIQchG%2FCDcda4DB8DQTOAujljVN0hkwYljCboo2PeAAfdA0aDtvGNZyw%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 662e33931e2d31dc-BOM
+1 &lt; CF-RAY: 669e180098364b05-HYD
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
 {&quot;id&quot;:101,&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;}
 </div>   
@@ -805,7 +803,7 @@
         <span>And</span>&nbsp;<span>assert responseTime &lt; 3000</span>
       </div>
     </div>
-    <div class="time-cell passed">32</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -833,7 +831,7 @@
         <span>And</span>&nbsp;<span>match responseType == &#39;json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -861,7 +859,7 @@
         <span>And</span>&nbsp;<span>print &#39;Response is: &#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -870,7 +868,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.21">20:47:03.874 [print] Response is:  {
+  <div class="preformatted" data-parent="2.21">10:41:38.589 [print] Response is:  {
   &quot;id&quot;: 101,
   &quot;title&quot;: &quot;Welcome&quot;,
   &quot;body&quot;: &quot;Karate Framework&quot;,
@@ -924,7 +922,7 @@
         <span>Then</span>&nbsp;<span>match response.body == &#39;Karate Framework&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -952,7 +950,7 @@
         <span>Then</span>&nbsp;<span>match response.userId == &#39;10&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
