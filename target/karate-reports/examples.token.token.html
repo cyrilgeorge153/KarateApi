@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>examples.token.token</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-07-15 10:20:09 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:19]"><span>[1:19]</span> <span>create profile</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/token/token.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">generate oauth 2.o token and reuse it in creating profile</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:19]</span>
+                <span class="scenario-name">create profile</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2182</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://login.salesforce.com/services/oauth2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">10:20:06.430 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field grant_type = &#39;password&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">349</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field username = &#39;apptest@katzion.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field password = &#39;Ganesh@18&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field client_id = &#39;3MVG9fe4g9fhX0E58aNIy03f0wE8LKYfhIVnt1P2lh1eXPIesU.oNmSdI_6CnKaM7S8dLgmwsm5TRxqjvfOl3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field client_secret = &#39;98E209043DE1BD69CBE2FF78724FF5BD12888AE257DBA1E79E08EDDEF75E5B17&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1016</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">10:20:06.844 request:
+1 &gt; POST https://login.salesforce.com/services/oauth2/token
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 246
+1 &gt; Host: login.salesforce.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=password&amp;username=apptest%40katzion.com&amp;password=Ganesh%4018&amp;client_id=3MVG9fe4g9fhX0E58aNIy03f0wE8LKYfhIVnt1P2lh1eXPIesU.oNmSdI_6CnKaM7S8dLgmwsm5TRxqjvfOl3&amp;client_secret=98E209043DE1BD69CBE2FF78724FF5BD12888AE257DBA1E79E08EDDEF75E5B17
+
+10:20:07.812 response time in milliseconds: 947
+1 &lt; 200
+1 &lt; Date: Thu, 15 Jul 2021 04:50:07 GMT
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache,must-revalidate,max-age=0,no-store,private
+1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 &lt; X-ReadOnlyMode: false
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Vary: Accept-Encoding
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: BrowserId=ILRGyOUoEeu1nDn2KHXJag; Max-Age=1657860607000; Expires=Mon, 17 Jan 54557 16:06:47 GMT; Domain=salesforce.com
+1 &lt; Set-Cookie: CookieConsentPolicy=0:0; Max-Age=1657860607000; Expires=Mon, 17 Jan 54557 16:06:47 GMT; Domain=login.salesforce.com
+{&quot;access_token&quot;:&quot;00D5g000005EPAg!ASAAQGTz.H7uYuAv3Uk1FxmYPmmge5vCwQekAfCO2pQ.7PDdslk3Zf91mlP7bCI3XmBcddSLY.DnM7RHuAUrjbuV3XuWLnMI&quot;,&quot;signature&quot;:&quot;XqKKbsm7gQg+q2jF0xXqKnTZgpT8eNicoDjc3kfX34c=&quot;,&quot;instance_url&quot;:&quot;https:\/\/katzapptest.my.salesforce.com&quot;,&quot;id&quot;:&quot;https:\/\/login.salesforce.com\/id\/00D5g000005EPAgEAO\/0055g000008wDcIAAU&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;issued_at&quot;:&quot;1626324607708&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">10:20:07.822 [print] {
+  &quot;access_token&quot;: &quot;00D5g000005EPAg!ASAAQGTz.H7uYuAv3Uk1FxmYPmmge5vCwQekAfCO2pQ.7PDdslk3Zf91mlP7bCI3XmBcddSLY.DnM7RHuAUrjbuV3XuWLnMI&quot;,
+  &quot;signature&quot;: &quot;XqKKbsm7gQg+q2jF0xXqKnTZgpT8eNicoDjc3kfX34c=&quot;,
+  &quot;instance_url&quot;: &quot;https://katzapptest.my.salesforce.com&quot;,
+  &quot;id&quot;: &quot;https://login.salesforce.com/id/00D5g000005EPAgEAO/0055g000008wDcIAAU&quot;,
+  &quot;token_type&quot;: &quot;Bearer&quot;,
+  &quot;issued_at&quot;: &quot;1626324607708&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print &#39;access token is:&#39;+accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">10:20:07.826 [print] access token is:00D5g000005EPAg!ASAAQGTz.H7uYuAv3Uk1FxmYPmmge5vCwQekAfCO2pQ.7PDdslk3Zf91mlP7bCI3XmBcddSLY.DnM7RHuAUrjbuV3XuWLnMI 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = read(&#39;profile.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    Given url &#39;https://login.salesforce.com/services/oauth2&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * path &#39;token&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * form field grant_type = &#39;password&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * form field username = &#39;apptest@katzion.com&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * form field password = &#39;Ganesh@18&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * form field client_id = &#39;3MVG9fe4g9fhX0E58aNIy03f0wE8LKYfhIVnt1P2lh1eXPIesU.oNmSdI_6CnKaM7S8dLgmwsm5TRxqjvfOl3&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * form field client_secret = &#39;98E209043DE1BD69CBE2FF78724FF5BD12888AE257DBA1E79E08EDDEF75E5B17&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * method post</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * status 200</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * print response</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def accessToken = response.access_token</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#     Then print &#39;access token is:&#39;+accessToken</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://katzapptest.my.salesforce.com/services/data/v51.0/sobjects/katzion__Matchscore_Profile__c&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">797</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">10:20:07.835 request:
+2 &gt; POST https://katzapptest.my.salesforce.com/services/data/v51.0/sobjects/katzion__Matchscore_Profile__c
+2 &gt; Authorization: Bearer 00D5g000005EPAg!ASAAQGTz.H7uYuAv3Uk1FxmYPmmge5vCwQekAfCO2pQ.7PDdslk3Zf91mlP7bCI3XmBcddSLY.DnM7RHuAUrjbuV3XuWLnMI
+2 &gt; Cookie: BrowserId=ILRGyOUoEeu1nDn2KHXJag
+2 &gt; Cookie: CookieConsentPolicy=0:0
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 26
+2 &gt; Host: katzapptest.my.salesforce.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;katzion__Score__c&quot;:&quot;80&quot;}
+
+10:20:08.626 response time in milliseconds: 790
+2 &lt; 201
+2 &lt; Date: Thu, 15 Jul 2021 04:50:08 GMT
+2 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; X-Robots-Tag: none
+2 &lt; Cache-Control: no-cache,must-revalidate,max-age=0,no-store,private
+2 &lt; Sforce-Limit-Info: api-usage=2600/101002
+2 &lt; Location: /services/data/v51.0/sobjects/katzion__Matchscore_Profile__c/a025g000004uX1UAAU
+2 &lt; Content-Type: application/json;charset=UTF-8
+2 &lt; Vary: Accept-Encoding
+2 &lt; Transfer-Encoding: chunked
+{&quot;success&quot;:true,&quot;id&quot;:&quot;a025g000004uX1UAAU&quot;,&quot;errors&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.40">10:20:08.628 [print] {
+  &quot;success&quot;: true,
+  &quot;id&quot;: &quot;a025g000004uX1UAAU&quot;,
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
