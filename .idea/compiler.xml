@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="KarateApi" />
+        <module name="KarateUiAutomation" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="KarateApi" options="-Werror" />
+      <module name="KarateUiAutomation" options="-Werror" />
     </option>
   </component>
 </project>

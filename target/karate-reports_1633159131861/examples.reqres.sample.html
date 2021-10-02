@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>examples.reqres.sample</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-10-02 12:45:19 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>swag labs login button display test</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:15]"><span>[2:15]</span> <span>swag labs logo display test</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/reqres/sample.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">swag labs login page ui test cases</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">swag labs login button display test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>8743</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chrome&#39;, showDriverLog: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">111</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:45:07.408 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>driver &#39;https://www.saucedemo.com/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8423</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">12:45:11.513 request:
+1 &gt; GET http://localhost:9222/json
+1 &gt; Host: localhost:9222
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:45:11.522 response time in milliseconds: 3
+1 &lt; 200
+1 &lt; Content-Length: 2182
+1 &lt; Content-Type: application/json; charset=UTF-8
+[{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/9ABB50F62563D0A895BB0CB557B2293D&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;9ABB50F62563D0A895BB0CB557B2293D&quot;,&quot;title&quot;:&quot;CryptoTokenExtension&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/9ABB50F62563D0A895BB0CB557B2293D&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/kmendfapggjehodndflmmgagdbamhnfd\/_generated_background_page.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/00680197C5A77ECBA9B5590D4A371B0D&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;00680197C5A77ECBA9B5590D4A371B0D&quot;,&quot;title&quot;:&quot;Google Network Speech&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/00680197C5A77ECBA9B5590D4A371B0D&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/neajdppkdcdipfabeoofebfddakdcjhd\/_generated_background_page.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/6EC5888180CC65C310DC92ADA635F73D&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;6EC5888180CC65C310DC92ADA635F73D&quot;,&quot;title&quot;:&quot;Feedback&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/6EC5888180CC65C310DC92ADA635F73D&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/gfdkimpbcpahaombhbimeihdjnejgicl\/_generated_background_page.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/0B43390B7DEE20C5ADF40F4C7FAAA388&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;0B43390B7DEE20C5ADF40F4C7FAAA388&quot;,&quot;title&quot;:&quot;Google Hangouts&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/0B43390B7DEE20C5ADF40F4C7FAAA388&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/nkeimhogjdpnpccoofpliimaahmaaome\/background.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/DF78824C04209B1020F4D5E9C83A5644&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;DF78824C04209B1020F4D5E9C83A5644&quot;,&quot;title&quot;:&quot;Welcome to Chrome&quot;,&quot;type&quot;:&quot;page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/DF78824C04209B1020F4D5E9C83A5644&quot;,&quot;url&quot;:&quot;chrome:\/\/welcome\/&quot;}]
+12:45:11.546 root frame id: DF78824C04209B1020F4D5E9C83A5644
+12:45:14.071 &gt;&gt; {&quot;id&quot;:1,&quot;method&quot;:&quot;Target.activateTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;DF78824C04209B1020F4D5E9C83A5644&quot;}}
+12:45:14.124 &lt;&lt; {&quot;id&quot;:1,&quot;result&quot;:{}}
+12:45:14.125 &gt;&gt; {&quot;id&quot;:2,&quot;method&quot;:&quot;Page.enable&quot;}
+12:45:14.131 &lt;&lt; {&quot;id&quot;:2,&quot;result&quot;:{}}
+12:45:14.136 &gt;&gt; {&quot;id&quot;:3,&quot;method&quot;:&quot;Runtime.enable&quot;}
+12:45:14.161 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;chrome://welcome&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-2531308185435317588.2681324541068753412&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;DF78824C04209B1020F4D5E9C83A5644&quot;}}}}
+12:45:14.162 &lt;&lt; {&quot;id&quot;:3,&quot;result&quot;:{}}
+12:45:14.166 &gt;&gt; {&quot;id&quot;:4,&quot;method&quot;:&quot;Target.setAutoAttach&quot;,&quot;params&quot;:{&quot;autoAttach&quot;:true,&quot;waitForDebuggerOnStart&quot;:false,&quot;flatten&quot;:true}}
+12:45:14.170 &lt;&lt; {&quot;id&quot;:4,&quot;result&quot;:{}}
+12:45:14.171 &gt;&gt; {&quot;id&quot;:5,&quot;method&quot;:&quot;Browser.getWindowForTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;DF78824C04209B1020F4D5E9C83A5644&quot;}}
+12:45:14.174 &lt;&lt; {&quot;id&quot;:5,&quot;result&quot;:{&quot;windowId&quot;:1,&quot;bounds&quot;:{&quot;left&quot;:10,&quot;top&quot;:10,&quot;width&quot;:1050,&quot;height&quot;:708,&quot;windowState&quot;:&quot;normal&quot;}}}
+12:45:14.642 &gt;&gt; {&quot;id&quot;:6,&quot;method&quot;:&quot;Page.navigate&quot;,&quot;params&quot;:{&quot;url&quot;:&quot;https:\/\/www.saucedemo.com\/&quot;}}
+12:45:15.083 &lt;&lt; {&quot;id&quot;:6,&quot;result&quot;:{&quot;frameId&quot;:&quot;DF78824C04209B1020F4D5E9C83A5644&quot;,&quot;loaderId&quot;:&quot;00EAD13D8066905AF6A7D66252BEE3C4&quot;}}
+12:45:15.093 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+12:45:15.096 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;DF78824C04209B1020F4D5E9C83A5644&quot;}}
+12:45:15.134 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+12:45:15.137 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;DF78824C04209B1020F4D5E9C83A5644&quot;,&quot;loaderId&quot;:&quot;00EAD13D8066905AF6A7D66252BEE3C4&quot;,&quot;url&quot;:&quot;https://www.saucedemo.com/&quot;,&quot;domainAndRegistry&quot;:&quot;saucedemo.com&quot;,&quot;securityOrigin&quot;:&quot;https://www.saucedemo.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameStatus&quot;:{&quot;adFrameType&quot;:&quot;none&quot;},&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[]},&quot;type&quot;:&quot;Navigation&quot;}}
+12:45:15.139 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;https://www.saucedemo.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-5753518782187479901.-2766821353581122725&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;DF78824C04209B1020F4D5E9C83A5644&quot;}}}}
+12:45:16.001 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:167783.536136}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>maximize()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">77</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">12:45:16.047 &gt;&gt; {&quot;id&quot;:7,&quot;method&quot;:&quot;Browser.setWindowBounds&quot;,&quot;params&quot;:{&quot;windowId&quot;:1,&quot;bounds&quot;:{&quot;windowState&quot;:&quot;maximized&quot;}}}
+12:45:16.064 &lt;&lt; {&quot;id&quot;:7,&quot;result&quot;:{}}
+12:45:16.076 &lt;&lt; {&quot;method&quot;:&quot;Page.frameResized&quot;,&quot;params&quot;:{}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>waitFor(&#39;#login-button&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">86</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">12:45:16.104 &lt;&lt; {&quot;method&quot;:&quot;Page.frameResized&quot;,&quot;params&quot;:{}}
+12:45:16.157 &gt;&gt; {&quot;id&quot;:8,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;(document.querySelector(\&quot;#login-button\&quot;) != null)&quot;,&quot;returnByValue&quot;:true}}
+12:45:16.162 &lt;&lt; {&quot;id&quot;:8,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;boolean&quot;,&quot;value&quot;:true}}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def button_exists = exists(&#39;#login-button&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">12:45:16.181 &gt;&gt; {&quot;id&quot;:9,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.querySelector(\&quot;#login-button\&quot;) != null&quot;,&quot;returnByValue&quot;:true}}
+12:45:16.184 &lt;&lt; {&quot;id&quot;:9,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;boolean&quot;,&quot;value&quot;:true}}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print button_exists</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">12:45:16.190 [print] true 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match  button_exists == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">12:45:16.217 &gt;&gt; {&quot;id&quot;:10,&quot;method&quot;:&quot;Target.closeTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;DF78824C04209B1020F4D5E9C83A5644&quot;}}
+12:45:16.221 &lt;&lt; {&quot;id&quot;:10,&quot;result&quot;:{&quot;success&quot;:true}}
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:15]</span>
+                <span class="scenario-name">swag labs logo display test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3504</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chrome&#39;, showDriverLog: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:45:16.389 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>driver &#39;https://www.saucedemo.com/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3411</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">12:45:16.393 preferred port 9222 not available, will use: 59882
+12:45:17.478 request:
+1 &gt; GET http://localhost:59882/json
+1 &gt; Host: localhost:59882
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:45:18.108 response time in milliseconds: 2
+1 &lt; 200
+1 &lt; Content-Length: 2194
+1 &lt; Content-Type: application/json; charset=UTF-8
+[{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:59882\/devtools\/page\/CB27F7A2A3E9840775F7CE1E5D616CBF&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;CB27F7A2A3E9840775F7CE1E5D616CBF&quot;,&quot;title&quot;:&quot;CryptoTokenExtension&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:59882\/devtools\/page\/CB27F7A2A3E9840775F7CE1E5D616CBF&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/kmendfapggjehodndflmmgagdbamhnfd\/_generated_background_page.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:59882\/devtools\/page\/D707B0A7B034DD4BC3725B3D2FA2367D&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;D707B0A7B034DD4BC3725B3D2FA2367D&quot;,&quot;title&quot;:&quot;Google Network Speech&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:59882\/devtools\/page\/D707B0A7B034DD4BC3725B3D2FA2367D&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/neajdppkdcdipfabeoofebfddakdcjhd\/_generated_background_page.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:59882\/devtools\/page\/3B4C9769E874621C0D9B4F9A60DC8C90&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;3B4C9769E874621C0D9B4F9A60DC8C90&quot;,&quot;title&quot;:&quot;Feedback&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:59882\/devtools\/page\/3B4C9769E874621C0D9B4F9A60DC8C90&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/gfdkimpbcpahaombhbimeihdjnejgicl\/_generated_background_page.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:59882\/devtools\/page\/53E736FB0B5BD27B14C32F0098510C84&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;53E736FB0B5BD27B14C32F0098510C84&quot;,&quot;title&quot;:&quot;Google Hangouts&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:59882\/devtools\/page\/53E736FB0B5BD27B14C32F0098510C84&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/nkeimhogjdpnpccoofpliimaahmaaome\/background.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:59882\/devtools\/page\/613B226D668EDCA1F3ABEE4D4EB56EE5&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;613B226D668EDCA1F3ABEE4D4EB56EE5&quot;,&quot;title&quot;:&quot;&quot;,&quot;type&quot;:&quot;page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:59882\/devtools\/page\/613B226D668EDCA1F3ABEE4D4EB56EE5&quot;,&quot;url&quot;:&quot;chrome:\/\/welcome\/?variant=everywhere&quot;}]
+12:45:18.111 root frame id: 613B226D668EDCA1F3ABEE4D4EB56EE5
+12:45:18.137 &gt;&gt; {&quot;id&quot;:1,&quot;method&quot;:&quot;Target.activateTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;613B226D668EDCA1F3ABEE4D4EB56EE5&quot;}}
+12:45:18.147 &lt;&lt; {&quot;id&quot;:1,&quot;result&quot;:{}}
+12:45:18.148 &gt;&gt; {&quot;id&quot;:2,&quot;method&quot;:&quot;Page.enable&quot;}
+12:45:18.305 &lt;&lt; {&quot;id&quot;:2,&quot;result&quot;:{}}
+12:45:18.306 &gt;&gt; {&quot;id&quot;:3,&quot;method&quot;:&quot;Runtime.enable&quot;}
+12:45:18.324 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;chrome://welcome&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;2577410639925483660.-4002560223332844583&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;613B226D668EDCA1F3ABEE4D4EB56EE5&quot;}}}}
+12:45:18.326 &lt;&lt; {&quot;id&quot;:3,&quot;result&quot;:{}}
+12:45:18.347 &gt;&gt; {&quot;id&quot;:4,&quot;method&quot;:&quot;Target.setAutoAttach&quot;,&quot;params&quot;:{&quot;autoAttach&quot;:true,&quot;waitForDebuggerOnStart&quot;:false,&quot;flatten&quot;:true}}
+12:45:18.466 &lt;&lt; {&quot;method&quot;:&quot;Page.loadEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:167786.001398}}
+12:45:18.467 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;613B226D668EDCA1F3ABEE4D4EB56EE5&quot;}}
+12:45:18.469 &lt;&lt; {&quot;id&quot;:4,&quot;result&quot;:{}}
+12:45:18.472 &gt;&gt; {&quot;id&quot;:5,&quot;method&quot;:&quot;Browser.getWindowForTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;613B226D668EDCA1F3ABEE4D4EB56EE5&quot;}}
+12:45:18.475 &lt;&lt; {&quot;id&quot;:5,&quot;result&quot;:{&quot;windowId&quot;:1,&quot;bounds&quot;:{&quot;left&quot;:10,&quot;top&quot;:10,&quot;width&quot;:1050,&quot;height&quot;:708,&quot;windowState&quot;:&quot;normal&quot;}}}
+12:45:18.514 &gt;&gt; {&quot;id&quot;:6,&quot;method&quot;:&quot;Page.navigate&quot;,&quot;params&quot;:{&quot;url&quot;:&quot;https:\/\/www.saucedemo.com\/&quot;}}
+12:45:18.750 &lt;&lt; {&quot;id&quot;:6,&quot;result&quot;:{&quot;frameId&quot;:&quot;613B226D668EDCA1F3ABEE4D4EB56EE5&quot;,&quot;loaderId&quot;:&quot;4760258ADEB7DC611ECCCB2D02E4273F&quot;}}
+12:45:18.758 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+12:45:18.761 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;613B226D668EDCA1F3ABEE4D4EB56EE5&quot;}}
+12:45:18.787 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+12:45:18.788 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;613B226D668EDCA1F3ABEE4D4EB56EE5&quot;,&quot;loaderId&quot;:&quot;4760258ADEB7DC611ECCCB2D02E4273F&quot;,&quot;url&quot;:&quot;https://www.saucedemo.com/&quot;,&quot;domainAndRegistry&quot;:&quot;saucedemo.com&quot;,&quot;securityOrigin&quot;:&quot;https://www.saucedemo.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameStatus&quot;:{&quot;adFrameType&quot;:&quot;none&quot;},&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[]},&quot;type&quot;:&quot;Navigation&quot;}}
+12:45:18.789 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;https://www.saucedemo.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-9089730224920228758.-8848336668907151260&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;613B226D668EDCA1F3ABEE4D4EB56EE5&quot;}}}}
+12:45:19.800 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:167787.336805}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>maximize()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">12:45:19.804 &gt;&gt; {&quot;id&quot;:7,&quot;method&quot;:&quot;Browser.setWindowBounds&quot;,&quot;params&quot;:{&quot;windowId&quot;:1,&quot;bounds&quot;:{&quot;windowState&quot;:&quot;maximized&quot;}}}
+12:45:19.818 &lt;&lt; {&quot;id&quot;:7,&quot;result&quot;:{}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>waitFor(&#39;.login_logo&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">44</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">12:45:19.838 &gt;&gt; {&quot;id&quot;:8,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;(document.querySelector(\&quot;.login_logo\&quot;) != null)&quot;,&quot;returnByValue&quot;:true}}
+12:45:19.863 &lt;&lt; {&quot;method&quot;:&quot;Page.frameResized&quot;,&quot;params&quot;:{}}
+12:45:19.864 &lt;&lt; {&quot;id&quot;:8,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;boolean&quot;,&quot;value&quot;:true}}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def button_exists = exists(&#39;.login_logo&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">12:45:19.875 &gt;&gt; {&quot;id&quot;:9,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.querySelector(\&quot;.login_logo\&quot;) != null&quot;,&quot;returnByValue&quot;:true}}
+12:45:19.886 &lt;&lt; {&quot;id&quot;:9,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;boolean&quot;,&quot;value&quot;:true}}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print button_exists</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">12:45:19.893 &lt;&lt; {&quot;method&quot;:&quot;Page.frameResized&quot;,&quot;params&quot;:{}}
+12:45:19.894 [print] true 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match  button_exists == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">12:45:19.897 &gt;&gt; {&quot;id&quot;:10,&quot;method&quot;:&quot;Target.closeTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;613B226D668EDCA1F3ABEE4D4EB56EE5&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

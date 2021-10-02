@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.examples.reqres.sample</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-10-02 12:19:16 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>swag labs login button display test</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/reqres/sample.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">swag labs login page ui test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">swag labs login button display test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>8625</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chrome&#39;, showDriverLog: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">91</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:19:07.525 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>driver &#39;https://www.saucedemo.com/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8402</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">12:19:11.521 request:
+1 &gt; GET http://localhost:9222/json
+1 &gt; Host: localhost:9222
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:19:11.524 response time in milliseconds: 2
+1 &lt; 200
+1 &lt; Content-Length: 2182
+1 &lt; Content-Type: application/json; charset=UTF-8
+[{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/8C95A3CAC676D828B9382F2DEBC12CDE&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;8C95A3CAC676D828B9382F2DEBC12CDE&quot;,&quot;title&quot;:&quot;CryptoTokenExtension&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/8C95A3CAC676D828B9382F2DEBC12CDE&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/kmendfapggjehodndflmmgagdbamhnfd\/_generated_background_page.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/5B3EAEFA790147DEEFA22AD4388A394E&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;5B3EAEFA790147DEEFA22AD4388A394E&quot;,&quot;title&quot;:&quot;Google Network Speech&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/5B3EAEFA790147DEEFA22AD4388A394E&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/neajdppkdcdipfabeoofebfddakdcjhd\/_generated_background_page.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/6289A81D9C7E131E6B2D5AAF62B39066&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;6289A81D9C7E131E6B2D5AAF62B39066&quot;,&quot;title&quot;:&quot;Feedback&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/6289A81D9C7E131E6B2D5AAF62B39066&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/gfdkimpbcpahaombhbimeihdjnejgicl\/_generated_background_page.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/CA9983F6DFD35AC99A9688CBBABC8024&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;CA9983F6DFD35AC99A9688CBBABC8024&quot;,&quot;title&quot;:&quot;Google Hangouts&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/CA9983F6DFD35AC99A9688CBBABC8024&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/nkeimhogjdpnpccoofpliimaahmaaome\/background.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/694C401DF035AD49E5A1315D11ADAB16&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;694C401DF035AD49E5A1315D11ADAB16&quot;,&quot;title&quot;:&quot;Welcome to Chrome&quot;,&quot;type&quot;:&quot;page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/694C401DF035AD49E5A1315D11ADAB16&quot;,&quot;url&quot;:&quot;chrome:\/\/welcome\/&quot;}]
+12:19:11.536 root frame id: 694C401DF035AD49E5A1315D11ADAB16
+12:19:14.577 &gt;&gt; {&quot;id&quot;:1,&quot;method&quot;:&quot;Target.activateTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;694C401DF035AD49E5A1315D11ADAB16&quot;}}
+12:19:14.635 &lt;&lt; {&quot;id&quot;:1,&quot;result&quot;:{}}
+12:19:14.637 &gt;&gt; {&quot;id&quot;:2,&quot;method&quot;:&quot;Page.enable&quot;}
+12:19:14.641 &lt;&lt; {&quot;id&quot;:2,&quot;result&quot;:{}}
+12:19:14.642 &gt;&gt; {&quot;id&quot;:3,&quot;method&quot;:&quot;Runtime.enable&quot;}
+12:19:14.645 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;chrome://welcome&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;1842885496594575549.3479683482449989940&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;694C401DF035AD49E5A1315D11ADAB16&quot;}}}}
+12:19:14.647 &lt;&lt; {&quot;id&quot;:3,&quot;result&quot;:{}}
+12:19:14.651 &gt;&gt; {&quot;id&quot;:4,&quot;method&quot;:&quot;Target.setAutoAttach&quot;,&quot;params&quot;:{&quot;autoAttach&quot;:true,&quot;waitForDebuggerOnStart&quot;:false,&quot;flatten&quot;:true}}
+12:19:14.656 &lt;&lt; {&quot;id&quot;:4,&quot;result&quot;:{}}
+12:19:14.658 &gt;&gt; {&quot;id&quot;:5,&quot;method&quot;:&quot;Browser.getWindowForTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;694C401DF035AD49E5A1315D11ADAB16&quot;}}
+12:19:14.661 &lt;&lt; {&quot;id&quot;:5,&quot;result&quot;:{&quot;windowId&quot;:1,&quot;bounds&quot;:{&quot;left&quot;:10,&quot;top&quot;:10,&quot;width&quot;:1050,&quot;height&quot;:708,&quot;windowState&quot;:&quot;normal&quot;}}}
+12:19:15.073 &gt;&gt; {&quot;id&quot;:6,&quot;method&quot;:&quot;Page.navigate&quot;,&quot;params&quot;:{&quot;url&quot;:&quot;https:\/\/www.saucedemo.com\/&quot;}}
+12:19:15.391 &lt;&lt; {&quot;id&quot;:6,&quot;result&quot;:{&quot;frameId&quot;:&quot;694C401DF035AD49E5A1315D11ADAB16&quot;,&quot;loaderId&quot;:&quot;655EEB89300BD1FBE34ED1361156C4EE&quot;}}
+12:19:15.406 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+12:19:15.415 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;694C401DF035AD49E5A1315D11ADAB16&quot;}}
+12:19:15.448 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+12:19:15.450 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;694C401DF035AD49E5A1315D11ADAB16&quot;,&quot;loaderId&quot;:&quot;655EEB89300BD1FBE34ED1361156C4EE&quot;,&quot;url&quot;:&quot;https://www.saucedemo.com/&quot;,&quot;domainAndRegistry&quot;:&quot;saucedemo.com&quot;,&quot;securityOrigin&quot;:&quot;https://www.saucedemo.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameStatus&quot;:{&quot;adFrameType&quot;:&quot;none&quot;},&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[]},&quot;type&quot;:&quot;Navigation&quot;}}
+12:19:15.451 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;https://www.saucedemo.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;1760966746055106217.8777654617650220122&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;694C401DF035AD49E5A1315D11ADAB16&quot;}}}}
+12:19:16.083 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:166223.618032}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>maximize()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">60</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">12:19:16.126 &gt;&gt; {&quot;id&quot;:7,&quot;method&quot;:&quot;Browser.setWindowBounds&quot;,&quot;params&quot;:{&quot;windowId&quot;:1,&quot;bounds&quot;:{&quot;windowState&quot;:&quot;maximized&quot;}}}
+12:19:16.140 &lt;&lt; {&quot;id&quot;:7,&quot;result&quot;:{}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>waitFor(&#39;#login-button&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">50</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">12:19:16.149 &lt;&lt; {&quot;method&quot;:&quot;Page.frameResized&quot;,&quot;params&quot;:{}}
+12:19:16.162 &lt;&lt; {&quot;method&quot;:&quot;Page.frameResized&quot;,&quot;params&quot;:{}}
+12:19:16.186 &gt;&gt; {&quot;id&quot;:8,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;(document.querySelector(\&quot;#login-button\&quot;) != null)&quot;,&quot;returnByValue&quot;:true}}
+12:19:16.189 &lt;&lt; {&quot;id&quot;:8,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;boolean&quot;,&quot;value&quot;:true}}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def button_exists = exists(&#39;#login-button&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">12:19:16.211 &gt;&gt; {&quot;id&quot;:9,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.querySelector(\&quot;#login-button\&quot;) != null&quot;,&quot;returnByValue&quot;:true}}
+12:19:16.216 &lt;&lt; {&quot;id&quot;:9,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;boolean&quot;,&quot;value&quot;:true}}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print button_exists</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">12:19:16.219 [print] true 
+12:19:16.232 &gt;&gt; {&quot;id&quot;:10,&quot;method&quot;:&quot;Target.closeTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;694C401DF035AD49E5A1315D11ADAB16&quot;}}
+12:19:16.233 &lt;&lt; {&quot;id&quot;:10,&quot;result&quot;:{&quot;success&quot;:true}}
+12:19:16.239 &lt;&lt; {&quot;method&quot;:&quot;Inspector.detached&quot;,&quot;params&quot;:{&quot;reason&quot;:&quot;Render process gone.&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
