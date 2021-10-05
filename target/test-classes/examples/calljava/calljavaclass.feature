@@ -9,7 +9,7 @@ Feature: Call a Java Method From Feature File
 
 
     Given url 'https://jsonplaceholder.typicode.com/posts'
-    * def JavaDemo = Java.type('examples.calljava.jsonbody')
+    * def JavaDemo = Java.type('examples.data.jsonbody')
     * def result = JavaDemo.bodyis('<Title>' , '<Body>' , <UserId>)
     And print result
     And header Content-Type = 'application/json; charset=UTF-8'

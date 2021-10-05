@@ -1,4 +1,4 @@
-
+@ignore
 Feature: generate oauth 2.o token and reuse it in creating profile
 
   Background: oauth2.0 token

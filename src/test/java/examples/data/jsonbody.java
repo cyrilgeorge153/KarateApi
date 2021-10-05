@@ -1,4 +1,4 @@
-package examples.calljava;
+package examples.data;
 
 public class jsonbody {
 

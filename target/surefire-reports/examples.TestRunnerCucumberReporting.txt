@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: examples.TestRunnerParallel
+Test set: examples.TestRunnerCucumberReporting
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.905 s - in examples.TestRunnerParallel
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.15 s - in examples.TestRunnerCucumberReporting
