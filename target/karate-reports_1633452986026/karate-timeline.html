@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-3","id":1},{"content":"pool-1-thread-4","id":2},{"content":"pool-1-thread-5","id":3},{"content":"pool-1-thread-6","id":4},{"content":"pool-1-thread-7","id":5},{"content":"pool-1-thread-8","id":6},{"content":"pool-1-thread-9","id":7},{"content":"pool-1-thread-10","id":8},{"content":"pool-1-thread-1","id":9},{"content":"pool-1-thread-2","id":10}];
+var items = [{"id":1,"group":1,"content":"examples\/reqres\/reqres[1:6]","start":1633452807614,"end":1633452811651,"title":"examples\/reqres\/reqres[1:6] 22:23:27.614-22:23:31.651 single user get request"},{"id":2,"group":2,"content":"examples\/reqres\/reqres[2:15]","start":1633452807614,"end":1633452811670,"title":"examples\/reqres\/reqres[2:15] 22:23:27.614-22:23:31.670 list users get request"},{"id":3,"group":3,"content":"examples\/reqres\/reqres[3:35]","start":1633452807614,"end":1633452811974,"title":"examples\/reqres\/reqres[3:35] 22:23:27.614-22:23:31.974 create user using post and external json file"},{"id":4,"group":4,"content":"examples\/reqres\/reqres[4:46]","start":1633452807630,"end":1633452811974,"title":"examples\/reqres\/reqres[4:46] 22:23:27.630-22:23:31.974 create user using post and inline json payload"},{"id":5,"group":5,"content":"examples\/reqres\/reqres[5:57]","start":1633452807614,"end":1633452811974,"title":"examples\/reqres\/reqres[5:57] 22:23:27.614-22:23:31.974 update user using put and inline json payload"},{"id":6,"group":6,"content":"examples\/reqres\/reqres[6:67]","start":1633452807614,"end":1633452811994,"title":"examples\/reqres\/reqres[6:67] 22:23:27.614-22:23:31.994 update user using patch and inline json payload"},{"id":7,"group":7,"content":"examples\/reqres\/reqres[7:77]","start":1633452807614,"end":1633452811974,"title":"examples\/reqres\/reqres[7:77] 22:23:27.614-22:23:31.974 update user using patch and passing payload as a variable"},{"id":8,"group":8,"content":"examples\/reqres\/reqres[8:89]","start":1633452807614,"end":1633452811990,"title":"examples\/reqres\/reqres[8:89] 22:23:27.614-22:23:31.990 delete user using delete http method"},{"id":9,"group":9,"content":"examples\/calljava\/calljavaclass[1.1:27]","start":1633452807630,"end":1633452812034,"title":"examples\/calljava\/calljavaclass[1.1:27] 22:23:27.630-22:23:32.034 Verify that a new employee is successfully getting created"},{"id":10,"group":10,"content":"examples\/calljava\/calljavaclass[1.2:28]","start":1633452807614,"end":1633452812017,"title":"examples\/calljava\/calljavaclass[1.2:28] 22:23:27.614-22:23:32.017 Verify that a new employee is successfully getting created"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

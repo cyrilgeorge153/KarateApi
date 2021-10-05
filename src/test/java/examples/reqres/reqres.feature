@@ -1,7 +1,7 @@
 Feature: reqres api test cases
 
   Background: base url
-    Given url 'https://reqres.in/api'
+    Given url base_url
 
   Scenario: single user get request
     Given path '/users/2'
@@ -92,4 +92,12 @@ Feature: reqres api test cases
     When method delete
     Then print response
     And status 204
+
+  Scenario: basic auth test
+    * header Authorization = call read('../data/basic-auth.js') { username: 'postman', password: 'password' }
+    Given url "https://postman-echo.com/basic-auth"
+    When method get
+    Then print response
+    Then print response.authenticated
+    And match response.authenticated == true
 

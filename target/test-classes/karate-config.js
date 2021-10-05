@@ -6,7 +6,7 @@ function fn() {
   }
   var config = {
     env: env,
-    myVarName: 'someValue'
+    base_url: 'https://reqres.in/api'
   }
   if (env == 'dev') {
     // customize
