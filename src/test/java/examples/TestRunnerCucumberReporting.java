@@ -16,7 +16,7 @@ public class TestRunnerCucumberReporting {
         Results results = Runner.path("classpath:examples")
                 .tags("~@ignore")
                 .outputCucumberJson(true)
-                .parallel(11);
+                .parallel(14);
         generateReport(results.getReportDir());
         assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
     }

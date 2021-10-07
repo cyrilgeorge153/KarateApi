@@ -3,4 +3,5 @@ examples\reqres\ReqresTestRunner.class
 examples\TestRunnerCucumberReporting.class
 examples\data\jsonbody.class
 examples\TestRunnerParallel.class
+examples\restfulbooker\RestfulBookerTestRunner.class
 examples\token\TokenTestRunner.class

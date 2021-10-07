@@ -12,7 +12,7 @@ class TestRunnerParallel {
         Results results = Runner.path("classpath:examples")
                 .tags("~@ignore")
                 //.outputCucumberJson(true)
-                .parallel(11);
+                .parallel(14);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 

@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-10-05 10:38:21 PM</div>
+    <div>2021-10-07 10:57:25 AM</div>
   </div>        
 </div>
 
@@ -86,7 +86,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2353</span>
+              <span>ms:</span>&nbsp;<span>2114</span>
             </div>
           </div>
           <div class="step-row">
@@ -118,7 +118,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">22:38:17.520 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:57:20.779 karate.env system property was: null 
 </div>   
 
   
@@ -138,7 +138,7 @@
         <span>Given</span>&nbsp;<span>path &#39;/users/2&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">69</div>
+    <div class="time-cell passed">124</div>
   </div>
 
    
@@ -166,7 +166,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">2262</div>
+    <div class="time-cell passed">1965</div>
   </div>
 
    
@@ -175,17 +175,17 @@
 
   
 
-  <div class="preformatted" data-parent="0.8">22:38:18.807 request:
+  <div class="preformatted" data-parent="0.8">10:57:22.045 request:
 1 &gt; GET https://reqres.in/api/users/2
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-22:38:19.922 response time in milliseconds: 1115
+10:57:23.035 response time in milliseconds: 990
 1 &lt; 200
-1 &lt; Date: Tue, 05 Oct 2021 17:08:20 GMT
+1 &lt; Date: Thu, 07 Oct 2021 05:27:23 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -195,13 +195,13 @@
 1 &lt; via: 1.1 vegur
 1 &lt; Cache-Control: max-age=14400
 1 &lt; CF-Cache-Status: HIT
-1 &lt; Age: 624
+1 &lt; Age: 370
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=U1wyf9FsOBrDNqtbFxT%2B%2F2qzfHAbJXm%2Ff8GWwxH3RC3vLQFc8Hbj73ufk5EquI2hqz1kv93ovOVsneKS0oQNNCSKmStyEsgOmPbFq9SI8r00m14OijwibeAi1Oc%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Iiz5WPjeE35nngFteHDFnmbqWgGJF4MAxzG8GGP6E%2F%2FylVYjrMf2uHjSr7hAj%2F%2B7eJhD95X%2BeUqM8V9tNILfbCRwV1YaEhR8smtH2gT9ry8QrRuULJSUBvCqWOY%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 699840596ed86f00-BOM
+1 &lt; CF-RAY: 69a4b8566a226e76-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 {&quot;data&quot;:{&quot;last_name&quot;:&quot;Weaver&quot;,&quot;id&quot;:2,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/2-image.jpg&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;},&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
 </div>   
@@ -251,7 +251,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -260,7 +260,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.10">22:38:19.937 [print] {
+  <div class="preformatted" data-parent="0.10">10:57:23.035 [print] {
   &quot;data&quot;: {
     &quot;last_name&quot;: &quot;Weaver&quot;,
     &quot;id&quot;: 2,
@@ -293,7 +293,7 @@
         <span>And</span>&nbsp;<span>match $ == {&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</span>
       </div>
     </div>
-    <div class="time-cell passed">20</div>
+    <div class="time-cell passed">21</div>
   </div>
 
    
@@ -349,7 +349,7 @@
         <span>And</span>&nbsp;<span>match response $ == {&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -378,7 +378,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2330</span>
+              <span>ms:</span>&nbsp;<span>2184</span>
             </div>
           </div>
           <div class="step-row">
@@ -410,7 +410,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">22:38:17.527 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:57:20.779 karate.env system property was: null 
 </div>   
 
   
@@ -430,7 +430,7 @@
         <span>Given</span>&nbsp;<span>path &#39;/users?page=2&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">15</div>
+    <div class="time-cell passed">173</div>
   </div>
 
    
@@ -458,7 +458,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">2261</div>
+    <div class="time-cell passed">1965</div>
   </div>
 
    
@@ -467,17 +467,17 @@
 
   
 
-  <div class="preformatted" data-parent="0.17">22:38:18.822 request:
+  <div class="preformatted" data-parent="0.17">10:57:22.045 request:
 1 &gt; GET https://reqres.in/api/users?page=2
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-22:38:19.922 response time in milliseconds: 1095
+10:57:23.035 response time in milliseconds: 990
 1 &lt; 200
-1 &lt; Date: Tue, 05 Oct 2021 17:08:20 GMT
+1 &lt; Date: Thu, 07 Oct 2021 05:27:23 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -487,13 +487,13 @@
 1 &lt; via: 1.1 vegur
 1 &lt; Cache-Control: max-age=14400
 1 &lt; CF-Cache-Status: HIT
-1 &lt; Age: 2033
+1 &lt; Age: 3007
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=A%2FnE1Sow0BoWQq5lGJpP3KQWh1RQ80QF0n%2B1c5ZJnFkaWLNBfQbWR1oeW4IP%2FOmbHyKR7BnPLLaoC0F%2Bb7xX6Rm3cNnYOc4MLzb1oAL%2F3n8pJ6eKu%2B9cGJCK5So%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=1SbanbkSPa5O%2FM4anA7ek%2Fo1KhDYI1CxkPatb4k7BUonPktvfw%2BUUKkq1rSL%2FxV57bZ%2FCp9pisWOPGFJWRX4vfEsvOU%2BVhG%2BInRKYY0kwecR9CvyAEeJG1%2FKUW0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 699840595d7c6e94-BOM
+1 &lt; CF-RAY: 69a4b8566eb90f18-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 {&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;data&quot;:[{&quot;last_name&quot;:&quot;Lawson&quot;,&quot;id&quot;:7,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/7-image.jpg&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;id&quot;:8,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/8-image.jpg&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Funke&quot;,&quot;id&quot;:9,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/9-image.jpg&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;},{&quot;last_name&quot;:&quot;Fields&quot;,&quot;id&quot;:10,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/10-image.jpg&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;},{&quot;last_name&quot;:&quot;Edwards&quot;,&quot;id&quot;:11,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/11-image.jpg&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;},{&quot;last_name&quot;:&quot;Howell&quot;,&quot;id&quot;:12,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/12-image.jpg&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;}],&quot;page&quot;:2,&quot;total_pages&quot;:2,&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
 </div>   
@@ -543,7 +543,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -552,7 +552,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.19">22:38:19.922 [print] {
+  <div class="preformatted" data-parent="0.19">10:57:23.035 [print] {
   &quot;per_page&quot;: 6,
   &quot;total&quot;: 12,
   &quot;data&quot;: [
@@ -626,7 +626,7 @@
         <span>And</span>&nbsp;<span>match $ == {&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:7,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;last_name&quot;:&quot;Lawson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;},{&quot;id&quot;:8,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;},{&quot;id&quot;:9,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;last_name&quot;:&quot;Funke&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;},{&quot;id&quot;:10,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;last_name&quot;:&quot;Fields&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;},{&quot;id&quot;:11,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Edwards&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;},{&quot;id&quot;:12,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;last_name&quot;:&quot;Howell&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</span>
       </div>
     </div>
-    <div class="time-cell passed">33</div>
+    <div class="time-cell passed">20</div>
   </div>
 
    
@@ -663,7 +663,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.21">22:38:19.961 [print] {
+  <div class="preformatted" data-parent="0.21">10:57:23.066 [print] {
   &quot;last_name&quot;: &quot;Lawson&quot;,
   &quot;id&quot;: 7,
   &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
@@ -718,7 +718,7 @@
         <span>And</span>&nbsp;<span>match response.data[0].first_name != null</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -858,7 +858,7 @@
         <span>And</span>&nbsp;<span>match response.data[*].first_name contains [&#39;Lindsay&#39;, &#39;Tobias&#39;, &#39;Byron&#39;]</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -970,7 +970,7 @@
         <span>And</span>&nbsp;<span>match response.data[*].id contains only [7, 8, 9, 10, 11, 12]</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1027,7 +1027,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2625</span>
+              <span>ms:</span>&nbsp;<span>2352</span>
             </div>
           </div>
           <div class="step-row">
@@ -1059,7 +1059,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">22:38:17.520 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:57:20.764 karate.env system property was: null 
 </div>   
 
   
@@ -1107,7 +1107,7 @@
         <span>*</span>&nbsp;<span>def payload = read(&#39;../data/user.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">283</div>
+    <div class="time-cell passed">300</div>
   </div>
 
    
@@ -1135,7 +1135,7 @@
         <span>Given</span>&nbsp;<span>path path</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1191,7 +1191,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2334</div>
+    <div class="time-cell passed">2048</div>
   </div>
 
    
@@ -1200,34 +1200,34 @@
 
   
 
-  <div class="preformatted" data-parent="0.40">22:38:18.822 request:
+  <div class="preformatted" data-parent="0.40">10:57:22.060 request:
 1 &gt; POST https://reqres.in/api/users
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 34
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;leader&quot;}
 
-22:38:20.227 response time in milliseconds: 1405
+10:57:23.301 response time in milliseconds: 1241
 1 &lt; 201
-1 &lt; Date: Tue, 05 Oct 2021 17:08:20 GMT
+1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 84
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; access-control-allow-origin: *
-1 &lt; etag: W/&quot;54-IUJHPm8wUB6/GCxWJ6t6zvX/tM4&quot;
+1 &lt; etag: W/&quot;54-Exc0b2PXtNFmDyxZjSLVw5ov+ac&quot;
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=UNB5snLGhvmDlBQh7BN0EYXfNNWdO0j8RM4A%2FNQmVopwzcj6IwW%2F8Z7NiVYz%2FaSjGB6RIPuBevFUwFOx6KC8rZSrDvoAEeG56UqDRFAiEwqOESRSK86V5ELjn5o%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=2ZqJMJC%2BFGMqgNhvRVdZ61DjjnC0e6UWzP0bpozmiJRXwWGfGbQDbT80O6rzPEgtO83HykmoAxBKzxBAh%2BwO%2FLN9uURqCGO5q%2Fry2gV8vhQSDimrOkmEL267b%2FQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 699840596c986ec2-BOM
+1 &lt; CF-RAY: 69a4b8566beb2e59-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-{&quot;createdAt&quot;:&quot;2021-10-05T17:08:20.285Z&quot;,&quot;name&quot;:&quot;morpheus&quot;,&quot;id&quot;:&quot;970&quot;,&quot;job&quot;:&quot;leader&quot;}
+{&quot;createdAt&quot;:&quot;2021-10-07T05:27:24.123Z&quot;,&quot;name&quot;:&quot;morpheus&quot;,&quot;id&quot;:&quot;140&quot;,&quot;job&quot;:&quot;leader&quot;}
 </div>   
 
   
@@ -1247,7 +1247,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1256,10 +1256,10 @@
 
   
 
-  <div class="preformatted" data-parent="0.41">22:38:20.227 [print] {
-  &quot;createdAt&quot;: &quot;2021-10-05T17:08:20.285Z&quot;,
+  <div class="preformatted" data-parent="0.41">10:57:23.301 [print] {
+  &quot;createdAt&quot;: &quot;2021-10-07T05:27:24.123Z&quot;,
   &quot;name&quot;: &quot;morpheus&quot;,
-  &quot;id&quot;: &quot;970&quot;,
+  &quot;id&quot;: &quot;140&quot;,
   &quot;job&quot;: &quot;leader&quot;
 }
  
@@ -1367,7 +1367,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2648</span>
+              <span>ms:</span>&nbsp;<span>2403</span>
             </div>
           </div>
           <div class="step-row">
@@ -1399,7 +1399,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">22:38:17.527 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:57:20.764 karate.env system property was: null 
 </div>   
 
   
@@ -1419,7 +1419,7 @@
         <span>*</span>&nbsp;<span>def path = &#39;/users&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1447,7 +1447,7 @@
         <span>Given</span>&nbsp;<span>path path</span>
       </div>
     </div>
-    <div class="time-cell passed">67</div>
+    <div class="time-cell passed">200</div>
   </div>
 
    
@@ -1475,7 +1475,7 @@
         <span>And</span>&nbsp;<span>request {&quot;name&quot;: &quot;morpheus&quot;,&quot;job&quot;: &quot;leader&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">169</div>
+    <div class="time-cell passed">128</div>
   </div>
 
    
@@ -1503,7 +1503,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2402</div>
+    <div class="time-cell passed">2068</div>
   </div>
 
    
@@ -1512,34 +1512,34 @@
 
   
 
-  <div class="preformatted" data-parent="0.50">22:38:18.807 request:
+  <div class="preformatted" data-parent="0.50">10:57:22.045 request:
 1 &gt; POST https://reqres.in/api/users
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 34
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;leader&quot;}
 
-22:38:20.269 response time in milliseconds: 1452
+10:57:23.301 response time in milliseconds: 1256
 1 &lt; 201
-1 &lt; Date: Tue, 05 Oct 2021 17:08:20 GMT
+1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 84
+1 &lt; Content-Length: 83
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; access-control-allow-origin: *
-1 &lt; etag: W/&quot;54-UkNl1ME5kxGADPJdnx+JvS+9apU&quot;
+1 &lt; etag: W/&quot;53-ez4hIA7X5y/7k8dWQ96xXxdu7H4&quot;
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=8GHQkd6wRFi1Y7LXlgtom08GNY3LVWPXrtIVnkN59yQxDgsUeO0p5yYiXwbcQKfqKgQ3AKE0gtyaBkN9mMQND4WrMfko26nvuEOBQaIrg8G0OACLnstk8MPdeec%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=C9x7DDbv9C%2Fp%2BdbeULDgJmUTk%2B8FoysL0%2Bl9E%2BUvijWW6aEaIB8F8o%2BbqKojQ4lO75NADR9iN%2BGkkDzVeHylmQRYt65bbPF3zlblcmTYWU4SJfqcoK28Kv%2BfuWA%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 699840597dea6eec-BOM
+1 &lt; CF-RAY: 69a4b8567e6ad5b3-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-{&quot;createdAt&quot;:&quot;2021-10-05T17:08:20.296Z&quot;,&quot;name&quot;:&quot;morpheus&quot;,&quot;id&quot;:&quot;881&quot;,&quot;job&quot;:&quot;leader&quot;}
+{&quot;createdAt&quot;:&quot;2021-10-07T05:27:24.132Z&quot;,&quot;name&quot;:&quot;morpheus&quot;,&quot;id&quot;:&quot;77&quot;,&quot;job&quot;:&quot;leader&quot;}
 </div>   
 
   
@@ -1559,7 +1559,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1568,10 +1568,10 @@
 
   
 
-  <div class="preformatted" data-parent="0.51">22:38:20.285 [print] {
-  &quot;createdAt&quot;: &quot;2021-10-05T17:08:20.296Z&quot;,
+  <div class="preformatted" data-parent="0.51">10:57:23.316 [print] {
+  &quot;createdAt&quot;: &quot;2021-10-07T05:27:24.132Z&quot;,
   &quot;name&quot;: &quot;morpheus&quot;,
-  &quot;id&quot;: &quot;881&quot;,
+  &quot;id&quot;: &quot;77&quot;,
   &quot;job&quot;: &quot;leader&quot;
 }
  
@@ -1650,7 +1650,7 @@
         <span>And</span>&nbsp;<span>match response.job == &quot;leader&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1679,7 +1679,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2593</span>
+              <span>ms:</span>&nbsp;<span>2346</span>
             </div>
           </div>
           <div class="step-row">
@@ -1711,7 +1711,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">22:38:17.527 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:57:20.764 karate.env system property was: null 
 </div>   
 
   
@@ -1759,7 +1759,7 @@
         <span>Given</span>&nbsp;<span>path path</span>
       </div>
     </div>
-    <div class="time-cell passed">91</div>
+    <div class="time-cell passed">162</div>
   </div>
 
    
@@ -1787,7 +1787,7 @@
         <span>And</span>&nbsp;<span>request {&quot;name&quot;: &quot;morpheus&quot;,&quot;job&quot;: &quot;zion resident&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">155</div>
+    <div class="time-cell passed">129</div>
   </div>
 
    
@@ -1815,7 +1815,7 @@
         <span>When</span>&nbsp;<span>method put</span>
       </div>
     </div>
-    <div class="time-cell passed">2316</div>
+    <div class="time-cell passed">2051</div>
   </div>
 
    
@@ -1824,35 +1824,35 @@
 
   
 
-  <div class="preformatted" data-parent="0.61">22:38:18.822 request:
+  <div class="preformatted" data-parent="0.61">10:57:22.060 request:
 1 &gt; PUT https://reqres.in/api/users
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 41
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;}
 
-22:38:20.180 response time in milliseconds: 1358
+10:57:23.285 response time in milliseconds: 1225
 1 &lt; 200
-1 &lt; Date: Tue, 05 Oct 2021 17:08:20 GMT
+1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; access-control-allow-origin: *
-1 &lt; etag: W/&quot;50-IVm3YtRyh8rH0cUI5T7HZG4KTHQ&quot;
+1 &lt; etag: W/&quot;50-cc3XHWwe9SvgNQzJUVPzhD5mG5A&quot;
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=a6Y7M9%2FHa9FhRWw5P1zA3Wdn4Pq36Pd9eE5fOBXRdAqAtjM0DfVr6z0C81Edf1%2BUHb6ksg21HwnnGeaSWvw7X9S3NRSsO%2BAghlUXVJFbDEGyvO%2FOlgCHE7K6N%2Fo%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=CD%2Fu99%2FURwsCvYFDtmic%2BitML%2BTEisCPMQpwFbAo1kzNwGcsafXExY%2BF29mpluAdKd1LAdWB8pq%2FtD0WtEWZ9DIfasrR%2F%2BPx5rG96RCgBiJJTUh203B6owN8B5I%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 699840596f21d5bb-BOM
+1 &lt; CF-RAY: 69a4b8566c8d6eb6-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-05T17:08:20.281Z&quot;}
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-07T05:27:24.123Z&quot;}
 </div>   
 
   
@@ -1872,7 +1872,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">23</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1881,10 +1881,10 @@
 
   
 
-  <div class="preformatted" data-parent="0.62">22:38:20.180 [print] {
+  <div class="preformatted" data-parent="0.62">10:57:23.301 [print] {
   &quot;name&quot;: &quot;morpheus&quot;,
   &quot;job&quot;: &quot;zion resident&quot;,
-  &quot;updatedAt&quot;: &quot;2021-10-05T17:08:20.281Z&quot;
+  &quot;updatedAt&quot;: &quot;2021-10-07T05:27:24.123Z&quot;
 }
  
 </div>   
@@ -1934,7 +1934,7 @@
         <span>And</span>&nbsp;<span>match response.name == &quot;morpheus&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1991,7 +1991,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2599</span>
+              <span>ms:</span>&nbsp;<span>2366</span>
             </div>
           </div>
           <div class="step-row">
@@ -2023,7 +2023,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">22:38:17.527 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:57:20.764 karate.env system property was: null 
 </div>   
 
   
@@ -2071,7 +2071,7 @@
         <span>Given</span>&nbsp;<span>path path</span>
       </div>
     </div>
-    <div class="time-cell passed">83</div>
+    <div class="time-cell passed">197</div>
   </div>
 
    
@@ -2099,7 +2099,7 @@
         <span>And</span>&nbsp;<span>request {&quot;name&quot;: &quot;morpheus&quot;,&quot;job&quot;: &quot;zion resident&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">154</div>
+    <div class="time-cell passed">129</div>
   </div>
 
    
@@ -2127,7 +2127,7 @@
         <span>When</span>&nbsp;<span>method put</span>
       </div>
     </div>
-    <div class="time-cell passed">2350</div>
+    <div class="time-cell passed">2035</div>
   </div>
 
    
@@ -2136,35 +2136,35 @@
 
   
 
-  <div class="preformatted" data-parent="0.71">22:38:18.807 request:
+  <div class="preformatted" data-parent="0.71">10:57:22.060 request:
 1 &gt; PUT https://reqres.in/api/users
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 41
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;}
 
-22:38:20.212 response time in milliseconds: 1405
+10:57:23.269 response time in milliseconds: 1209
 1 &lt; 200
-1 &lt; Date: Tue, 05 Oct 2021 17:08:20 GMT
+1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; access-control-allow-origin: *
-1 &lt; etag: W/&quot;50-4TZ5fiPrlZN0pywSGDmi2lWQOgY&quot;
+1 &lt; etag: W/&quot;50-dEjcll2zbWQbWmYSwkXcClhJKVs&quot;
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=b3RsdgsqHjyzHpnRf8lKwaXQuhrG%2Fo24sPEiY%2Fve%2BuJMDqsEWfYInuBH7uAHGguWCtvwhIeWXM5ReAKkomNYJ5fFe5tBLBKGzrkv25ogf6QAljZPzSrvpidnpJw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=VsRD45SLs%2F4U7yeiZv7FgA1ZUWK5xFNlttYY0bcKGEW%2BM2Jja41vg3sHhdHI%2BgdUD7sXIsmWoUT53WcVHxGPVAbVel%2BVwWb2CWJ5BGwMgP2TtJ46JH90uY3zpy0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 699840596f380de0-BOM
+1 &lt; CF-RAY: 69a4b8567a740dd4-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-05T17:08:20.286Z&quot;}
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-07T05:27:24.122Z&quot;}
 </div>   
 
   
@@ -2184,7 +2184,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2193,10 +2193,10 @@
 
   
 
-  <div class="preformatted" data-parent="0.72">22:38:20.227 [print] {
+  <div class="preformatted" data-parent="0.72">10:57:23.285 [print] {
   &quot;name&quot;: &quot;morpheus&quot;,
   &quot;job&quot;: &quot;zion resident&quot;,
-  &quot;updatedAt&quot;: &quot;2021-10-05T17:08:20.286Z&quot;
+  &quot;updatedAt&quot;: &quot;2021-10-07T05:27:24.122Z&quot;
 }
  
 </div>   
@@ -2274,7 +2274,7 @@
         <span>And</span>&nbsp;<span>match response.job == &quot;zion resident&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2303,7 +2303,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2658</span>
+              <span>ms:</span>&nbsp;<span>2384</span>
             </div>
           </div>
           <div class="step-row">
@@ -2335,7 +2335,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">22:38:17.527 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:57:20.779 karate.env system property was: null 
 </div>   
 
   
@@ -2383,7 +2383,7 @@
         <span>*</span>&nbsp;<span>def payload = {&quot;name&quot;: &quot;morpheus&quot;,&quot;job&quot;: &quot;zion resident&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">265</div>
+    <div class="time-cell passed">293</div>
   </div>
 
    
@@ -2411,7 +2411,7 @@
         <span>Given</span>&nbsp;<span>path path</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2467,7 +2467,7 @@
         <span>When</span>&nbsp;<span>method put</span>
       </div>
     </div>
-    <div class="time-cell passed">2381</div>
+    <div class="time-cell passed">2085</div>
   </div>
 
    
@@ -2476,35 +2476,35 @@
 
   
 
-  <div class="preformatted" data-parent="0.82">22:38:18.822 request:
+  <div class="preformatted" data-parent="0.82">10:57:22.060 request:
 1 &gt; PUT https://reqres.in/api/users
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 41
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;}
 
-22:38:20.243 response time in milliseconds: 1421
+10:57:23.332 response time in milliseconds: 1272
 1 &lt; 200
-1 &lt; Date: Tue, 05 Oct 2021 17:08:20 GMT
+1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; access-control-allow-origin: *
-1 &lt; etag: W/&quot;50-JfbFKIBXnVgD6BYOtUd06Mvjf5M&quot;
+1 &lt; etag: W/&quot;50-TsNAV0kWAnI8d7MTVSCOf1SaIa4&quot;
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=VOfRMjQCUOq%2B3CJyN2e252hLUxvitn573NcfgdlW0QyK2IeSDqjHiNakKTm5pemSmyFY%2FcitDDOyGx2T%2FXgoTvMFIIQrqf2Ha0NuvGPalH2UkmAawioJLQ2nhV0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=qagmwD45CRKkYiNJIbZBjLpX2pRGCu33ixy9CAu8vN4k0ChgfjVWWqcuoQapOm9R1oy0F7tQJAnm0oRNNq8M08CB7eVYm1G8nqVwYBlSFx05tvFcf%2FnZEbX%2Fhqs%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 699840596e440e8c-BOM
+1 &lt; CF-RAY: 69a4b8569c742e3a-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-05T17:08:20.289Z&quot;}
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-07T05:27:24.153Z&quot;}
 </div>   
 
   
@@ -2524,7 +2524,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2533,10 +2533,10 @@
 
   
 
-  <div class="preformatted" data-parent="0.83">22:38:20.259 [print] {
+  <div class="preformatted" data-parent="0.83">10:57:23.332 [print] {
   &quot;name&quot;: &quot;morpheus&quot;,
   &quot;job&quot;: &quot;zion resident&quot;,
-  &quot;updatedAt&quot;: &quot;2021-10-05T17:08:20.289Z&quot;
+  &quot;updatedAt&quot;: &quot;2021-10-07T05:27:24.153Z&quot;
 }
  
 </div>   
@@ -2586,7 +2586,7 @@
         <span>And</span>&nbsp;<span>match response.name == &quot;morpheus&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2643,7 +2643,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2643</span>
+              <span>ms:</span>&nbsp;<span>2388</span>
             </div>
           </div>
           <div class="step-row">
@@ -2675,7 +2675,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">22:38:17.520 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:57:20.779 karate.env system property was: null 
 </div>   
 
   
@@ -2695,7 +2695,7 @@
         <span>*</span>&nbsp;<span>def path = &#39;/users/2&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -2723,7 +2723,7 @@
         <span>Given</span>&nbsp;<span>path path</span>
       </div>
     </div>
-    <div class="time-cell passed">79</div>
+    <div class="time-cell passed">172</div>
   </div>
 
    
@@ -2751,7 +2751,7 @@
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">2561</div>
+    <div class="time-cell passed">2211</div>
   </div>
 
    
@@ -2760,17 +2760,17 @@
 
   
 
-  <div class="preformatted" data-parent="0.92">22:38:18.807 request:
+  <div class="preformatted" data-parent="0.92">10:57:22.045 request:
 1 &gt; DELETE https://reqres.in/api/users/2
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-22:38:20.269 response time in milliseconds: 1462
+10:57:23.316 response time in milliseconds: 1271
 1 &lt; 204
-1 &lt; Date: Tue, 05 Oct 2021 17:08:20 GMT
+1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
 1 &lt; Content-Length: 0
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
@@ -2779,10 +2779,10 @@
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=B00FYqqmu5qU61xWoy97gsRK596M4Dp8X19F9GpUnyF4S6RJsOIJ1Uwaj3UnsDRuClYNciMSGKVkgyXMykXNgQnp9y4o1hUMvK2Q3vRBcyIfzTvu%2FxJFHSwW%2BYQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=fTdAHkSib5yQQ8i7rCuWAhjGA75ANDvX2p%2F8cUnxrM%2BDwdBEna2t5JD8T1yjB4njvUjCNsf64jQV8DkTlcni%2BQDJFrsHqTP8%2Bi4oRp28tIfiywLqBS6FXcI1ZVE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 699840596ce66e76-BOM
+1 &lt; CF-RAY: 69a4b8566fe70de9-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 </div>   
@@ -2813,7 +2813,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.93">22:38:20.269 [print]  
+  <div class="preformatted" data-parent="0.93">10:57:23.332 [print]  
 </div>   
 
   
@@ -2862,7 +2862,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2717</span>
+              <span>ms:</span>&nbsp;<span>2577</span>
             </div>
           </div>
           <div class="step-row">
@@ -2894,7 +2894,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">22:38:17.527 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:57:20.779 karate.env system property was: null 
 </div>   
 
   
@@ -2914,7 +2914,7 @@
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;../data/basic-auth.js&#39;) { username: &#39;postman&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">309</div>
+    <div class="time-cell passed">386</div>
   </div>
 
    
@@ -2970,7 +2970,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">2403</div>
+    <div class="time-cell passed">2185</div>
   </div>
 
    
@@ -2979,24 +2979,24 @@
 
   
 
-  <div class="preformatted" data-parent="0.99">22:38:18.833 request:
+  <div class="preformatted" data-parent="0.99">10:57:22.045 request:
 1 &gt; GET https://postman-echo.com/basic-auth
 1 &gt; Authorization: Basic cG9zdG1hbjpwYXNzd29yZA==
 1 &gt; Host: postman-echo.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-22:38:20.301 response time in milliseconds: 1468
+10:57:23.472 response time in milliseconds: 1396
 1 &lt; 200
-1 &lt; Date: Tue, 05 Oct 2021 17:08:20 GMT
+1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 22
 1 &lt; Connection: keep-alive
 1 &lt; ETag: W/&quot;16-sJz8uwjdDv0wvm7//BYdNw8vMbU&quot;
 1 &lt; Vary: Accept-Encoding
-1 &lt; Set-Cookie: sails.sid=s%3ArAnq2P6x4u4frVPas_JXcQpo_JKXmJWh.VtPn9%2Bm1avbyRWttJ%2Fcbx66%2F5V78jYv%2BKerhmA73lk4; Domain=postman-echo.com
+1 &lt; Set-Cookie: sails.sid=s%3AxHPhE8xnnUeff4JA0SNgvowARKI9jifD.B%2BRxDMFIIXnNeDx3qFRgwjwIKhGYMfflWomwiFl%2FEYI; Domain=postman-echo.com
 {&quot;authenticated&quot;:true}
 </div>   
 
@@ -3026,7 +3026,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.100">22:38:20.316 [print] {
+  <div class="preformatted" data-parent="0.100">10:57:23.472 [print] {
   &quot;authenticated&quot;: true
 }
  
@@ -3049,7 +3049,7 @@
         <span>Then</span>&nbsp;<span>print response.authenticated</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3058,7 +3058,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.101">22:38:20.316 [print] true 
+  <div class="preformatted" data-parent="0.101">10:57:23.472 [print] true 
 </div>   
 
   

@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>reqres</td>
-      <td>05 Oct 2021, 22:38</td>
+      <td>07 Oct 2021, 10:57</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="5406192200">5.406</td>
+          <td class="duration" data-value="5041654000">5.041</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.696</span>
+  <span class="lead-duration duration">2.550</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">url 'https://jsonplaceholder.typicode.com/posts'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>22:38:17.520 karate.env system property was: null 
+        <pre>10:57:20.764 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -270,7 +270,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def JavaDemo = Java.type('examples.data.jsonbody')</span>
 
-  <span class="lead-duration duration">0.043</span>
+  <span class="lead-duration duration">0.074</span>
 
 </div>
 
@@ -297,7 +297,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def result = JavaDemo.bodyis('Java Feature File' , 'Karate Framework' , 50)</span>
 
-  <span class="lead-duration duration">0.027</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -324,7 +324,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">print result</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -342,7 +342,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>22:38:17.723 [print] {&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;} 
+        <pre>10:57:21.014 [print] {&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;} 
 </pre>
       </div>
     </div>
@@ -362,7 +362,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">header Content-Type = 'application/json; charset=UTF-8'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.066</span>
 
 </div>
 
@@ -416,7 +416,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">2.602</span>
+  <span class="lead-duration duration">2.359</span>
 
 </div>
 
@@ -434,26 +434,26 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>22:38:18.822 request:
+        <pre>10:57:22.045 request:
 1 &gt; POST https://jsonplaceholder.typicode.com/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 69
 1 &gt; Host: jsonplaceholder.typicode.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;}
 
-22:38:20.327 response time in milliseconds: 1505
+10:57:23.441 response time in milliseconds: 1396
 1 &lt; 201
-1 &lt; Date: Tue, 05 Oct 2021 17:08:20 GMT
+1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 95
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; x-ratelimit-limit: 1000
 1 &lt; x-ratelimit-remaining: 998
-1 &lt; x-ratelimit-reset: 1633453744
+1 &lt; x-ratelimit-reset: 1633584485
 1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 &lt; access-control-allow-credentials: true
 1 &lt; cache-control: no-cache
@@ -466,10 +466,10 @@ $(document).ready(function() {
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=ZTypMP6dXtsPpuHv4nnwzWBIfh9hWz9glHPhlihfJt0SSf7AUK2LmKgbis7Zq9dBAmXNgbF0I0IDq8Jez3T5hkVQ8iYWAzdTPK6trnSu%2BQLFMCqtCJuR8WwfuNNqhWIKdnARf0hzv2E%2BuRK3DGrY&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ky4odNy31VlmpH0dG8lPkIYyfxFuLJE%2FSJ6M37GknUDq3texl0xyC8rtwLrgNL9T2sGrtac7Ca2egekCrCl37rYnNU52P3wuTpfxd04iZRnu8ArL%2BJhfylQeAPJKb%2FVLMrVie92fYId59m9oKaka&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 699840598b442e11-BOM
+1 &lt; CF-RAY: 69a4b8568f0d2dfd-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 {&quot;id&quot;:101,&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;}
 </pre>
@@ -518,7 +518,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">assert responseTime &lt; 3000</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -590,7 +590,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>22:38:20.327 [print] Response is:  {
+        <pre>10:57:23.441 [print] Response is:  {
   &quot;id&quot;: 101,
   &quot;title&quot;: &quot;Java Feature File&quot;,
   &quot;body&quot;: &quot;Karate Framework&quot;,
@@ -616,7 +616,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">match response.title == 'Java Feature File'</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -708,7 +708,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.709</span>
+  <span class="lead-duration duration">2.491</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
@@ -751,7 +751,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">url 'https://jsonplaceholder.typicode.com/posts'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -769,7 +769,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-9" class="collapse collapsable-details">
-        <pre>22:38:17.527 karate.env system property was: null 
+        <pre>10:57:20.779 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -789,7 +789,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def JavaDemo = Java.type('examples.data.jsonbody')</span>
 
-  <span class="lead-duration duration">0.053</span>
+  <span class="lead-duration duration">0.031</span>
 
 </div>
 
@@ -816,7 +816,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def result = JavaDemo.bodyis('Welcome' , 'Karate Framework' , 10)</span>
 
-  <span class="lead-duration duration">0.056</span>
+  <span class="lead-duration duration">0.074</span>
 
 </div>
 
@@ -843,7 +843,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">print result</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -861,7 +861,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details">
-        <pre>22:38:17.730 [print] {&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;} 
+        <pre>10:57:21.061 [print] {&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;} 
 </pre>
       </div>
     </div>
@@ -881,7 +881,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">header Content-Type = 'application/json; charset=UTF-8'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -935,7 +935,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">2.556</span>
+  <span class="lead-duration duration">2.369</span>
 
 </div>
 
@@ -953,26 +953,26 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-11" class="collapse collapsable-details">
-        <pre>22:38:18.822 request:
+        <pre>10:57:22.060 request:
 1 &gt; POST https://jsonplaceholder.typicode.com/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 59
 1 &gt; Host: jsonplaceholder.typicode.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;}
 
-22:38:20.285 response time in milliseconds: 1463
+10:57:23.426 response time in milliseconds: 1366
 1 &lt; 201
-1 &lt; Date: Tue, 05 Oct 2021 17:08:20 GMT
+1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 85
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; x-ratelimit-limit: 1000
 1 &lt; x-ratelimit-remaining: 999
-1 &lt; x-ratelimit-reset: 1633453744
+1 &lt; x-ratelimit-reset: 1633584485
 1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 &lt; access-control-allow-credentials: true
 1 &lt; cache-control: no-cache
@@ -985,10 +985,10 @@ $(document).ready(function() {
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=KAtVpI2AfWWktPsItUrA%2FuLrnRwIxa5YWajpLteBCv%2BK%2Fb7aNd0so6%2FE2YFvhY%2Fl%2F1%2FbSQVQwlOoxp7z08kQnLjbvnl9FJJzKvwVNCzBi9%2FfSr9lcACb7RB%2FDYCp9t%2FHj9CWXnn0w%2FQd1lL9dZrf&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=jy6bw8xv3aBKb8zIJ%2BxnQE3ZPpJ11yVdqIJDr9aracMGhchXldRvv2R44a%2B%2BGwqKcWpK%2FOGaJl7NqgtYVxQ7V4AZzGzwqqodVJTwvryOqu4TkORvU3L1Tu0vPEd%2BnrJelgZUqiaIGhZVPlyn636b&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 699840595e770efc-BOM
+1 &lt; CF-RAY: 69a4b8567a7f0ec0-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 {&quot;id&quot;:101,&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;}
 </pre>
@@ -1037,7 +1037,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">assert responseTime &lt; 3000</span>
 
-  <span class="lead-duration duration">0.032</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -1091,7 +1091,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">print 'Response is: ', response</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1109,7 +1109,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-12" class="collapse collapsable-details">
-        <pre>22:38:20.327 [print] Response is:  {
+        <pre>10:57:23.441 [print] Response is:  {
   &quot;id&quot;: 101,
   &quot;title&quot;: &quot;Welcome&quot;,
   &quot;body&quot;: &quot;Karate Framework&quot;,
