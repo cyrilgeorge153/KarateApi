@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>reqres</td>
-      <td>07 Oct 2021, 10:57</td>
+      <td>07 Oct 2021, 22:31</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">examples/reqres/reqres.feature</td>
-          <td      class="passed"    >87</td>
+          <td      class="passed"    >150</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">87</td>
+          <td class="total">150</td>
 
-          <td  class="passed"    >9</td>
+          <td  class="passed"    >15</td>
           <td >0</td>
-          <td class="total">9</td>
+          <td class="total">15</td>
 
-          <td class="duration" data-value="21114599300">21.114</td>
+          <td class="duration" data-value="110397756600">1:50.397</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>10:57:20.779 karate.env system property was: null 
+        <pre>22:31:32.538 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -281,7 +281,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.114</span>
+  <span class="lead-duration duration">7.043</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
@@ -324,7 +324,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path '/users/2'</span>
 
-  <span class="lead-duration duration">0.123</span>
+  <span class="lead-duration duration">0.034</span>
 
 </div>
 
@@ -351,7 +351,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">1.965</span>
+  <span class="lead-duration duration">6.980</span>
 
 </div>
 
@@ -369,17 +369,17 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>10:57:22.045 request:
+        <pre>22:31:37.180 request:
 1 &gt; GET https://reqres.in/api/users/2
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-10:57:23.035 response time in milliseconds: 990
+22:31:39.703 response time in milliseconds: 2519
 1 &lt; 200
-1 &lt; Date: Thu, 07 Oct 2021 05:27:23 GMT
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -389,13 +389,13 @@ $(document).ready(function() {
 1 &lt; via: 1.1 vegur
 1 &lt; Cache-Control: max-age=14400
 1 &lt; CF-Cache-Status: HIT
-1 &lt; Age: 370
+1 &lt; Age: 5600
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Iiz5WPjeE35nngFteHDFnmbqWgGJF4MAxzG8GGP6E%2F%2FylVYjrMf2uHjSr7hAj%2F%2B7eJhD95X%2BeUqM8V9tNILfbCRwV1YaEhR8smtH2gT9ry8QrRuULJSUBvCqWOY%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=VdXXBJ3w06Lx%2BTm1yD2sdtBedzi9UgX7%2Fcep2R5IQP6jkshINXLdd47Cz6rsXGlOCrdmpkxAMv5nuqe4Ati48vhDl7KZzHd%2FcmOSMiQdisk4WV4qOP9CV4dcRRE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 69a4b8566a226e76-BOM
+1 &lt; CF-RAY: 69a8b15569b36eb2-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 {&quot;data&quot;:{&quot;last_name&quot;:&quot;Weaver&quot;,&quot;id&quot;:2,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/2-image.jpg&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;},&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
 </pre>
@@ -444,7 +444,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -462,7 +462,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details">
-        <pre>10:57:23.035 [print] {
+        <pre>22:31:39.714 [print] {
   &quot;data&quot;: {
     &quot;last_name&quot;: &quot;Weaver&quot;,
     &quot;id&quot;: 2,
@@ -495,7 +495,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match $ == {&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</span>
 
-  <span class="lead-duration duration">0.021</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -648,7 +648,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details">
-        <pre>10:57:20.779 karate.env system property was: null 
+        <pre>22:31:32.520 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -679,7 +679,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.183</span>
+  <span class="lead-duration duration">7.072</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
@@ -722,7 +722,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path '/users?page=2'</span>
 
-  <span class="lead-duration duration">0.172</span>
+  <span class="lead-duration duration">0.039</span>
 
 </div>
 
@@ -749,7 +749,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">1.965</span>
+  <span class="lead-duration duration">6.978</span>
 
 </div>
 
@@ -767,17 +767,17 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-13" class="collapse collapsable-details">
-        <pre>10:57:22.045 request:
+        <pre>22:31:37.194 request:
 1 &gt; GET https://reqres.in/api/users?page=2
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-10:57:23.035 response time in milliseconds: 990
+22:31:39.703 response time in milliseconds: 2505
 1 &lt; 200
-1 &lt; Date: Thu, 07 Oct 2021 05:27:23 GMT
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -787,13 +787,13 @@ $(document).ready(function() {
 1 &lt; via: 1.1 vegur
 1 &lt; Cache-Control: max-age=14400
 1 &lt; CF-Cache-Status: HIT
-1 &lt; Age: 3007
+1 &lt; Age: 1416
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=1SbanbkSPa5O%2FM4anA7ek%2Fo1KhDYI1CxkPatb4k7BUonPktvfw%2BUUKkq1rSL%2FxV57bZ%2FCp9pisWOPGFJWRX4vfEsvOU%2BVhG%2BInRKYY0kwecR9CvyAEeJG1%2FKUW0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=wtlOO3SGXdZdjkhDyU43zfqiZrQpMiHbXs353oHfS78s8u%2BeAW5eSfrUrgbqOaay5OfnpsgMb2MoXciX1SyzBPLsO1zJHxZxsCz34v7Sbuczlz8MGes0y7TMZW0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 69a4b8566eb90f18-BOM
+1 &lt; CF-RAY: 69a8b15548060ea4-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 {&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;data&quot;:[{&quot;last_name&quot;:&quot;Lawson&quot;,&quot;id&quot;:7,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/7-image.jpg&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;id&quot;:8,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/8-image.jpg&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Funke&quot;,&quot;id&quot;:9,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/9-image.jpg&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;},{&quot;last_name&quot;:&quot;Fields&quot;,&quot;id&quot;:10,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/10-image.jpg&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;},{&quot;last_name&quot;:&quot;Edwards&quot;,&quot;id&quot;:11,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/11-image.jpg&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;},{&quot;last_name&quot;:&quot;Howell&quot;,&quot;id&quot;:12,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/12-image.jpg&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;}],&quot;page&quot;:2,&quot;total_pages&quot;:2,&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
 </pre>
@@ -860,7 +860,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-14" class="collapse collapsable-details">
-        <pre>10:57:23.035 [print] {
+        <pre>22:31:39.714 [print] {
   &quot;per_page&quot;: 6,
   &quot;total&quot;: 12,
   &quot;data&quot;: [
@@ -934,7 +934,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match $ == {&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:7,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;last_name&quot;:&quot;Lawson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;},{&quot;id&quot;:8,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;},{&quot;id&quot;:9,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;last_name&quot;:&quot;Funke&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;},{&quot;id&quot;:10,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;last_name&quot;:&quot;Fields&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;},{&quot;id&quot;:11,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Edwards&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;},{&quot;id&quot;:12,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;last_name&quot;:&quot;Howell&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</span>
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -961,7 +961,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">print response.data[0]</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.009</span>
 
 </div>
 
@@ -979,7 +979,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-15" class="collapse collapsable-details">
-        <pre>10:57:23.066 [print] {
+        <pre>22:31:39.747 [print] {
   &quot;last_name&quot;: &quot;Lawson&quot;,
   &quot;id&quot;: 7,
   &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
@@ -1006,7 +1006,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.data[0] == {&quot;last_name&quot;: &quot;Lawson&quot;,&quot;id&quot;: &quot;#ignore&quot;,&quot;avatar&quot;: &quot;#ignore&quot;,&quot;first_name&quot;: &quot;Michael&quot;,&quot;email&quot;: &quot;michael.lawson@reqres.in&quot;}</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -1060,7 +1060,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.data[*].id contains [7, 8, 9, 10, 11, 12]</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1087,7 +1087,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.data[*].id contains [12, 9, 8, 11, 10, 7]</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1222,7 +1222,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.data[*].id !contains 3</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1402,7 +1402,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-18" class="collapse collapsable-details">
-        <pre>10:57:20.764 karate.env system property was: null 
+        <pre>22:31:32.515 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -1433,7 +1433,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.351</span>
+  <span class="lead-duration duration">7.395</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
@@ -1476,7 +1476,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def path = '/users'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.014</span>
 
 </div>
 
@@ -1503,7 +1503,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def payload = read('../data/user.json')</span>
 
-  <span class="lead-duration duration">0.299</span>
+  <span class="lead-duration duration">1.094</span>
 
 </div>
 
@@ -1530,7 +1530,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path path</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -1584,7 +1584,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">2.047</span>
+  <span class="lead-duration duration">6.277</span>
 
 </div>
 
@@ -1602,34 +1602,34 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-21" class="collapse collapsable-details">
-        <pre>10:57:22.060 request:
+        <pre>22:31:37.186 request:
 1 &gt; POST https://reqres.in/api/users
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 34
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;leader&quot;}
 
-10:57:23.301 response time in milliseconds: 1241
+22:31:40.045 response time in milliseconds: 2843
 1 &lt; 201
-1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 84
+1 &lt; Content-Length: 83
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; access-control-allow-origin: *
-1 &lt; etag: W/&quot;54-Exc0b2PXtNFmDyxZjSLVw5ov+ac&quot;
+1 &lt; etag: W/&quot;53-MRH/VouKlnrzSEaQ5fmIvMRod/g&quot;
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=2ZqJMJC%2BFGMqgNhvRVdZ61DjjnC0e6UWzP0bpozmiJRXwWGfGbQDbT80O6rzPEgtO83HykmoAxBKzxBAh%2BwO%2FLN9uURqCGO5q%2Fry2gV8vhQSDimrOkmEL267b%2FQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=DVUlriiuZpAA4KxriXD3BZi8VUgrdItmGOi3YoG7j99hpYHb2R6ixYsuhOn7ZYVhoPOJFrEn%2FNkYf5TbPi4pMfusppj5yMdJRT5bFoS2J0wfVP4wd8o4Ag4p9w0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 69a4b8566beb2e59-BOM
+1 &lt; CF-RAY: 69a8b15558370e18-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-{&quot;createdAt&quot;:&quot;2021-10-07T05:27:24.123Z&quot;,&quot;name&quot;:&quot;morpheus&quot;,&quot;id&quot;:&quot;140&quot;,&quot;job&quot;:&quot;leader&quot;}
+{&quot;createdAt&quot;:&quot;2021-10-07T17:01:40.322Z&quot;,&quot;name&quot;:&quot;morpheus&quot;,&quot;id&quot;:&quot;89&quot;,&quot;job&quot;:&quot;leader&quot;}
 </pre>
       </div>
     </div>
@@ -1649,7 +1649,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -1667,10 +1667,10 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-22" class="collapse collapsable-details">
-        <pre>10:57:23.301 [print] {
-  &quot;createdAt&quot;: &quot;2021-10-07T05:27:24.123Z&quot;,
+        <pre>22:31:40.049 [print] {
+  &quot;createdAt&quot;: &quot;2021-10-07T17:01:40.322Z&quot;,
   &quot;name&quot;: &quot;morpheus&quot;,
-  &quot;id&quot;: &quot;140&quot;,
+  &quot;id&quot;: &quot;89&quot;,
   &quot;job&quot;: &quot;leader&quot;
 }
  
@@ -1720,7 +1720,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.name == &quot;morpheus&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1846,7 +1846,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-25" class="collapse collapsable-details">
-        <pre>10:57:20.764 karate.env system property was: null 
+        <pre>22:31:32.530 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -1877,7 +1877,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.403</span>
+  <span class="lead-duration duration">7.361</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
@@ -1920,7 +1920,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def path = '/users'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1947,7 +1947,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path path</span>
 
-  <span class="lead-duration duration">0.199</span>
+  <span class="lead-duration duration">0.073</span>
 
 </div>
 
@@ -1974,7 +1974,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">request {&quot;name&quot;: &quot;morpheus&quot;,&quot;job&quot;: &quot;leader&quot;}</span>
 
-  <span class="lead-duration duration">0.128</span>
+  <span class="lead-duration duration">0.996</span>
 
 </div>
 
@@ -2001,7 +2001,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">2.068</span>
+  <span class="lead-duration duration">6.277</span>
 
 </div>
 
@@ -2019,34 +2019,34 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-28" class="collapse collapsable-details">
-        <pre>10:57:22.045 request:
+        <pre>22:31:37.188 request:
 1 &gt; POST https://reqres.in/api/users
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 34
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;leader&quot;}
 
-10:57:23.301 response time in milliseconds: 1256
+22:31:40.016 response time in milliseconds: 2827
 1 &lt; 201
-1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 83
+1 &lt; Content-Length: 84
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; access-control-allow-origin: *
-1 &lt; etag: W/&quot;53-ez4hIA7X5y/7k8dWQ96xXxdu7H4&quot;
+1 &lt; etag: W/&quot;54-RI8wYIGThjhsrIu+MJj0DCRaiR4&quot;
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=C9x7DDbv9C%2Fp%2BdbeULDgJmUTk%2B8FoysL0%2Bl9E%2BUvijWW6aEaIB8F8o%2BbqKojQ4lO75NADR9iN%2BGkkDzVeHylmQRYt65bbPF3zlblcmTYWU4SJfqcoK28Kv%2BfuWA%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=hCzw42t%2FE06IcqksDaxLqcYZ%2BKYfu2De0NA8EZfv%2FtJLRWWTAKC8UTJukPWXUtt%2Fatu%2BaEL%2FKtwt1KPihs%2B099yGx9zbvaIjOJXG%2BMp%2Ft6XB5ntjRJi9U5s9VZQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 69a4b8567e6ad5b3-BOM
+1 &lt; CF-RAY: 69a8b1555f562e77-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-{&quot;createdAt&quot;:&quot;2021-10-07T05:27:24.132Z&quot;,&quot;name&quot;:&quot;morpheus&quot;,&quot;id&quot;:&quot;77&quot;,&quot;job&quot;:&quot;leader&quot;}
+{&quot;createdAt&quot;:&quot;2021-10-07T17:01:40.325Z&quot;,&quot;name&quot;:&quot;morpheus&quot;,&quot;id&quot;:&quot;603&quot;,&quot;job&quot;:&quot;leader&quot;}
 </pre>
       </div>
     </div>
@@ -2066,7 +2066,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.009</span>
 
 </div>
 
@@ -2084,10 +2084,10 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-29" class="collapse collapsable-details">
-        <pre>10:57:23.316 [print] {
-  &quot;createdAt&quot;: &quot;2021-10-07T05:27:24.132Z&quot;,
+        <pre>22:31:40.027 [print] {
+  &quot;createdAt&quot;: &quot;2021-10-07T17:01:40.325Z&quot;,
   &quot;name&quot;: &quot;morpheus&quot;,
-  &quot;id&quot;: &quot;77&quot;,
+  &quot;id&quot;: &quot;603&quot;,
   &quot;job&quot;: &quot;leader&quot;
 }
  
@@ -2137,7 +2137,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.name == &quot;morpheus&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2164,7 +2164,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.job == &quot;leader&quot;</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -2263,7 +2263,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-32" class="collapse collapsable-details">
-        <pre>10:57:20.764 karate.env system property was: null 
+        <pre>22:31:32.492 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -2294,7 +2294,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.346</span>
+  <span class="lead-duration duration">7.390</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
@@ -2337,7 +2337,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def path = '/users'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2364,7 +2364,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path path</span>
 
-  <span class="lead-duration duration">0.161</span>
+  <span class="lead-duration duration">0.074</span>
 
 </div>
 
@@ -2391,7 +2391,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">request {&quot;name&quot;: &quot;morpheus&quot;,&quot;job&quot;: &quot;zion resident&quot;}</span>
 
-  <span class="lead-duration duration">0.128</span>
+  <span class="lead-duration duration">1.008</span>
 
 </div>
 
@@ -2418,7 +2418,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method put</span>
 
-  <span class="lead-duration duration">2.050</span>
+  <span class="lead-duration duration">6.299</span>
 
 </div>
 
@@ -2436,35 +2436,35 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-35" class="collapse collapsable-details">
-        <pre>10:57:22.060 request:
+        <pre>22:31:37.198 request:
 1 &gt; PUT https://reqres.in/api/users
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 41
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;}
 
-10:57:23.285 response time in milliseconds: 1225
+22:31:40.044 response time in milliseconds: 2834
 1 &lt; 200
-1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; access-control-allow-origin: *
-1 &lt; etag: W/&quot;50-cc3XHWwe9SvgNQzJUVPzhD5mG5A&quot;
+1 &lt; etag: W/&quot;50-HvnaPavyC1QacKOBmHNajhpP7jQ&quot;
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=CD%2Fu99%2FURwsCvYFDtmic%2BitML%2BTEisCPMQpwFbAo1kzNwGcsafXExY%2BF29mpluAdKd1LAdWB8pq%2FtD0WtEWZ9DIfasrR%2F%2BPx5rG96RCgBiJJTUh203B6owN8B5I%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=aNcnm%2FOhBEuIb%2Fs7jtBTb1zCN39IuYvMlcsw8jCw9yg3DYPVaYTr0iA6NVXGCQaAyq1oYQtxdjsv8vHrS%2FlkL%2BXysj%2Bv5Lpx0d4zJYx5%2BIUal7%2FKSC2FJzNaTf8%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 69a4b8566c8d6eb6-BOM
+1 &lt; CF-RAY: 69a8b1555f3131ee-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-07T05:27:24.123Z&quot;}
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-07T17:01:40.332Z&quot;}
 </pre>
       </div>
     </div>
@@ -2484,7 +2484,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -2502,10 +2502,10 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-36" class="collapse collapsable-details">
-        <pre>10:57:23.301 [print] {
+        <pre>22:31:40.054 [print] {
   &quot;name&quot;: &quot;morpheus&quot;,
   &quot;job&quot;: &quot;zion resident&quot;,
-  &quot;updatedAt&quot;: &quot;2021-10-07T05:27:24.123Z&quot;
+  &quot;updatedAt&quot;: &quot;2021-10-07T17:01:40.332Z&quot;
 }
  
 </pre>
@@ -2554,7 +2554,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.name == &quot;morpheus&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2581,7 +2581,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.job == &quot;zion resident&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -2680,7 +2680,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-39" class="collapse collapsable-details">
-        <pre>10:57:20.764 karate.env system property was: null 
+        <pre>22:31:32.495 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -2711,7 +2711,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.365</span>
+  <span class="lead-duration duration">7.465</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-40">
@@ -2781,7 +2781,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path path</span>
 
-  <span class="lead-duration duration">0.197</span>
+  <span class="lead-duration duration">0.085</span>
 
 </div>
 
@@ -2808,7 +2808,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">request {&quot;name&quot;: &quot;morpheus&quot;,&quot;job&quot;: &quot;zion resident&quot;}</span>
 
-  <span class="lead-duration duration">0.129</span>
+  <span class="lead-duration duration">0.993</span>
 
 </div>
 
@@ -2835,7 +2835,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method put</span>
 
-  <span class="lead-duration duration">2.035</span>
+  <span class="lead-duration duration">6.373</span>
 
 </div>
 
@@ -2853,35 +2853,35 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-42" class="collapse collapsable-details">
-        <pre>10:57:22.060 request:
+        <pre>22:31:37.175 request:
 1 &gt; PUT https://reqres.in/api/users
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 41
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;}
 
-10:57:23.269 response time in milliseconds: 1209
+22:31:40.111 response time in milliseconds: 2861
 1 &lt; 200
-1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; access-control-allow-origin: *
-1 &lt; etag: W/&quot;50-dEjcll2zbWQbWmYSwkXcClhJKVs&quot;
+1 &lt; etag: W/&quot;50-HvnaPavyC1QacKOBmHNajhpP7jQ&quot;
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=VsRD45SLs%2F4U7yeiZv7FgA1ZUWK5xFNlttYY0bcKGEW%2BM2Jja41vg3sHhdHI%2BgdUD7sXIsmWoUT53WcVHxGPVAbVel%2BVwWb2CWJ5BGwMgP2TtJ46JH90uY3zpy0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=KSIjzR01tji7lE%2Bu5aCBCYtfjzLASg6FGqWwDmhaFzZ1Jky1CYV04a7Wci%2BRGTM%2BDeyNDwZ5J%2BV%2BGcKszwfVWY%2Bt02OxuNqkT1K2bGlC7reNNbaE4yqM7PBqt6s%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 69a4b8567a740dd4-BOM
+1 &lt; CF-RAY: 69a8b1554fd031db-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-07T05:27:24.122Z&quot;}
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-07T17:01:40.332Z&quot;}
 </pre>
       </div>
     </div>
@@ -2901,7 +2901,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -2919,10 +2919,10 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-43" class="collapse collapsable-details">
-        <pre>10:57:23.285 [print] {
+        <pre>22:31:40.123 [print] {
   &quot;name&quot;: &quot;morpheus&quot;,
   &quot;job&quot;: &quot;zion resident&quot;,
-  &quot;updatedAt&quot;: &quot;2021-10-07T05:27:24.122Z&quot;
+  &quot;updatedAt&quot;: &quot;2021-10-07T17:01:40.332Z&quot;
 }
  
 </pre>
@@ -3097,7 +3097,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-46" class="collapse collapsable-details">
-        <pre>10:57:20.779 karate.env system property was: null 
+        <pre>22:31:32.540 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -3128,7 +3128,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.383</span>
+  <span class="lead-duration duration">7.448</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-47">
@@ -3171,7 +3171,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def path = '/users'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3198,7 +3198,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def payload = {&quot;name&quot;: &quot;morpheus&quot;,&quot;job&quot;: &quot;zion resident&quot;}</span>
 
-  <span class="lead-duration duration">0.292</span>
+  <span class="lead-duration duration">1.075</span>
 
 </div>
 
@@ -3225,7 +3225,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path path</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -3279,7 +3279,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method put</span>
 
-  <span class="lead-duration duration">2.085</span>
+  <span class="lead-duration duration">6.361</span>
 
 </div>
 
@@ -3297,35 +3297,35 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-49" class="collapse collapsable-details">
-        <pre>10:57:22.060 request:
+        <pre>22:31:37.198 request:
 1 &gt; PUT https://reqres.in/api/users
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 41
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;}
 
-10:57:23.332 response time in milliseconds: 1272
+22:31:40.123 response time in milliseconds: 2838
 1 &lt; 200
-1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
 1 &lt; access-control-allow-origin: *
-1 &lt; etag: W/&quot;50-TsNAV0kWAnI8d7MTVSCOf1SaIa4&quot;
+1 &lt; etag: W/&quot;50-S8RxW4RyWkkkdmVBkRZqCR3PadQ&quot;
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=qagmwD45CRKkYiNJIbZBjLpX2pRGCu33ixy9CAu8vN4k0ChgfjVWWqcuoQapOm9R1oy0F7tQJAnm0oRNNq8M08CB7eVYm1G8nqVwYBlSFx05tvFcf%2FnZEbX%2Fhqs%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=JT30MnKCrACiwsmiskxuq8nnsgz493Cbv2tq5x9OVSvis53qIo2xocj6rmRtfcCBfelvYCF7JGozqJgEsil9mOcNfk5OzVzZ0R3tsJiiA6C4ZSNPd7VMwA%2F3HYk%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 69a4b8569c742e3a-BOM
+1 &lt; CF-RAY: 69a8b1555ac50e60-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-07T05:27:24.153Z&quot;}
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2021-10-07T17:01:40.342Z&quot;}
 </pre>
       </div>
     </div>
@@ -3345,7 +3345,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -3363,10 +3363,10 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-50" class="collapse collapsable-details">
-        <pre>10:57:23.332 [print] {
+        <pre>22:31:40.127 [print] {
   &quot;name&quot;: &quot;morpheus&quot;,
   &quot;job&quot;: &quot;zion resident&quot;,
-  &quot;updatedAt&quot;: &quot;2021-10-07T05:27:24.153Z&quot;
+  &quot;updatedAt&quot;: &quot;2021-10-07T17:01:40.342Z&quot;
 }
  
 </pre>
@@ -3442,7 +3442,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.job == &quot;zion resident&quot;</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3541,7 +3541,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-53" class="collapse collapsable-details">
-        <pre>10:57:20.779 karate.env system property was: null 
+        <pre>22:31:32.517 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -3572,7 +3572,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.388</span>
+  <span class="lead-duration duration">7.338</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-54">
@@ -3615,7 +3615,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def path = '/users/2'</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -3642,7 +3642,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path path</span>
 
-  <span class="lead-duration duration">0.172</span>
+  <span class="lead-duration duration">0.070</span>
 
 </div>
 
@@ -3669,7 +3669,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method delete</span>
 
-  <span class="lead-duration duration">2.211</span>
+  <span class="lead-duration duration">7.257</span>
 
 </div>
 
@@ -3687,17 +3687,17 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-56" class="collapse collapsable-details">
-        <pre>10:57:22.045 request:
+        <pre>22:31:37.186 request:
 1 &gt; DELETE https://reqres.in/api/users/2
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-10:57:23.316 response time in milliseconds: 1271
+22:31:39.997 response time in milliseconds: 2805
 1 &lt; 204
-1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
 1 &lt; Content-Length: 0
 1 &lt; Connection: keep-alive
 1 &lt; x-powered-by: Express
@@ -3706,10 +3706,10 @@ $(document).ready(function() {
 1 &lt; via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=fTdAHkSib5yQQ8i7rCuWAhjGA75ANDvX2p%2F8cUnxrM%2BDwdBEna2t5JD8T1yjB4njvUjCNsf64jQV8DkTlcni%2BQDJFrsHqTP8%2Bi4oRp28tIfiywLqBS6FXcI1ZVE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=R0tNCieBevoQncrH8%2FYJrlhqAIsOcxWEwARlXc92DvGeJCVIpQXeztKrpaWQTkdZGtWv2T1GaoNcgY%2F3l1rb8lHseZ%2FPAHqrApOlYiSSsOrGpgNyrZJw0cjWymU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 69a4b8566fe70de9-BOM
+1 &lt; CF-RAY: 69a8b15558ad6eb6-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 </pre>
@@ -3749,7 +3749,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-57" class="collapse collapsable-details">
-        <pre>10:57:23.332 [print]  
+        <pre>22:31:40.001 [print]  
 </pre>
       </div>
     </div>
@@ -3868,7 +3868,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-60" class="collapse collapsable-details">
-        <pre>10:57:20.779 karate.env system property was: null 
+        <pre>22:31:32.536 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -3899,7 +3899,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.577</span>
+  <span class="lead-duration duration">7.536</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-61">
@@ -3942,7 +3942,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">header Authorization = call read('../data/basic-auth.js') { username: 'postman', password: 'password' }</span>
 
-  <span class="lead-duration duration">0.386</span>
+  <span class="lead-duration duration">1.201</span>
 
 </div>
 
@@ -3969,7 +3969,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">url &quot;https://postman-echo.com/basic-auth&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -3996,7 +3996,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">2.184</span>
+  <span class="lead-duration duration">6.326</span>
 
 </div>
 
@@ -4014,24 +4014,24 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-63" class="collapse collapsable-details">
-        <pre>10:57:22.045 request:
+        <pre>22:31:37.173 request:
 1 &gt; GET https://postman-echo.com/basic-auth
 1 &gt; Authorization: Basic cG9zdG1hbjpwYXNzd29yZA==
 1 &gt; Host: postman-echo.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-10:57:23.472 response time in milliseconds: 1396
+22:31:40.202 response time in milliseconds: 2935
 1 &lt; 200
-1 &lt; Date: Thu, 07 Oct 2021 05:27:24 GMT
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 22
 1 &lt; Connection: keep-alive
 1 &lt; ETag: W/&quot;16-sJz8uwjdDv0wvm7//BYdNw8vMbU&quot;
 1 &lt; Vary: Accept-Encoding
-1 &lt; Set-Cookie: sails.sid=s%3AxHPhE8xnnUeff4JA0SNgvowARKI9jifD.B%2BRxDMFIIXnNeDx3qFRgwjwIKhGYMfflWomwiFl%2FEYI; Domain=postman-echo.com
+1 &lt; Set-Cookie: sails.sid=s%3A-bkZL68lnQfzfgD0W1mRWMNsPKRdIBHe.cUyqYQeGX16uhHmoXhAORWuYaNpl1MOYs7tCyOgJBeg; Domain=postman-echo.com
 {&quot;authenticated&quot;:true}
 </pre>
       </div>
@@ -4052,7 +4052,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -4070,7 +4070,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-64" class="collapse collapsable-details">
-        <pre>10:57:23.472 [print] {
+        <pre>22:31:40.215 [print] {
   &quot;authenticated&quot;: true
 }
  
@@ -4111,7 +4111,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-65" class="collapse collapsable-details">
-        <pre>10:57:23.472 [print] true 
+        <pre>22:31:40.217 [print] true 
 </pre>
       </div>
     </div>
@@ -4132,6 +4132,2829 @@ $(document).ready(function() {
   <span class="name">match response.authenticated == true</span>
 
   <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-66">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-66" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-67">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-67" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url base_url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-68">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-68" class="collapse collapsable-details">
+        <pre>22:31:32.524 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">7.325</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-69">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">create user post -data driven test</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-69" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-70">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-70" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/users'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.041</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def payload =</span>
+
+  <span class="lead-duration duration">1.024</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-71">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-71" class="collapse collapsable-details">
+        <pre>{
+&quot;name&quot;: &quot;cyril&quot;,
+&quot;job&quot;: &quot;qa&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">6.256</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-72">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-72" class="collapse collapsable-details">
+        <pre>22:31:37.187 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 27
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;cyril&quot;,&quot;job&quot;:&quot;qa&quot;}
+
+22:31:40.010 response time in milliseconds: 2822
+1 &lt; 201
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 77
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;4d-n4nNZ+SAR3c4FCcjlBNbRkIzePk&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=CF3N5F2GuxWmVtHDC8OJ81PpNQL7by0F3pBx5tLuEAxueIHqsIzL%2BKMoYNyq7YObET4wB2kT7JNur6d%2BjdSCLTcFThJ3%2F49PY8phgilBNf%2BYTTQki%2F4hnAppm8o%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 69a8b1554c72d5bf-BOM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;createdAt&quot;:&quot;2021-10-07T17:01:40.324Z&quot;,&quot;name&quot;:&quot;cyril&quot;,&quot;id&quot;:&quot;520&quot;,&quot;job&quot;:&quot;qa&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-73">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-73" class="collapse collapsable-details">
+        <pre>22:31:40.014 [print] {
+  &quot;createdAt&quot;: &quot;2021-10-07T17:01:40.324Z&quot;,
+  &quot;name&quot;: &quot;cyril&quot;,
+  &quot;id&quot;: &quot;520&quot;,
+  &quot;job&quot;: &quot;qa&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {&quot;createdAt&quot;: &quot;#notnull&quot;,&quot;name&quot;: &quot;#string&quot;,&quot;id&quot;: &quot;#notnull&quot;,&quot;job&quot;: &quot;#string&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-74">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-74" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-75">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-75" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url base_url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-76">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-76" class="collapse collapsable-details">
+        <pre>22:31:32.533 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">7.346</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-77">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">create user post -data driven test</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-77" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-78">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-78" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/users'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.081</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def payload =</span>
+
+  <span class="lead-duration duration">0.991</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-79">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-79" class="collapse collapsable-details">
+        <pre>{
+&quot;name&quot;: &quot;tony&quot;,
+&quot;job&quot;: &quot;dev&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">6.268</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-80">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-80" class="collapse collapsable-details">
+        <pre>22:31:37.195 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 27
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;tony&quot;,&quot;job&quot;:&quot;dev&quot;}
+
+22:31:40.003 response time in milliseconds: 2807
+1 &lt; 201
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 77
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;4d-FjtL3aWBpbR7VaNt2YL7c3XRkyg&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Cx7dVS%2BeZghLup0kRrZMK5%2B%2B1xcldBBno0r0jCR2%2F6bwylMmnK%2Fopbp2ePL1l%2BPNR4jRrZ%2FwBYryfkSnYTMdyNf5cr2sJCfdkLOsDHvYw%2ByoxQfEjP9bIRosgHw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 69a8b1555bc1699d-BOM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;createdAt&quot;:&quot;2021-10-07T17:01:40.322Z&quot;,&quot;name&quot;:&quot;tony&quot;,&quot;id&quot;:&quot;560&quot;,&quot;job&quot;:&quot;dev&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-81">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-81" class="collapse collapsable-details">
+        <pre>22:31:40.008 [print] {
+  &quot;createdAt&quot;: &quot;2021-10-07T17:01:40.322Z&quot;,
+  &quot;name&quot;: &quot;tony&quot;,
+  &quot;id&quot;: &quot;560&quot;,
+  &quot;job&quot;: &quot;dev&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {&quot;createdAt&quot;: &quot;#notnull&quot;,&quot;name&quot;: &quot;#string&quot;,&quot;id&quot;: &quot;#notnull&quot;,&quot;job&quot;: &quot;#string&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-82">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-82" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-83">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-83" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url base_url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-84">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-84" class="collapse collapsable-details">
+        <pre>22:31:32.509 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">7.418</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-85">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">create user post -data driven test</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-85" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-86">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-86" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/users'</span>
+
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.055</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def payload =</span>
+
+  <span class="lead-duration duration">1.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-87">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-87" class="collapse collapsable-details">
+        <pre>{
+&quot;name&quot;: &quot;ferran&quot;,
+&quot;job&quot;: &quot;ba&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">6.325</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-88">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-88" class="collapse collapsable-details">
+        <pre>22:31:37.201 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 28
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;ferran&quot;,&quot;job&quot;:&quot;ba&quot;}
+
+22:31:40.056 response time in milliseconds: 2834
+1 &lt; 201
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 78
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;4e-wFDHViUbFdfgPlF0iUg+XIErHpE&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=QFRopEeC1FO0UU9xZ%2FFWk0ZZqRyFmYoYR1XfGiY31R0AGAkFPvZQkTS0GkT0kvfbvIt3db%2FD45QtMUOUQbrc6AHS5K62hsmT2z4cIjgF9HVt7u8ZLXLjxIn7wT8%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 69a8b1556b4c2dff-BOM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;createdAt&quot;:&quot;2021-10-07T17:01:40.334Z&quot;,&quot;name&quot;:&quot;ferran&quot;,&quot;id&quot;:&quot;741&quot;,&quot;job&quot;:&quot;ba&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-89">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-89" class="collapse collapsable-details">
+        <pre>22:31:40.073 [print] {
+  &quot;createdAt&quot;: &quot;2021-10-07T17:01:40.334Z&quot;,
+  &quot;name&quot;: &quot;ferran&quot;,
+  &quot;id&quot;: &quot;741&quot;,
+  &quot;job&quot;: &quot;ba&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {&quot;createdAt&quot;: &quot;#notnull&quot;,&quot;name&quot;: &quot;#string&quot;,&quot;id&quot;: &quot;#notnull&quot;,&quot;job&quot;: &quot;#string&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-90">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-90" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-91">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-91" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url base_url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-92">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-92" class="collapse collapsable-details">
+        <pre>22:31:32.512 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">7.389</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-93">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">create user post -data driven test using faker api</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-93" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-94">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-94" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def test_data = Java.type('examples.data.faker')</span>
+
+  <span class="lead-duration duration">0.100</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def fake_name = test_data.fakeName()</span>
+
+  <span class="lead-duration duration">1.536</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def fake_job = test_data.fakeJob()</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/users'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def payload =</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-95">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-95" class="collapse collapsable-details">
+        <pre>{
+&quot;name&quot;: &quot;#(fake_name)&quot;,
+&quot;job&quot;: &quot;#(fake_job)&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">5.728</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-96">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-96" class="collapse collapsable-details">
+        <pre>22:31:37.200 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Winford&quot;,&quot;job&quot;:&quot;Corporate Accounting Director&quot;}
+
+22:31:40.060 response time in milliseconds: 2835
+1 &lt; 201
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 106
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;6a-Qzz9zQIpuElDipGjck+o1sx73IE&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=0CgAbDDfkgzU6HnRc9tSwgy80vGsIYNuZuFLh4gUFofe7QTvkrMeE5ptEOE38fOMfsUWand3msCYjsHi6P6Gh6QsRcdu7JMq1INDRKhlXXg7T7d8N8KAGWe4GyI%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 69a8b1555fb96ebc-BOM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;createdAt&quot;:&quot;2021-10-07T17:01:40.333Z&quot;,&quot;name&quot;:&quot;Winford&quot;,&quot;id&quot;:&quot;866&quot;,&quot;job&quot;:&quot;Corporate Accounting Director&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-97">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-97" class="collapse collapsable-details">
+        <pre>22:31:40.064 [print] {
+  &quot;createdAt&quot;: &quot;2021-10-07T17:01:40.333Z&quot;,
+  &quot;name&quot;: &quot;Winford&quot;,
+  &quot;id&quot;: &quot;866&quot;,
+  &quot;job&quot;: &quot;Corporate Accounting Director&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {&quot;createdAt&quot;: &quot;#notnull&quot;,&quot;name&quot;: &quot;#string&quot;,&quot;id&quot;: &quot;#notnull&quot;,&quot;job&quot;: &quot;#string&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-98">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-98" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-99">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-99" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url base_url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-100">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-100" class="collapse collapsable-details">
+        <pre>22:31:32.499 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">7.488</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-101">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">create user post -data driven test using faker api</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-101" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-102">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-102" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def test_data = Java.type('examples.data.faker')</span>
+
+  <span class="lead-duration duration">0.109</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def fake_name = test_data.fakeName()</span>
+
+  <span class="lead-duration duration">1.538</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def fake_job = test_data.fakeJob()</span>
+
+  <span class="lead-duration duration">0.036</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/users'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def payload =</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-103">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-103" class="collapse collapsable-details">
+        <pre>{
+&quot;name&quot;: &quot;#(fake_name)&quot;,
+&quot;job&quot;: &quot;#(fake_job)&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">5.717</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-104">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-104" class="collapse collapsable-details">
+        <pre>22:31:37.182 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 43
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Dorine&quot;,&quot;job&quot;:&quot;Marketing Officer&quot;}
+
+22:31:40.064 response time in milliseconds: 2854
+1 &lt; 201
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 93
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;5d-TSbAqm8Sj/Gow3eFQQZpNvneAzs&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=a4HaKAY4AC9NZxT1TinrIdsNQW1p3GKJWYc4ldV4qXrni%2Bn%2FKDnLQuZw%2Fnr%2BGyvozhj2H1uh6TA%2BPM7sBxTHvw1blAy8abyVHoBqmPHvu1TE0bcw0cZdXcuCcSY%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 69a8b1554eafd597-BOM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;createdAt&quot;:&quot;2021-10-07T17:01:40.330Z&quot;,&quot;name&quot;:&quot;Dorine&quot;,&quot;id&quot;:&quot;499&quot;,&quot;job&quot;:&quot;Marketing Officer&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.080</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-105">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-105" class="collapse collapsable-details">
+        <pre>22:31:40.145 [print] {
+  &quot;createdAt&quot;: &quot;2021-10-07T17:01:40.330Z&quot;,
+  &quot;name&quot;: &quot;Dorine&quot;,
+  &quot;id&quot;: &quot;499&quot;,
+  &quot;job&quot;: &quot;Marketing Officer&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {&quot;createdAt&quot;: &quot;#notnull&quot;,&quot;name&quot;: &quot;#string&quot;,&quot;id&quot;: &quot;#notnull&quot;,&quot;job&quot;: &quot;#string&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-106">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-106" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-107">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-107" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url base_url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-108">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-108" class="collapse collapsable-details">
+        <pre>22:31:32.500 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">7.374</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-109">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">create user post -data driven test using faker api</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-109" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-110">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-110" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def test_data = Java.type('examples.data.faker')</span>
+
+  <span class="lead-duration duration">0.076</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def fake_name = test_data.fakeName()</span>
+
+  <span class="lead-duration duration">1.533</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def fake_job = test_data.fakeJob()</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/users'</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def payload =</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-111">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-111" class="collapse collapsable-details">
+        <pre>{
+&quot;name&quot;: &quot;#(fake_name)&quot;,
+&quot;job&quot;: &quot;#(fake_job)&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">5.728</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-112">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-112" class="collapse collapsable-details">
+        <pre>22:31:37.184 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Sue&quot;,&quot;job&quot;:&quot;Corporate Associate&quot;}
+
+22:31:40.053 response time in milliseconds: 2848
+1 &lt; 201
+1 &lt; Date: Thu, 07 Oct 2021 17:01:40 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 92
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;5c-d9EA1PHdhG5qYJBYAphX1Fav0BU&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=0twg7tg8LqYKdbBXZ7uqIC%2F97Dwpj2YlMaiqt6kiyJGXS85Quk6akGcBEPPRQZYXd8iwBg9ZA7vJCjuy8s%2B6WDFjD57RNHQCI4spzTSuN5vVrBZrCRujVV7W%2Fs8%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 69a8b1555bc52e38-BOM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;createdAt&quot;:&quot;2021-10-07T17:01:40.335Z&quot;,&quot;name&quot;:&quot;Sue&quot;,&quot;id&quot;:&quot;349&quot;,&quot;job&quot;:&quot;Corporate Associate&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-113">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-113" class="collapse collapsable-details">
+        <pre>22:31:40.070 [print] {
+  &quot;createdAt&quot;: &quot;2021-10-07T17:01:40.335Z&quot;,
+  &quot;name&quot;: &quot;Sue&quot;,
+  &quot;id&quot;: &quot;349&quot;,
+  &quot;job&quot;: &quot;Corporate Associate&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {&quot;createdAt&quot;: &quot;#notnull&quot;,&quot;name&quot;: &quot;#string&quot;,&quot;id&quot;: &quot;#notnull&quot;,&quot;job&quot;: &quot;#string&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 

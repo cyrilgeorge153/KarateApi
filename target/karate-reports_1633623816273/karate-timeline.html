@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[11.1:143]","start":1633623658591,"end":1633623661205,"title":"src\/test\/java\/examples\/reqres\/reqres[11.1:143] 21:50:58.591-21:51:01.205 create user post -data driven test using faker api"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[11.2:144]","start":1633623661217,"end":1633623661641,"title":"src\/test\/java\/examples\/reqres\/reqres[11.2:144] 21:51:01.217-21:51:01.641 create user post -data driven test using faker api"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[11.3:145]","start":1633623661653,"end":1633623662159,"title":"src\/test\/java\/examples\/reqres\/reqres[11.3:145] 21:51:01.653-21:51:02.159 create user post -data driven test using faker api"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

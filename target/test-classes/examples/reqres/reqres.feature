@@ -101,3 +101,47 @@ Feature: reqres api test cases
     Then print response.authenticated
     And match response.authenticated == true
 
+  Scenario Outline: create user post -data driven test
+    * def path = '/users'
+    Given path path
+    And def payload =
+    """
+    {
+    "name": "<name>",
+    "job": "<job>"
+    }
+    """
+    And request payload
+    When method post
+    Then print response
+    And status 201
+    And match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
+    Examples:
+      | name   | job |
+      | cyril  | qa  |
+      | tony   | dev |
+      | ferran | ba  |
+
+ Scenario Outline: create user post -data driven test using faker api
+    * def test_data = Java.type('examples.data.faker')
+    * def fake_name = test_data.fakeName()
+    * def fake_job = test_data.fakeJob()
+    * def path = '/users'
+    Given path path
+    And def payload =
+    """
+    {
+    "name": "<name>",
+    "job": "<job>"
+    }
+    """
+    And request payload
+    When method post
+    Then print response
+    And status 201
+    And match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
+    Examples:
+      | name         | job         |
+      | #(fake_name) | #(fake_job) |
+      | #(fake_name) | #(fake_job) |
+      | #(fake_name) | #(fake_job) |
