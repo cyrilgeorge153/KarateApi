@@ -140,8 +140,24 @@ Feature: reqres api test cases
     Then print response
     And status 201
     And match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
+    And match response == {"createdAt": "#notnull","name":  #(fake_name),"id": "#notnull","job": #(fake_job)}
     Examples:
       | name         | job         |
       | #(fake_name) | #(fake_job) |
       | #(fake_name) | #(fake_job) |
       | #(fake_name) | #(fake_job) |
+
+  Scenario: create user using post , faker api
+    * def test_data = Java.type('examples.data.faker')
+    * def fake_name = test_data.fakeName()
+    * def fake_job = test_data.fakeJob()
+    * def path = '/users'
+    Given path path
+    And request {"name": #(fake_name),"job": #(fake_job)}
+    When method post
+    Then print response
+    And status 201
+    And match response.name == fake_name
+    And match response.job == fake_job
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.1:7]","start":1633691555995,"end":1633691556037,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.1:7] 16:42:35.995-16:42:36.037 cat name","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.2:7]","start":1633691556085,"end":1633691556098,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.2:7] 16:42:36.085-16:42:36.098 cat name","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.3:7]","start":1633691556107,"end":1633691556114,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.3:7] 16:42:36.107-16:42:36.114 cat name","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.4:7]","start":1633691556133,"end":1633691556135,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.4:7] 16:42:36.133-16:42:36.135 cat name","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.5:7]","start":1633691556165,"end":1633691556172,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.5:7] 16:42:36.165-16:42:36.172 cat name","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.6:7]","start":1633691556184,"end":1633691556190,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.6:7] 16:42:36.184-16:42:36.190 cat name","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

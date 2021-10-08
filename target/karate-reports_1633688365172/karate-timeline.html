@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[1:6]","start":1633685055512,"end":1633685058365,"title":"src\/test\/java\/examples\/reqres\/reqres[1:6] 14:54:15.512-14:54:18.365 single user get request"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[2:15]","start":1633685058380,"end":1633685058605,"title":"src\/test\/java\/examples\/reqres\/reqres[2:15] 14:54:18.380-14:54:18.605 list users get request"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[3:35]","start":1633685058623,"end":1633685059201,"title":"src\/test\/java\/examples\/reqres\/reqres[3:35] 14:54:18.623-14:54:19.201 create user using post and external json file"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[4:46]","start":1633685059209,"end":1633685059662,"title":"src\/test\/java\/examples\/reqres\/reqres[4:46] 14:54:19.209-14:54:19.662 create user using post and inline json payload"},{"id":5,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[5:57]","start":1633685059686,"end":1633685060256,"title":"src\/test\/java\/examples\/reqres\/reqres[5:57] 14:54:19.686-14:54:20.256 update user using put and inline json payload"},{"id":6,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[6:67]","start":1633685060265,"end":1633685060715,"title":"src\/test\/java\/examples\/reqres\/reqres[6:67] 14:54:20.265-14:54:20.715 update user using patch and inline json payload"},{"id":7,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[7:77]","start":1633685060722,"end":1633685061175,"title":"src\/test\/java\/examples\/reqres\/reqres[7:77] 14:54:20.722-14:54:21.175 update user using patch and passing payload as a variable"},{"id":8,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[8:89]","start":1633685061188,"end":1633685061624,"title":"src\/test\/java\/examples\/reqres\/reqres[8:89] 14:54:21.188-14:54:21.624 delete user using delete http method"},{"id":9,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[9:96]","start":1633685061638,"end":1633685062879,"title":"src\/test\/java\/examples\/reqres\/reqres[9:96] 14:54:21.638-14:54:22.879 basic auth test"},{"id":10,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[10.1:121]","start":1633685062894,"end":1633685063352,"title":"src\/test\/java\/examples\/reqres\/reqres[10.1:121] 14:54:22.894-14:54:23.352 create user post -data driven test"},{"id":11,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[10.2:122]","start":1633685063365,"end":1633685063851,"title":"src\/test\/java\/examples\/reqres\/reqres[10.2:122] 14:54:23.365-14:54:23.851 create user post -data driven test"},{"id":12,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[10.3:123]","start":1633685063861,"end":1633685064300,"title":"src\/test\/java\/examples\/reqres\/reqres[10.3:123] 14:54:23.861-14:54:24.300 create user post -data driven test"},{"id":13,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[11.1:145]","start":1633685064305,"end":1633685065222,"title":"src\/test\/java\/examples\/reqres\/reqres[11.1:145] 14:54:24.305-14:54:25.222 create user post -data driven test using faker api"},{"id":14,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[11.2:146]","start":1633685065232,"end":1633685065713,"title":"src\/test\/java\/examples\/reqres\/reqres[11.2:146] 14:54:25.232-14:54:25.713 create user post -data driven test using faker api"},{"id":15,"group":1,"content":"src\/test\/java\/examples\/reqres\/reqres[11.3:147]","start":1633685065720,"end":1633685066164,"title":"src\/test\/java\/examples\/reqres\/reqres[11.3:147] 14:54:25.720-14:54:26.164 create user post -data driven test using faker api"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

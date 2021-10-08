@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.1:7]","start":1633691326207,"end":1633691328818,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.1:7] 16:38:46.207-16:38:48.818 cat name: Bob","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.2:7]","start":1633691328836,"end":1633691328839,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.2:7] 16:38:48.836-16:38:48.839 cat name: Wild","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.3:7]","start":1633691328856,"end":1633691328862,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.3:7] 16:38:48.856-16:38:48.862 cat name: Nyan","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.4:7]","start":1633691328873,"end":1633691328882,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.4:7] 16:38:48.873-16:38:48.882 cat name: Keyboard","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.5:7]","start":1633691328898,"end":1633691328900,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.5:7] 16:38:48.898-16:38:48.900 cat name: LOL","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.6:7]","start":1633691328923,"end":1633691328953,"title":"src\/test\/java\/examples\/reqres\/dynamic_scenario_outline[1.6:7] 16:38:48.923-16:38:48.953 cat name: Ceiling","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
