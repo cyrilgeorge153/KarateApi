@@ -1,7 +1,7 @@
 package examples;
+
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
-
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
@@ -12,7 +12,6 @@ import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 import org.apache.commons.io.FileUtils;
 import static org.junit.Assert.*;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 public class TestRunnerCucumberReporting {

@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-10-08 09:35:40 PM</div>
+    <div>2021-10-08 09:51:28 PM</div>
   </div>        
 </div>
 
@@ -68,7 +68,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>6398</span>
+              <span>ms:</span>&nbsp;<span>5788</span>
             </div>
           </div>
           <div class="step-row">
@@ -91,7 +91,7 @@
         <span>*</span>&nbsp;<span>call read(&#39;classpath:examples/preconditions/presteps.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">4999</div>
+    <div class="time-cell passed">4676</div>
   </div>
 
    
@@ -110,7 +110,7 @@
         <div class="step-indent"></div>
         <div class="step-cell passed">examples.preconditions.presteps</div>
       </div>
-      <div class="time-cell passed">4941</div>
+      <div class="time-cell passed">4629</div>
     </div>
     <div>
       <div><div>
@@ -126,7 +126,7 @@
         <span>Given</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com/auth&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -135,7 +135,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.5">21:35:34.531 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.3.0.call.0.5">21:51:22.514 karate.env system property was: null 
 </div>   
 
   
@@ -155,7 +155,7 @@
         <span>And</span>&nbsp;<span>request {&quot;username&quot; : &quot;admin&quot;,&quot;password&quot; : &quot;password123&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">363</div>
+    <div class="time-cell passed">254</div>
   </div>
 
    
@@ -183,7 +183,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">3446</div>
+    <div class="time-cell passed">3223</div>
   </div>
 
    
@@ -192,7 +192,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.7">21:35:36.792 request:
+  <div class="preformatted" data-parent="0.3.0.call.0.7">21:51:24.829 request:
 1 &gt; POST https://restful-booker.herokuapp.com/auth
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 45
@@ -202,17 +202,17 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;password&quot;:&quot;password123&quot;,&quot;username&quot;:&quot;admin&quot;}
 
-21:35:38.422 response time in milliseconds: 1630
+21:51:26.171 response time in milliseconds: 1342
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 27
-1 &lt; Etag: W/&quot;1b-KKJZWYo1ucwtRGj3Dq5FCtOZ3Sk&quot;
-1 &lt; Date: Fri, 08 Oct 2021 16:05:39 GMT
+1 &lt; Etag: W/&quot;1b-sZOt7n1eEY0qlNkA8XJhP5EVxbA&quot;
+1 &lt; Date: Fri, 08 Oct 2021 16:21:27 GMT
 1 &lt; Via: 1.1 vegur
-{&quot;token&quot;:&quot;71b4267f3e9c353&quot;}
+{&quot;token&quot;:&quot;93211c835d5d796&quot;}
 </div>   
 
   
@@ -232,7 +232,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -241,8 +241,8 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.8">21:35:38.422 [print] {
-  &quot;token&quot;: &quot;71b4267f3e9c353&quot;
+  <div class="preformatted" data-parent="0.3.0.call.0.8">21:51:26.171 [print] {
+  &quot;token&quot;: &quot;93211c835d5d796&quot;
 }
  
 </div>   
@@ -320,7 +320,7 @@
         <span>Then</span>&nbsp;<span>match response.token == &#39;#present&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -348,7 +348,7 @@
         <span>Then</span>&nbsp;<span>match response.token == &#39;#notnull&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -376,7 +376,7 @@
         <span>*</span>&nbsp;<span>def token_value = response.token</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -460,7 +460,7 @@
         <span>Given</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com/booking&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -516,7 +516,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1116</div>
+    <div class="time-cell passed">1129</div>
   </div>
 
    
@@ -525,7 +525,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.18">21:35:38.469 request:
+  <div class="preformatted" data-parent="0.3.0.call.0.18">21:51:26.187 request:
 2 &gt; POST https://restful-booker.herokuapp.com/booking
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Accept: application/json
@@ -536,17 +536,17 @@
 2 &gt; Accept-Encoding: gzip,deflate
 {&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 
-21:35:39.554 response time in milliseconds: 1085
+21:51:27.318 response time in milliseconds: 1131
 2 &lt; 200
 2 &lt; Server: Cowboy
 2 &lt; Connection: keep-alive
 2 &lt; X-Powered-By: Express
 2 &lt; Content-Type: application/json; charset=utf-8
 2 &lt; Content-Length: 195
-2 &lt; Etag: W/&quot;c3-Vju75FvVUsENRa3M6FBhVA2hg4U&quot;
-2 &lt; Date: Fri, 08 Oct 2021 16:05:40 GMT
+2 &lt; Etag: W/&quot;c3-2A2NvXuWms4xhyfTT2ymASvMl68&quot;
+2 &lt; Date: Fri, 08 Oct 2021 16:21:28 GMT
 2 &lt; Via: 1.1 vegur
-{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:36}
+{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:29}
 </div>   
 
   
@@ -711,7 +711,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1397</div>
+    <div class="time-cell passed">1109</div>
   </div>
 
    
@@ -720,7 +720,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.10">21:35:39.554 request:
+  <div class="preformatted" data-parent="0.10">21:51:27.318 request:
 1 &gt; POST https://restful-booker.herokuapp.com/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -731,17 +731,17 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 
-21:35:40.953 response time in milliseconds: 1399
+21:51:28.431 response time in milliseconds: 1113
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 195
-1 &lt; Etag: W/&quot;c3-WviWsYEOY57MS86OSR3P4Ga4Usw&quot;
-1 &lt; Date: Fri, 08 Oct 2021 16:05:41 GMT
+1 &lt; Etag: W/&quot;c3-SJ8OabYv5jjD5vxHv5twBw0NGpg&quot;
+1 &lt; Date: Fri, 08 Oct 2021 16:21:29 GMT
 1 &lt; Via: 1.1 vegur
-{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:38}
+{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:30}
 </div>   
 
   
@@ -777,7 +777,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.12">21:35:40.953 over-writing existing variable &#39;booking_id&#39; with new value: response.bookingid
+  <div class="preformatted" data-parent="0.12">21:51:28.431 over-writing existing variable &#39;booking_id&#39; with new value: response.bookingid
 </div>   
 
   
@@ -806,7 +806,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.13">21:35:40.953 [print] 38 
+  <div class="preformatted" data-parent="0.13">21:51:28.431 [print] 30 
 </div>   
 
   
@@ -827,7 +827,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>6178</span>
+              <span>ms:</span>&nbsp;<span>5765</span>
             </div>
           </div>
           <div class="step-row">
@@ -850,7 +850,7 @@
         <span>*</span>&nbsp;<span>call read(&#39;classpath:examples/preconditions/presteps.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">5020</div>
+    <div class="time-cell passed">4599</div>
   </div>
 
    
@@ -869,7 +869,7 @@
         <div class="step-indent"></div>
         <div class="step-cell passed">examples.preconditions.presteps</div>
       </div>
-      <div class="time-cell passed">5002</div>
+      <div class="time-cell passed">4577</div>
     </div>
     <div>
       <div><div>
@@ -894,7 +894,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.5">21:35:34.484 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.3.0.call.0.5">21:51:22.514 karate.env system property was: null 
 </div>   
 
   
@@ -914,7 +914,7 @@
         <span>And</span>&nbsp;<span>request {&quot;username&quot; : &quot;admin&quot;,&quot;password&quot; : &quot;password123&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">392</div>
+    <div class="time-cell passed">250</div>
   </div>
 
    
@@ -942,7 +942,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">3415</div>
+    <div class="time-cell passed">3204</div>
   </div>
 
    
@@ -951,7 +951,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.7">21:35:36.792 request:
+  <div class="preformatted" data-parent="0.3.0.call.0.7">21:51:24.829 request:
 1 &gt; POST https://restful-booker.herokuapp.com/auth
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 45
@@ -961,17 +961,17 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;password&quot;:&quot;password123&quot;,&quot;username&quot;:&quot;admin&quot;}
 
-21:35:38.407 response time in milliseconds: 1568
+21:51:26.156 response time in milliseconds: 1327
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 27
-1 &lt; Etag: W/&quot;1b-683j4NAR1hzqizgANT28YrLAEEw&quot;
-1 &lt; Date: Fri, 08 Oct 2021 16:05:39 GMT
+1 &lt; Etag: W/&quot;1b-8XYNaQLjgvAa1Ccn9B+oCRnBKZg&quot;
+1 &lt; Date: Fri, 08 Oct 2021 16:21:27 GMT
 1 &lt; Via: 1.1 vegur
-{&quot;token&quot;:&quot;9a92359bcbd0062&quot;}
+{&quot;token&quot;:&quot;5323cc6a70439db&quot;}
 </div>   
 
   
@@ -1000,8 +1000,8 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.8">21:35:38.407 [print] {
-  &quot;token&quot;: &quot;9a92359bcbd0062&quot;
+  <div class="preformatted" data-parent="0.3.0.call.0.8">21:51:26.156 [print] {
+  &quot;token&quot;: &quot;5323cc6a70439db&quot;
 }
  
 </div>   
@@ -1079,7 +1079,7 @@
         <span>Then</span>&nbsp;<span>match response.token == &#39;#present&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1107,7 +1107,7 @@
         <span>Then</span>&nbsp;<span>match response.token == &#39;#notnull&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1135,7 +1135,7 @@
         <span>*</span>&nbsp;<span>def token_value = response.token</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1163,7 +1163,7 @@
         <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1191,7 +1191,7 @@
         <span>Given</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1247,7 +1247,7 @@
         <span>And</span>&nbsp;<span>request {&quot;firstname&quot; : &quot;Jim&quot;,&quot;lastname&quot; : &quot;Brown&quot;,&quot;totalprice&quot; : 111,&quot;depositpaid&quot; : true,&quot;bookingdates&quot; : {&quot;checkin&quot; : &quot;2018-01-01&quot;,&quot;checkout&quot; : &quot;2019-01-01&quot;},&quot;additionalneeds&quot; : &quot;Breakfast&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1275,7 +1275,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1186</div>
+    <div class="time-cell passed">1111</div>
   </div>
 
    
@@ -1284,7 +1284,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.18">21:35:38.407 request:
+  <div class="preformatted" data-parent="0.3.0.call.0.18">21:51:26.171 request:
 2 &gt; POST https://restful-booker.herokuapp.com/booking
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Accept: application/json
@@ -1295,17 +1295,17 @@
 2 &gt; Accept-Encoding: gzip,deflate
 {&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 
-21:35:39.601 response time in milliseconds: 1194
+21:51:27.271 response time in milliseconds: 1100
 2 &lt; 200
 2 &lt; Server: Cowboy
 2 &lt; Connection: keep-alive
 2 &lt; X-Powered-By: Express
 2 &lt; Content-Type: application/json; charset=utf-8
 2 &lt; Content-Length: 195
-2 &lt; Etag: W/&quot;c3-p0Ah2c/H9KbSGMZt79y5+gvE50k&quot;
-2 &lt; Date: Fri, 08 Oct 2021 16:05:40 GMT
+2 &lt; Etag: W/&quot;c3-AjbAZNa7Ods9W5ziFxGgv2BnFnc&quot;
+2 &lt; Date: Fri, 08 Oct 2021 16:21:28 GMT
 2 &lt; Via: 1.1 vegur
-{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:37}
+{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:27}
 </div>   
 
   
@@ -1414,7 +1414,7 @@
         <span>And</span>&nbsp;<span>path booking_id</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1442,7 +1442,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">1156</div>
+    <div class="time-cell passed">1161</div>
   </div>
 
    
@@ -1451,8 +1451,8 @@
 
   
 
-  <div class="preformatted" data-parent="0.19">21:35:39.601 request:
-1 &gt; GET https://restful-booker.herokuapp.com/booking/37
+  <div class="preformatted" data-parent="0.19">21:51:27.287 request:
+1 &gt; GET https://restful-booker.herokuapp.com/booking/27
 1 &gt; Accept: application/json
 1 &gt; Host: restful-booker.herokuapp.com
 1 &gt; Connection: Keep-Alive
@@ -1460,7 +1460,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:35:40.757 response time in milliseconds: 1156
+21:51:28.444 response time in milliseconds: 1157
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
@@ -1468,7 +1468,7 @@
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 168
 1 &lt; Etag: W/&quot;a8-p5uB2C7mxZA3HXJZF+tJCDJr8VE&quot;
-1 &lt; Date: Fri, 08 Oct 2021 16:05:41 GMT
+1 &lt; Date: Fri, 08 Oct 2021 16:21:29 GMT
 1 &lt; Via: 1.1 vegur
 {&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 </div>   
@@ -1490,7 +1490,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1499,7 +1499,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.20">21:35:40.757 [print] {
+  <div class="preformatted" data-parent="0.20">21:51:28.444 [print] {
   &quot;firstname&quot;: &quot;Jim&quot;,
   &quot;additionalneeds&quot;: &quot;Breakfast&quot;,
   &quot;bookingdates&quot;: {
@@ -1559,7 +1559,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>6095</span>
+              <span>ms:</span>&nbsp;<span>5712</span>
             </div>
           </div>
           <div class="step-row">
@@ -1582,7 +1582,7 @@
         <span>*</span>&nbsp;<span>call read(&#39;classpath:examples/preconditions/presteps.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">4953</div>
+    <div class="time-cell passed">4596</div>
   </div>
 
    
@@ -1601,7 +1601,7 @@
         <div class="step-indent"></div>
         <div class="step-cell passed">examples.preconditions.presteps</div>
       </div>
-      <div class="time-cell passed">4936</div>
+      <div class="time-cell passed">4479</div>
     </div>
     <div>
       <div><div>
@@ -1626,7 +1626,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.5">21:35:34.484 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.3.0.call.0.5">21:51:22.545 karate.env system property was: null 
 </div>   
 
   
@@ -1646,7 +1646,7 @@
         <span>And</span>&nbsp;<span>request {&quot;username&quot; : &quot;admin&quot;,&quot;password&quot; : &quot;password123&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">368</div>
+    <div class="time-cell passed">144</div>
   </div>
 
    
@@ -1674,7 +1674,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">3408</div>
+    <div class="time-cell passed">3192</div>
   </div>
 
    
@@ -1683,7 +1683,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.7">21:35:36.792 request:
+  <div class="preformatted" data-parent="0.3.0.call.0.7">21:51:24.829 request:
 1 &gt; POST https://restful-booker.herokuapp.com/auth
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 45
@@ -1693,17 +1693,17 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;password&quot;:&quot;password123&quot;,&quot;username&quot;:&quot;admin&quot;}
 
-21:35:38.391 response time in milliseconds: 1599
+21:51:26.156 response time in milliseconds: 1327
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 27
-1 &lt; Etag: W/&quot;1b-5nLA9QcQlATBjIOB1QPDYsOUtjY&quot;
-1 &lt; Date: Fri, 08 Oct 2021 16:05:39 GMT
+1 &lt; Etag: W/&quot;1b-Ansuf0HIQnio8oFNgak5/kKRErU&quot;
+1 &lt; Date: Fri, 08 Oct 2021 16:21:27 GMT
 1 &lt; Via: 1.1 vegur
-{&quot;token&quot;:&quot;00466db3dc62161&quot;}
+{&quot;token&quot;:&quot;9527a389046d7f1&quot;}
 </div>   
 
   
@@ -1723,7 +1723,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1732,8 +1732,8 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.8">21:35:38.391 [print] {
-  &quot;token&quot;: &quot;00466db3dc62161&quot;
+  <div class="preformatted" data-parent="0.3.0.call.0.8">21:51:26.156 [print] {
+  &quot;token&quot;: &quot;9527a389046d7f1&quot;
 }
  
 </div>   
@@ -1755,7 +1755,7 @@
         <span>Then</span>&nbsp;<span>match $.token == &#39;#present&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1811,7 +1811,7 @@
         <span>Then</span>&nbsp;<span>match response.token == &#39;#present&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1839,7 +1839,7 @@
         <span>Then</span>&nbsp;<span>match response.token == &#39;#notnull&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1867,7 +1867,7 @@
         <span>*</span>&nbsp;<span>def token_value = response.token</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1895,7 +1895,7 @@
         <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1951,7 +1951,7 @@
         <span>Given</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com/booking&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2007,7 +2007,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1153</div>
+    <div class="time-cell passed">1130</div>
   </div>
 
    
@@ -2016,7 +2016,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.3.0.call.0.18">21:35:38.391 request:
+  <div class="preformatted" data-parent="0.3.0.call.0.18">21:51:26.171 request:
 2 &gt; POST https://restful-booker.herokuapp.com/booking
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Accept: application/json
@@ -2027,17 +2027,17 @@
 2 &gt; Accept-Encoding: gzip,deflate
 {&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 
-21:35:39.539 response time in milliseconds: 1148
+21:51:27.287 response time in milliseconds: 1116
 2 &lt; 200
 2 &lt; Server: Cowboy
 2 &lt; Connection: keep-alive
 2 &lt; X-Powered-By: Express
 2 &lt; Content-Type: application/json; charset=utf-8
 2 &lt; Content-Length: 195
-2 &lt; Etag: W/&quot;c3-tBopoS1jM5QO6zJTHRgUeBXRaa0&quot;
-2 &lt; Date: Fri, 08 Oct 2021 16:05:40 GMT
+2 &lt; Etag: W/&quot;c3-W9/0WJWsjAtsXGOEL03B/xb1JwI&quot;
+2 &lt; Date: Fri, 08 Oct 2021 16:21:28 GMT
 2 &lt; Via: 1.1 vegur
-{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:35}
+{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:28}
 </div>   
 
   
@@ -2230,7 +2230,7 @@
         <span>And</span>&nbsp;<span>path booking_id</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2258,7 +2258,7 @@
         <span>When</span>&nbsp;<span>method put</span>
       </div>
     </div>
-    <div class="time-cell passed">1137</div>
+    <div class="time-cell passed">1112</div>
   </div>
 
    
@@ -2267,11 +2267,11 @@
 
   
 
-  <div class="preformatted" data-parent="0.30">21:35:39.554 request:
-1 &gt; PUT https://restful-booker.herokuapp.com/booking/35
+  <div class="preformatted" data-parent="0.30">21:51:27.303 request:
+1 &gt; PUT https://restful-booker.herokuapp.com/booking/28
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
-1 &gt; Cookie: token=00466db3dc62161
+1 &gt; Cookie: token=9527a389046d7f1
 1 &gt; Content-Length: 170
 1 &gt; Host: restful-booker.herokuapp.com
 1 &gt; Connection: Keep-Alive
@@ -2279,7 +2279,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;firstname&quot;:&quot;James&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 
-21:35:40.679 response time in milliseconds: 1125
+21:51:28.417 response time in milliseconds: 1114
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
@@ -2287,7 +2287,7 @@
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 170
 1 &lt; Etag: W/&quot;aa-waBDObUc25azXZ1Gkrz0LIEDGrg&quot;
-1 &lt; Date: Fri, 08 Oct 2021 16:05:41 GMT
+1 &lt; Date: Fri, 08 Oct 2021 16:21:29 GMT
 1 &lt; Via: 1.1 vegur
 {&quot;firstname&quot;:&quot;James&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 </div>   
@@ -2318,7 +2318,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.31">21:35:40.695 [print] {
+  <div class="preformatted" data-parent="0.31">21:51:28.417 [print] {
   &quot;firstname&quot;: &quot;James&quot;,
   &quot;additionalneeds&quot;: &quot;Breakfast&quot;,
   &quot;bookingdates&quot;: {
