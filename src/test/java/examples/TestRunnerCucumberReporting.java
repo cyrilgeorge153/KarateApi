@@ -11,7 +11,7 @@ import java.util.List;
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 import org.apache.commons.io.FileUtils;
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 public class TestRunnerCucumberReporting {
@@ -22,7 +22,9 @@ public class TestRunnerCucumberReporting {
                 .outputCucumberJson(true)
                 .parallel(21);
         generateReport(results.getReportDir());
-        assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
+        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+
+//        assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
     }
 
     public static void generateReport(String karateOutputPath) {

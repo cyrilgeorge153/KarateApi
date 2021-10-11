@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                275,
-                0,
-                0,
+                254,
+                1,
+                19,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 275) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 274) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                21,
-                0
+                20,
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   3,
-                   0
+                   2,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>reqres</td>
-      <td>11 Oct 2021, 09:35</td>
+      <td>11 Oct 2021, 12:57</td>
     </tr>
   </tbody>
 </table>
@@ -336,25 +336,25 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="7379961400">7.379</td>
+        <td class="duration" data-value="8123704100">8.123</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-feature_1_2477756784.html">examples/reqres/reqres.feature</a></td>
 
-        <td      class="passed"    >174</td>
+        <td      class="passed"    >153</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >19</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">174</td>
+        <td class="total">173</td>
 
-        <td  class="passed"    >16</td>
-        <td >0</td>
+        <td  class="passed"    >15</td>
+        <td  class="failed"    >1</td>
         <td class="total">16</td>
 
-        <td class="duration" data-value="57750208400">57.750</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="55840425000">55.840</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-feature_2_1678031536.html">examples/restfulbooker/restfulbooker.feature</a></td>
@@ -370,7 +370,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="31771866000">31.771</td>
+        <td class="duration" data-value="30015456800">30.015</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -378,33 +378,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>275</td>
+      <td>254</td>
+      <td>1</td>
+      <td>19</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>275</td>
+      <td>274</td>
 
-      <td>21</td>
-      <td>0</td>
+      <td>20</td>
+      <td>1</td>
       <td>21</td>
 
-      <td class="duration">1:36.902</td>
+      <td class="duration">1:33.979</td>
       <td>3</td>
     </tr>
     <tr>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+      <td>92.70%</td>
+      <td>0.36%</td>
+      <td>6.93%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
+      <td>95.24%</td>
+      <td>4.76%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>66.67%</td>
     </tr>
   </tfoot>
 </table>

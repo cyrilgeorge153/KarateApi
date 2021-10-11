@@ -1,3 +1,4 @@
+examples\data\faker.class
 examples\calljava\JavaClassTestRunner.class
 examples\reqres\ReqresTestRunner.class
 examples\TestRunnerCucumberReporting.class

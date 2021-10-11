@@ -1,0 +1,12 @@
+# Created at 2021-10-11T10:14:08.998
+[15928:ShellIpcClient] shell_ipc_client.cc:115:Connect Can't connect to socket at: \\.\Pipe\GoogleDriveFSPipe_cyril_shell
+
+# Created at 2021-10-11T10:14:09.017
+[27704:NonCelloThread] thumbnail_util_win.cc:115:LoadBitmapFromPngResource Can't find PNG resource 0.
+
+# Created at 2021-10-11T10:14:09.018
+[15928:ShellIpcClient] shell_ipc_client.cc:115:Connect Can't connect to socket at: \\.\Pipe\GoogleDriveFSPipe_cyril_shell
+
+# Created at 2021-10-11T10:14:09.024
+[27704:NonCelloThread] ctxmenu.cc:210:GenerateContextMenu Context menu IPC request failed with status: Status::UNKNOWN_STATUS
+
