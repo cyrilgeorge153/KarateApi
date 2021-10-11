@@ -11,6 +11,7 @@ Feature: reqres api test cases
     And match $ == {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
     And match response == {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
     And match response $ == {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+    And assert responseTime < 4000
 
   Scenario: list users get request
     Given path '/users?page=2'
@@ -31,6 +32,14 @@ Feature: reqres api test cases
     And match response.data[*].id !contains [1, 2, 3]
     And match response.data[*].id contains only [7, 8, 9, 10, 11, 12]
     And match response.data[*].id contains only [12, 9, 8, 11, 10, 7]
+    And match response.errors == '#notpresent'
+    And def first_name =  $response.data[*].first_name
+    And match each first_name == '#string'
+    And match each $response.data[*].first_name == '#string'
+    And def id_value =  $response.data[*].id
+    And match each id_value == "#number"
+    And match each $response.data[*].id == '#number'
+    And match each $response.data[*].avatar contains 'jpg'
 
   Scenario: create user using post and external json file
     * def path = '/users'
