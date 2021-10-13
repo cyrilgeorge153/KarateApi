@@ -8,16 +8,15 @@ Feature: Restful booker api testing
     Given url 'https://restful-booker.herokuapp.com/booking'
     And request {"firstname" : "Jim","lastname" : "Brown","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2018-01-01","checkout" : "2019-01-01"},"additionalneeds" : "Breakfast"}
     When method post
-#    Then print response.bookingid
-    * def booking_id = response.bookingid
-    And print booking_id
+    And print response
+    Then match response  == {"bookingid": #number,"booking": {"firstname": "Jim","lastname": "Brown","totalprice": 111,"depositpaid": true,"bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"additionalneeds": "Breakfast"}}
 
   Scenario: get booking details
     Given header Accept = 'application/json'
     And url 'https://restful-booker.herokuapp.com/booking'
     And path booking_id
     When method get
-    Then print response
+    And print response
     Then match response  == {"firstname": "Jim","additionalneeds": "Breakfast","bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"totalprice": 111,"depositpaid": true,"lastname": "Brown"}
 
   Scenario: update booking details
@@ -28,5 +27,5 @@ Feature: Restful booker api testing
     And request {"firstname" : "James","lastname" : "Brown","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2018-01-01","checkout" : "2019-01-01"},"additionalneeds" : "Breakfast"}
     And path booking_id
     When method put
-    Then print response
+    And print response
     Then match response == {"firstname": "James","additionalneeds": "Breakfast","bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"totalprice": 111,"depositpaid": true,"lastname": "Brown"}
