@@ -21,7 +21,7 @@ To execute test cases use the following commands from pom.xml location.
 **Karate Cucumber report location:KarateApi/target/cucumber-html-reports/overview-features.html**
 
 # Cucumber report screenshots
-
+![m7eaxNtGG6](https://user-images.githubusercontent.com/52770689/137769680-128817d1-9765-4516-8057-2f87df85befe.png)
 
 # Prerequisites
 
