@@ -13,6 +13,8 @@ To execute test cases use the following commands from pom.xml location.
 
 `mvn clean test -Dtest=TestRunnerCucumberReporting`
 
+**Test execution gif->** 
+
 **Karate Html report location:KarateApi/target/karate-reports/karate-summary.html**
 
 # Html report screenshots
