@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>reqres</td>
-      <td>13 Oct 2021, 11:31</td>
+      <td>25 Oct 2021, 22:02</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">examples/restfulbooker/restfulbooker.feature</td>
-          <td      class="passed"    >73</td>
+          <td      class="passed"    >38</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">73</td>
+          <td class="total">38</td>
 
           <td  class="passed"    >3</td>
           <td >0</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="34775116200">34.775</td>
+          <td class="duration" data-value="15436367600">15.436</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -189,14 +189,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.444</span>
+  <span class="lead-duration duration">12.669</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
+  <span class="keyword indention">Scenario</span>
+  <span class="name">get booking details</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -228,65 +228,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">call read('classpath:examples/preconditions/presteps.feature')</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header Accept = 'application/json'</span>
 
-  <span class="lead-duration duration">5.237</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name- passed">
-  <span class="keyword indention"></span>
-  <span class="name">examples/preconditions/presteps.feature</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Given passed">
-  <span class="keyword indention">&gt; Given</span>
-  <span class="name">url 'https://restful-booker.herokuapp.com/auth'</span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -304,847 +250,11 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>11:31:46.064 karate.env system property was: null 
+        <pre>22:02:08.439 &lt;&lt; lock released, cached callSingle: classpath:examples/preconditions/presteps.feature
 </pre>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">request {&quot;username&quot; : &quot;admin&quot;,&quot;password&quot; : &quot;password123&quot;}</span>
-
-  <span class="lead-duration duration">0.330</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; When passed">
-  <span class="keyword indention">&gt; When</span>
-  <span class="name">method post</span>
-
-  <span class="lead-duration duration">3.580</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>11:31:48.323 request:
-1 &gt; POST https://restful-booker.herokuapp.com/auth
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 45
-1 &gt; Host: restful-booker.herokuapp.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;password&quot;:&quot;password123&quot;,&quot;username&quot;:&quot;admin&quot;}
-
-11:31:50.098 response time in milliseconds: 1774
-1 &lt; 200
-1 &lt; Server: Cowboy
-1 &lt; Connection: keep-alive
-1 &lt; X-Powered-By: Express
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 27
-1 &lt; Etag: W/&quot;1b-xcKfigqvFXUctOM9uAydyUMtfCw&quot;
-1 &lt; Date: Wed, 13 Oct 2021 06:01:51 GMT
-1 &lt; Via: 1.1 vegur
-{&quot;token&quot;:&quot;eaf74d0889aad33&quot;}
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.009</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>11:31:50.125 [print] {
-  &quot;token&quot;: &quot;eaf74d0889aad33&quot;
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">match $.token == '#present'</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">match $.token == '#notnull'</span>
-
-  <span class="lead-duration duration">0.004</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">match response.token == '#present'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">match response.token == '#notnull'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def token_value = response.token</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Given passed">
-  <span class="keyword indention">&gt; Given</span>
-  <span class="name">header Content-Type = 'application/json'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Given passed">
-  <span class="keyword indention">&gt; Given</span>
-  <span class="name">header Accept = 'application/json'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Given passed">
-  <span class="keyword indention">&gt; Given</span>
-  <span class="name">url 'https://restful-booker.herokuapp.com/booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">request {&quot;firstname&quot; : &quot;Jim&quot;,&quot;lastname&quot; : &quot;Brown&quot;,&quot;totalprice&quot; : 111,&quot;depositpaid&quot; : true,&quot;bookingdates&quot; : {&quot;checkin&quot; : &quot;2018-01-01&quot;,&quot;checkout&quot; : &quot;2019-01-01&quot;},&quot;additionalneeds&quot; : &quot;Breakfast&quot;}</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; When passed">
-  <span class="keyword indention">&gt; When</span>
-  <span class="name">method post</span>
-
-  <span class="lead-duration duration">1.275</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>11:31:50.139 request:
-2 &gt; POST https://restful-booker.herokuapp.com/booking
-2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Accept: application/json
-2 &gt; Content-Length: 168
-2 &gt; Host: restful-booker.herokuapp.com
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
-2 &gt; Accept-Encoding: gzip,deflate
-{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
-
-11:31:51.409 response time in milliseconds: 1270
-2 &lt; 200
-2 &lt; Server: Cowboy
-2 &lt; Connection: keep-alive
-2 &lt; X-Powered-By: Express
-2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Content-Length: 195
-2 &lt; Etag: W/&quot;c3-MDV4FtgFQIXKCPct/AqBxCNouCU&quot;
-2 &lt; Date: Wed, 13 Oct 2021 06:01:52 GMT
-2 &lt; Via: 1.1 vegur
-{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:24}
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def booking_id = response.bookingid</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">1.145</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">create booking</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-7" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">header Content-Type = 'application/json'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">header Accept = 'application/json'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">url 'https://restful-booker.herokuapp.com/booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">request {&quot;firstname&quot; : &quot;Jim&quot;,&quot;lastname&quot; : &quot;Brown&quot;,&quot;totalprice&quot; : 111,&quot;depositpaid&quot; : true,&quot;bookingdates&quot; : {&quot;checkin&quot; : &quot;2018-01-01&quot;,&quot;checkout&quot; : &quot;2019-01-01&quot;},&quot;additionalneeds&quot; : &quot;Breakfast&quot;}</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method post</span>
-
-  <span class="lead-duration duration">1.143</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>11:31:51.409 request:
-1 &gt; POST https://restful-booker.herokuapp.com/booking
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Accept: application/json
-1 &gt; Content-Length: 168
-1 &gt; Host: restful-booker.herokuapp.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
-
-11:31:52.556 response time in milliseconds: 1147
-1 &lt; 200
-1 &lt; Server: Cowboy
-1 &lt; Connection: keep-alive
-1 &lt; X-Powered-By: Express
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 195
-1 &lt; Etag: W/&quot;c3-AjbAZNa7Ods9W5ziFxGgv2BnFnc&quot;
-1 &lt; Date: Wed, 13 Oct 2021 06:01:53 GMT
-1 &lt; Via: 1.1 vegur
-{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:27}
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-10" class="collapse collapsable-details">
-        <pre>11:31:52.557 [print] {
-  &quot;booking&quot;: {
-    &quot;firstname&quot;: &quot;Jim&quot;,
-    &quot;additionalneeds&quot;: &quot;Breakfast&quot;,
-    &quot;bookingdates&quot;: {
-      &quot;checkin&quot;: &quot;2018-01-01&quot;,
-      &quot;checkout&quot;: &quot;2019-01-01&quot;
-    },
-    &quot;totalprice&quot;: 111,
-    &quot;depositpaid&quot;: true,
-    &quot;lastname&quot;: &quot;Brown&quot;
-  },
-  &quot;bookingid&quot;: 27
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">match response  == {&quot;bookingid&quot;: #number,&quot;booking&quot;: {&quot;firstname&quot;: &quot;Jim&quot;,&quot;lastname&quot;: &quot;Brown&quot;,&quot;totalprice&quot;: 111,&quot;depositpaid&quot;: true,&quot;bookingdates&quot;: {&quot;checkin&quot;: &quot;2018-01-01&quot;,&quot;checkout&quot;: &quot;2019-01-01&quot;},&quot;additionalneeds&quot;: &quot;Breakfast&quot;}}</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">10.403</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-11" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-12" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">call read('classpath:examples/preconditions/presteps.feature')</span>
-
-  <span class="lead-duration duration">5.207</span>
-
-</div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1172,6 +282,24 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>{
+  &quot;env&quot;: &quot;dev&quot;,
+  &quot;base_url&quot;: &quot;https://reqres.in/api&quot;,
+  &quot;single_user_path&quot;: &quot;/users/2&quot;,
+  &quot;all_user_path&quot;: &quot;/users?page=2&quot;,
+  &quot;postman_basic_auth_url&quot;: &quot;https://postman-echo.com/basic-auth/&quot;,
+  &quot;restful_booker_base_url&quot;: &quot;https://restful-booker.herokuapp.com/booking&quot;
+}
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1201,11 +329,12 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
           <a>Doc string</a>
       </div>
-      <div id="msg-13" class="collapse collapsable-details">
-        <pre>11:31:46.048 karate.env system property was: null 
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>22:01:56.975 karate.env system property was: null 
+22:01:56.986 &gt;&gt; lock acquired, begin callSingle: classpath:examples/preconditions/presteps.feature
 </pre>
       </div>
     </div>
@@ -1225,7 +354,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">request {&quot;username&quot; : &quot;admin&quot;,&quot;password&quot; : &quot;password123&quot;}</span>
 
-  <span class="lead-duration duration">0.384</span>
+  <span class="lead-duration duration">0.117</span>
 
 </div>
 
@@ -1252,7 +381,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">3.498</span>
+  <span class="lead-duration duration">7.283</span>
 
 </div>
 
@@ -1266,31 +395,31 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
           <a>Doc string</a>
       </div>
-      <div id="msg-14" class="collapse collapsable-details">
-        <pre>11:31:48.267 request:
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>22:01:58.333 request:
 1 &gt; POST https://restful-booker.herokuapp.com/auth
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 45
 1 &gt; Host: restful-booker.herokuapp.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;password&quot;:&quot;password123&quot;,&quot;username&quot;:&quot;admin&quot;}
 
-11:31:50.104 response time in milliseconds: 1831
+22:02:04.618 response time in milliseconds: 6269
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 27
-1 &lt; Etag: W/&quot;1b-XPAmMDZClfy3Pl8SGknWkIymalg&quot;
-1 &lt; Date: Wed, 13 Oct 2021 06:01:51 GMT
+1 &lt; Etag: W/&quot;1b-40VfSuStN45g2zxC/9EJHXqz0C4&quot;
+1 &lt; Date: Mon, 25 Oct 2021 16:32:10 GMT
 1 &lt; Via: 1.1 vegur
-{&quot;token&quot;:&quot;b6d4c3f7d127ed9&quot;}
+{&quot;token&quot;:&quot;5f20e0d0c0b72d6&quot;}
 </pre>
       </div>
     </div>
@@ -1310,7 +439,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; Then</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.043</span>
 
 </div>
 
@@ -1324,12 +453,12 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
           <a>Doc string</a>
       </div>
-      <div id="msg-15" class="collapse collapsable-details">
-        <pre>11:31:50.126 [print] {
-  &quot;token&quot;: &quot;b6d4c3f7d127ed9&quot;
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>22:02:04.674 [print] {
+  &quot;token&quot;: &quot;5f20e0d0c0b72d6&quot;
 }
  
 </pre>
@@ -1351,7 +480,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; Then</span>
   <span class="name">match $.token == '#present'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -1405,7 +534,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; Then</span>
   <span class="name">match response.token == '#present'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1457,9 +586,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def token_value = response.token</span>
+  <span class="name">def token = response.token</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1594,7 +723,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">1.294</span>
+  <span class="lead-duration duration">3.712</span>
 
 </div>
 
@@ -1608,32 +737,32 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
           <a>Doc string</a>
       </div>
-      <div id="msg-16" class="collapse collapsable-details">
-        <pre>11:31:50.133 request:
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>22:02:04.712 request:
 2 &gt; POST https://restful-booker.herokuapp.com/booking
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Accept: application/json
 2 &gt; Content-Length: 168
 2 &gt; Host: restful-booker.herokuapp.com
 2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 2 &gt; Accept-Encoding: gzip,deflate
 {&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 
-11:31:51.424 response time in milliseconds: 1276
+22:02:08.417 response time in milliseconds: 3702
 2 &lt; 200
 2 &lt; Server: Cowboy
 2 &lt; Connection: keep-alive
 2 &lt; X-Powered-By: Express
 2 &lt; Content-Type: application/json; charset=utf-8
 2 &lt; Content-Length: 195
-2 &lt; Etag: W/&quot;c3-S124ytwuajv6Tg/JkEimX/838VY&quot;
-2 &lt; Date: Wed, 13 Oct 2021 06:01:52 GMT
+2 &lt; Etag: W/&quot;c3-TKDnGTK1tte6TLRGtQ+cpMQ9czg&quot;
+2 &lt; Date: Mon, 25 Oct 2021 16:32:14 GMT
 2 &lt; Via: 1.1 vegur
-{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:26}
+{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:32}
 </pre>
       </div>
     </div>
@@ -1653,88 +782,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def booking_id = response.bookingid</span>
 
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">1.187</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">get booking details</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-17" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-18" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">header Accept = 'application/json'</span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -1759,7 +807,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">url 'https://restful-booker.herokuapp.com/booking'</span>
+  <span class="name">url restful_booker_base_url</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1788,7 +836,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">path booking_id</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.117</span>
 
 </div>
 
@@ -1815,7 +863,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">1.185</span>
+  <span class="lead-duration duration">1.351</span>
 
 </div>
 
@@ -1829,20 +877,20 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
           <a>Doc string</a>
       </div>
-      <div id="msg-19" class="collapse collapsable-details">
-        <pre>11:31:51.431 request:
-1 &gt; GET https://restful-booker.herokuapp.com/booking/26
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>22:02:08.612 request:
+1 &gt; GET https://restful-booker.herokuapp.com/booking/32
 1 &gt; Accept: application/json
 1 &gt; Host: restful-booker.herokuapp.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-11:31:52.614 response time in milliseconds: 1183
+22:02:09.961 response time in milliseconds: 1348
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
@@ -1850,7 +898,7 @@ $(document).ready(function() {
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 168
 1 &lt; Etag: W/&quot;a8-p5uB2C7mxZA3HXJZF+tJCDJr8VE&quot;
-1 &lt; Date: Wed, 13 Oct 2021 06:01:53 GMT
+1 &lt; Date: Mon, 25 Oct 2021 16:32:15 GMT
 1 &lt; Via: 1.1 vegur
 {&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 </pre>
@@ -1872,7 +920,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1886,11 +934,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
           <a>Doc string</a>
       </div>
-      <div id="msg-20" class="collapse collapsable-details">
-        <pre>11:31:52.615 [print] {
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>22:02:09.963 [print] {
   &quot;firstname&quot;: &quot;Jim&quot;,
   &quot;additionalneeds&quot;: &quot;Breakfast&quot;,
   &quot;bookingdates&quot;: {
@@ -1959,14 +1007,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.459</span>
+  <span class="lead-duration duration">1.272</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
 
 <div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
+  <span class="keyword indention">Scenario</span>
+  <span class="name">create booking</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -1975,14 +1023,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details ">
+  <div id="element-11" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1994,365 +1042,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-22" class="inner-level collapse collapsable-details ">
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">call read('classpath:examples/preconditions/presteps.feature')</span>
-
-  <span class="lead-duration duration">5.242</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name- passed">
-  <span class="keyword indention"></span>
-  <span class="name">examples/preconditions/presteps.feature</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Given passed">
-  <span class="keyword indention">&gt; Given</span>
-  <span class="name">url 'https://restful-booker.herokuapp.com/auth'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-23" class="collapse collapsable-details">
-        <pre>11:31:46.064 karate.env system property was: null 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">request {&quot;username&quot; : &quot;admin&quot;,&quot;password&quot; : &quot;password123&quot;}</span>
-
-  <span class="lead-duration duration">0.354</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; When passed">
-  <span class="keyword indention">&gt; When</span>
-  <span class="name">method post</span>
-
-  <span class="lead-duration duration">3.560</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-24" class="collapse collapsable-details">
-        <pre>11:31:48.339 request:
-1 &gt; POST https://restful-booker.herokuapp.com/auth
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 45
-1 &gt; Host: restful-booker.herokuapp.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;password&quot;:&quot;password123&quot;,&quot;username&quot;:&quot;admin&quot;}
-
-11:31:50.106 response time in milliseconds: 1759
-1 &lt; 200
-1 &lt; Server: Cowboy
-1 &lt; Connection: keep-alive
-1 &lt; X-Powered-By: Express
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 27
-1 &lt; Etag: W/&quot;1b-LNzHCoNEQuQp/WOqGnvEJp+CGCA&quot;
-1 &lt; Date: Wed, 13 Oct 2021 06:01:51 GMT
-1 &lt; Via: 1.1 vegur
-{&quot;token&quot;:&quot;0cdba2ca981279b&quot;}
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.009</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-25" class="collapse collapsable-details">
-        <pre>11:31:50.126 [print] {
-  &quot;token&quot;: &quot;0cdba2ca981279b&quot;
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">match $.token == '#present'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">match $.token == '#notnull'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">match response.token == '#present'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">match response.token == '#notnull'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def token_value = response.token</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Given passed">
-  <span class="keyword indention">&gt; Given</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
   <span class="name">header Content-Type = 'application/json'</span>
 
   <span class="lead-duration duration">0.000</span>
@@ -2367,6 +1062,18 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>22:01:57.040 karate.env system property was: null 
+22:02:08.507 this thread waited 11463 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2378,8 +1085,8 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; Given passed">
-  <span class="keyword indention">&gt; Given</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
   <span class="name">header Accept = 'application/json'</span>
 
   <span class="lead-duration duration">0.000</span>
@@ -2405,9 +1112,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; Given passed">
-  <span class="keyword indention">&gt; Given</span>
-  <span class="name">url 'https://restful-booker.herokuapp.com/booking'</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url restful_booker_base_url</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2432,8 +1139,8 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
   <span class="name">request {&quot;firstname&quot; : &quot;Jim&quot;,&quot;lastname&quot; : &quot;Brown&quot;,&quot;totalprice&quot; : 111,&quot;depositpaid&quot; : true,&quot;bookingdates&quot; : {&quot;checkin&quot; : &quot;2018-01-01&quot;,&quot;checkout&quot; : &quot;2019-01-01&quot;},&quot;additionalneeds&quot; : &quot;Breakfast&quot;}</span>
 
   <span class="lead-duration duration">0.000</span>
@@ -2459,11 +1166,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; When passed">
-  <span class="keyword indention">&gt; When</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">1.287</span>
+  <span class="lead-duration duration">1.268</span>
 
 </div>
 
@@ -2477,32 +1184,32 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
           <a>Doc string</a>
       </div>
-      <div id="msg-26" class="collapse collapsable-details">
-        <pre>11:31:50.133 request:
-2 &gt; POST https://restful-booker.herokuapp.com/booking
-2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Accept: application/json
-2 &gt; Content-Length: 168
-2 &gt; Host: restful-booker.herokuapp.com
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
-2 &gt; Accept-Encoding: gzip,deflate
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>22:02:08.520 request:
+1 &gt; POST https://restful-booker.herokuapp.com/booking
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Accept: application/json
+1 &gt; Content-Length: 168
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
 {&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 
-11:31:51.409 response time in milliseconds: 1276
-2 &lt; 200
-2 &lt; Server: Cowboy
-2 &lt; Connection: keep-alive
-2 &lt; X-Powered-By: Express
-2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Content-Length: 195
-2 &lt; Etag: W/&quot;c3-OnKeGoeBq/xZesRvI4kfE9coNHc&quot;
-2 &lt; Date: Wed, 13 Oct 2021 06:01:52 GMT
-2 &lt; Via: 1.1 vegur
-{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:25}
+22:02:09.781 response time in milliseconds: 1260
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 195
+1 &lt; Etag: W/&quot;c3-51yx+oaM1CL1h404VcnaOEcqkSc&quot;
+1 &lt; Date: Mon, 25 Oct 2021 16:32:15 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:33}
 </pre>
       </div>
     </div>
@@ -2518,9 +1225,61 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def booking_id = response.bookingid</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>22:02:09.784 [print] {
+  &quot;booking&quot;: {
+    &quot;firstname&quot;: &quot;Jim&quot;,
+    &quot;additionalneeds&quot;: &quot;Breakfast&quot;,
+    &quot;bookingdates&quot;: {
+      &quot;checkin&quot;: &quot;2018-01-01&quot;,
+      &quot;checkout&quot;: &quot;2019-01-01&quot;
+    },
+    &quot;totalprice&quot;: 111,
+    &quot;depositpaid&quot;: true,
+    &quot;lastname&quot;: &quot;Brown&quot;
+  },
+  &quot;bookingid&quot;: 33
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response  == {&quot;bookingid&quot;: #number,&quot;booking&quot;: {&quot;firstname&quot;: &quot;Jim&quot;,&quot;lastname&quot;: &quot;Brown&quot;,&quot;totalprice&quot;: 111,&quot;depositpaid&quot;: true,&quot;bookingdates&quot;: {&quot;checkin&quot;: &quot;2018-01-01&quot;,&quot;checkout&quot;: &quot;2019-01-01&quot;},&quot;additionalneeds&quot;: &quot;Breakfast&quot;}}</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2560,10 +1319,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.135</span>
+  <span class="lead-duration duration">1.493</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -2576,14 +1335,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-27" class="collapse collapsable-details ">
+  <div id="element-16" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2595,7 +1354,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-28" class="inner-level collapse collapsable-details ">
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2615,6 +1374,18 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>22:01:57.038 karate.env system property was: null 
+22:02:08.515 this thread waited 11476 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2655,9 +1426,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">cookie token = token_value</span>
+  <span class="name">cookie token = token</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -2682,7 +1453,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">url 'https://restful-booker.herokuapp.com/booking'</span>
+  <span class="name">url restful_booker_base_url</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2738,7 +1509,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">path booking_id</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.089</span>
 
 </div>
 
@@ -2765,7 +1536,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method put</span>
 
-  <span class="lead-duration duration">1.130</span>
+  <span class="lead-duration duration">1.395</span>
 
 </div>
 
@@ -2779,23 +1550,23 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
           <a>Doc string</a>
       </div>
-      <div id="msg-29" class="collapse collapsable-details">
-        <pre>11:31:51.424 request:
-1 &gt; PUT https://restful-booker.herokuapp.com/booking/25
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>22:02:08.644 request:
+1 &gt; PUT https://restful-booker.herokuapp.com/booking/32
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
-1 &gt; Cookie: token=0cdba2ca981279b
+1 &gt; Cookie: token=5f20e0d0c0b72d6
 1 &gt; Content-Length: 170
 1 &gt; Host: restful-booker.herokuapp.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;firstname&quot;:&quot;James&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 
-11:31:52.552 response time in milliseconds: 1127
+22:02:10.011 response time in milliseconds: 1367
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
@@ -2803,7 +1574,7 @@ $(document).ready(function() {
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 170
 1 &lt; Etag: W/&quot;aa-waBDObUc25azXZ1Gkrz0LIEDGrg&quot;
-1 &lt; Date: Wed, 13 Oct 2021 06:01:53 GMT
+1 &lt; Date: Mon, 25 Oct 2021 16:32:16 GMT
 1 &lt; Via: 1.1 vegur
 {&quot;firstname&quot;:&quot;James&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
 </pre>
@@ -2839,11 +1610,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
           <a>Doc string</a>
       </div>
-      <div id="msg-30" class="collapse collapsable-details">
-        <pre>11:31:52.552 [print] {
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>22:02:10.013 [print] {
   &quot;firstname&quot;: &quot;James&quot;,
   &quot;additionalneeds&quot;: &quot;Breakfast&quot;,
   &quot;bookingdates&quot;: {

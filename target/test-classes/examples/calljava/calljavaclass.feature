@@ -1,13 +1,6 @@
-
 Feature: Call a Java Method From Feature File
 
-
-
-        # Call Java Function Using JavaScripts:
-
   Scenario Outline: Verify that a new employee is successfully getting created
-
-
     Given url 'https://jsonplaceholder.typicode.com/posts'
     * def JavaDemo = Java.type('examples.data.jsonbody')
     * def result = JavaDemo.bodyis('<Title>' , '<Body>' , <UserId>)

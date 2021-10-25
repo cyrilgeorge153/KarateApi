@@ -10,7 +10,7 @@ Feature: pre steps of restful booker api
     Then match $.token == '#notnull'
     Then match response.token == '#present'
     Then match response.token == '#notnull'
-    * def token_value = response.token
+    * def token = response.token
     Given header Content-Type = 'application/json'
     Given header Accept = 'application/json'
     Given url 'https://restful-booker.herokuapp.com/booking'

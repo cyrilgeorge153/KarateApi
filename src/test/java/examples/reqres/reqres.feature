@@ -3,8 +3,8 @@ Feature: reqres api test cases
   Background: base url
     Given url base_url
 
-  Scenario: single user get request
-    Given path '/users/2'
+  Scenario: list single user get request
+    Given path single_user_path
     When method get
     Then status 200
     Then print response
@@ -13,8 +13,8 @@ Feature: reqres api test cases
     And match response $ == {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
     And assert responseTime < 4000
 
-  Scenario: list users get request
-    Given path '/users?page=2'
+  Scenario: list all users get request
+    Given path all_user_path
     When method get
     Then status 200
     Then print response
@@ -104,7 +104,7 @@ Feature: reqres api test cases
 
   Scenario: basic auth test
     * header Authorization = call read('../data/basic-auth.js') { username: 'postman', password: 'password' }
-    Given url "https://postman-echo.com/basic-auth"
+    Given url postman_basic_auth_url
     When method get
     Then print response
     Then print response.authenticated
