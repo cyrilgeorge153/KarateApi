@@ -23,10 +23,7 @@ public class TestRunnerCucumberReporting {
                 .parallel(21);
         generateReport(results.getReportDir());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
-
-//        assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
     }
-
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
@@ -35,7 +32,6 @@ public class TestRunnerCucumberReporting {
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }
-
     @AfterAll
     public static void tearDown() {
         try {
@@ -44,6 +40,5 @@ public class TestRunnerCucumberReporting {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

@@ -6,9 +6,6 @@ class ReqresTestRunner {
     
     @Karate.Test
     Karate testUsers() {
-
         return Karate.run("reqres").relativeTo(getClass());
     }
-
-
 }

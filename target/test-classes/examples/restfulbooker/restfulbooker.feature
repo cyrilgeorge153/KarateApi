@@ -1,6 +1,6 @@
 Feature: Restful booker api testing
-#  Background: storing booking id and token values in variables
-#    * call read('classpath:examples/preconditions/presteps.feature')
+#  Background: storing booking id value in variable
+#    * callonce read('classpath:examples/preconditions/presteps_booking_id.feature')
 
   Scenario: get booking details
     Given header Accept = 'application/json'
@@ -29,3 +29,4 @@ Feature: Restful booker api testing
     When method put
     And print response
     Then match response == {"firstname": "James","additionalneeds": "Breakfast","bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"totalprice": 111,"depositpaid": true,"lastname": "Brown"}
+

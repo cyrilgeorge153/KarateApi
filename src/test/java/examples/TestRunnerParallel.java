@@ -27,7 +27,5 @@ class TestRunnerParallel {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
-
 }

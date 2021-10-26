@@ -6,9 +6,6 @@ class RestfulBookerTestRunner {
     
     @Karate.Test
     Karate testUsers() {
-
         return Karate.run("restfulbooker").relativeTo(getClass());
     }
-
-
 }

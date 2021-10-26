@@ -11,7 +11,6 @@ function fn() {
     all_user_path: '/users?page=2',
     postman_basic_auth_url: 'https://postman-echo.com/basic-auth/',
     restful_booker_base_url: 'https://restful-booker.herokuapp.com/booking'
-
   };
   if (env == 'dev') {
     // customize
