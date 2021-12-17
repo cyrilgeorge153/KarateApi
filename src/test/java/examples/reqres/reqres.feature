@@ -14,7 +14,8 @@ Feature: reqres api test cases
     And assert responseTime < 4000
 
   Scenario: list all users get request
-    Given path all_user_path
+    Given path all_users_path
+    And param page = 2
     When method get
     Then status 200
     Then print response

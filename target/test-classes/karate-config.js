@@ -8,7 +8,7 @@ function fn() {
     env: env,
     base_url: 'https://reqres.in/api',
     single_user_path: '/users/2',
-    all_user_path: '/users?page=2',
+    all_users_path: '/users',
     postman_basic_auth_url: 'https://postman-echo.com/basic-auth/',
     restful_booker_base_url: 'https://restful-booker.herokuapp.com/booking'
   };
