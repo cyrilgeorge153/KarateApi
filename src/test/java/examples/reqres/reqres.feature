@@ -8,6 +8,7 @@ Feature: Reqres api test cases
     When method get
     Then status 200
     Then print response
+    Then print responseHeaders
     And match $ == {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
     And match response == {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
     And match response $ == {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
@@ -15,6 +16,7 @@ Feature: Reqres api test cases
     And match $.data.id == 2
     #complex fuzzy matcher
     And match response.data.id == '#? _ == 2'
+    And match header Content-Type == 'application/json; charset=utf-8'
     And match responseType == 'json'
     And assert responseTime < 4000
 

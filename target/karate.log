@@ -1,7 +1,29 @@
-15:29:30.509 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-15:29:31.167 [main] INFO  com.intuit.karate - karate.env system property was: null 
-15:29:31.175 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:examples/preconditions/presteps.feature
-15:29:31.476 [main] DEBUG com.intuit.karate - request:
+16:45:35.293 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:45:35.305 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+16:45:36.013 [pool-1-thread-6] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.013 [pool-1-thread-11] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.012 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.012 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.015 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.012 [pool-1-thread-7] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.013 [pool-1-thread-10] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.015 [pool-1-thread-8] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.016 [pool-1-thread-12] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.014 [pool-1-thread-13] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.012 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.013 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.015 [pool-1-thread-9] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.024 [pool-1-thread-8] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:examples/preconditions/presteps.feature
+16:45:36.032 [pool-1-thread-16] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.032 [pool-1-thread-17] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.024 [pool-1-thread-14] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.071 [pool-1-thread-21] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.072 [pool-1-thread-15] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.079 [pool-1-thread-19] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.082 [pool-1-thread-18] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.087 [pool-1-thread-22] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.088 [pool-1-thread-20] INFO  com.intuit.karate - karate.env system property was: null 
+16:45:36.334 [pool-1-thread-8] DEBUG com.intuit.karate - request:
 1 > POST https://restful-booker.herokuapp.com/auth
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 45
@@ -11,22 +33,22 @@
 1 > Accept-Encoding: gzip,deflate
 {"password":"password123","username":"admin"}
 
-15:29:33.028 [main] DEBUG com.intuit.karate - response time in milliseconds: 1548
+16:45:38.012 [pool-1-thread-8] DEBUG com.intuit.karate - response time in milliseconds: 1674
 1 < 200
 1 < Server: Cowboy
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Content-Type: application/json; charset=utf-8
 1 < Content-Length: 27
-1 < Etag: W/"1b-z2IPABG9GfcsOcxRPAWOh4PILtU"
-1 < Date: Wed, 13 Apr 2022 09:59:32 GMT
+1 < Etag: W/"1b-fbulsSTEI2+01lIhXzvu5vooLZ0"
+1 < Date: Wed, 13 Apr 2022 11:15:37 GMT
 1 < Via: 1.1 vegur
-{"token":"d0f6f1df04977f5"}
-15:29:33.041 [main] INFO  com.intuit.karate - [print] {
-  "token": "d0f6f1df04977f5"
+{"token":"f465d8aec7b645d"}
+16:45:38.027 [pool-1-thread-8] INFO  com.intuit.karate - [print] {
+  "token": "f465d8aec7b645d"
 }
  
-15:29:33.065 [main] DEBUG com.intuit.karate - request:
+16:45:38.050 [pool-1-thread-8] DEBUG com.intuit.karate - request:
 2 > POST https://restful-booker.herokuapp.com/booking
 2 > Content-Type: application/json; charset=UTF-8
 2 > Accept: application/json
@@ -37,20 +59,168 @@
 2 > Accept-Encoding: gzip,deflate
 {"firstname":"Jim","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Brown"}
 
-15:29:34.464 [main] DEBUG com.intuit.karate - response time in milliseconds: 1399
+16:45:39.308 [pool-1-thread-8] DEBUG com.intuit.karate - response time in milliseconds: 1257
 2 < 200
 2 < Server: Cowboy
 2 < Connection: keep-alive
 2 < X-Powered-By: Express
 2 < Content-Type: application/json; charset=utf-8
 2 < Content-Length: 195
-2 < Etag: W/"c3-/kzt77KAy68ZAPHE9dOUjf8aioE"
-2 < Date: Wed, 13 Apr 2022 09:59:34 GMT
+2 < Etag: W/"c3-QluyOSMZH4R72rjYUC/2/l5O9/c"
+2 < Date: Wed, 13 Apr 2022 11:15:39 GMT
 2 < Via: 1.1 vegur
-{"booking":{"firstname":"Jim","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Brown"},"bookingid":47}
-15:29:34.472 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:examples/preconditions/presteps.feature
-15:29:34.506 [main] INFO  com.intuit.karate - [print] {"title":"Java Feature File","body":"Karate Framework","userId":"50"} 
-15:29:34.510 [main] DEBUG com.intuit.karate - request:
+{"booking":{"firstname":"Jim","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Brown"},"bookingid":34}
+16:45:39.315 [pool-1-thread-8] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:examples/preconditions/presteps.feature
+16:45:39.317 [pool-1-thread-20] WARN  com.intuit.karate - this thread waited 3227 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.317 [pool-1-thread-22] WARN  com.intuit.karate - this thread waited 3228 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.318 [pool-1-thread-18] WARN  com.intuit.karate - this thread waited 3234 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.318 [pool-1-thread-19] WARN  com.intuit.karate - this thread waited 3237 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.319 [pool-1-thread-21] WARN  com.intuit.karate - this thread waited 3243 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.320 [pool-1-thread-15] WARN  com.intuit.karate - this thread waited 3245 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.324 [pool-1-thread-14] WARN  com.intuit.karate - this thread waited 3271 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.325 [pool-1-thread-17] WARN  com.intuit.karate - this thread waited 3286 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.325 [pool-1-thread-16] WARN  com.intuit.karate - this thread waited 3292 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.326 [pool-1-thread-10] WARN  com.intuit.karate - this thread waited 3300 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.326 [pool-1-thread-2] WARN  com.intuit.karate - this thread waited 3300 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.327 [pool-1-thread-6] WARN  com.intuit.karate - this thread waited 3302 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.331 [pool-1-thread-5] WARN  com.intuit.karate - this thread waited 3306 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.332 [pool-1-thread-11] WARN  com.intuit.karate - this thread waited 3307 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.336 [pool-1-thread-4] WARN  com.intuit.karate - this thread waited 3311 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.337 [pool-1-thread-12] WARN  com.intuit.karate - this thread waited 3312 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.354 [pool-1-thread-7] WARN  com.intuit.karate - this thread waited 3329 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.355 [pool-1-thread-3] WARN  com.intuit.karate - this thread waited 3331 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.355 [pool-1-thread-9] WARN  com.intuit.karate - this thread waited 3331 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.356 [pool-1-thread-1] WARN  com.intuit.karate - this thread waited 3332 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.357 [pool-1-thread-22] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:examples/preconditions/presteps_booking_id.feature')
+16:45:39.367 [pool-1-thread-13] WARN  com.intuit.karate - this thread waited 3343 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+16:45:39.370 [pool-1-thread-8] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+16:45:39.373 [pool-1-thread-14] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 28
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"ferran","job":"ba"}
+
+16:45:39.374 [pool-1-thread-6] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+16:45:39.375 [pool-1-thread-12] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 27
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"cyril","job":"qa"}
+
+16:45:39.375 [pool-1-thread-9] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+16:45:39.375 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:45:39.377 [pool-1-thread-7] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+16:45:39.384 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+16:45:39.385 [pool-1-thread-19] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:45:39.389 [pool-1-thread-10] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:45:39.389 [pool-1-thread-13] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 27
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"tony","job":"dev"}
+
+16:45:39.399 [pool-1-thread-1] INFO  com.intuit.karate - [print] {"title":"Java Feature File","body":"Karate Framework","userId":"50"} 
+16:45:39.399 [pool-1-thread-2] INFO  com.intuit.karate - [print] {"title":"Welcome","body":"Karate Framework","userId":"10"} 
+16:45:39.406 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"title":"Welcome","body":"Karate Framework","userId":"10"}
+
+16:45:39.408 [pool-1-thread-22] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/booking
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 168
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"firstname":"Jim","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Brown"}
+
+16:45:39.413 [pool-1-thread-1] DEBUG com.intuit.karate - request:
 1 > POST https://jsonplaceholder.typicode.com/posts
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 69
@@ -60,16 +230,538 @@
 1 > Accept-Encoding: gzip,deflate
 {"title":"Java Feature File","body":"Karate Framework","userId":"50"}
 
-15:29:35.181 [main] DEBUG com.intuit.karate - response time in milliseconds: 670
+16:45:39.421 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:45:39.428 [pool-1-thread-11] DEBUG com.intuit.karate - request:
+1 > GET https://postman-echo.com/basic-auth/
+1 > Authorization: Basic cG9zdG1hbjpwYXNzd29yZA==
+1 > Host: postman-echo.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:45:39.592 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 171
+1 < 200
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 318
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=N8OTtPp8KIpfx9EmK8mbk9A0UVa7QHvWawwGCcjQXY0x5PgjAmeXLHUnNo3pufkZLzCLZEJx7QhFpGBW4u4oEEZU0bt4m3dBQQ6ZCX%2BPzFFtMOG5kT0kFjgov9A%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc4a8985a2-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+16:45:39.593 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 216
+1 < 200
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1487
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ZHqFUUt6dwBrpM7%2FUNAyWF3AWgBT3K%2BT9QnXt%2F%2BPYdJnFplPRQlzUGZdOOElNk5%2Ffu%2FvksplDjPXJH1JPqFMghlEkKzetm5HuWLdTpm2m7SSt3Pv4PCm3YPmbrE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc3a842e88-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+16:45:39.595 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "data": {
+    "last_name": "Weaver",
+    "id": 2,
+    "avatar": "https://reqres.in/img/faces/2-image.jpg",
+    "first_name": "Janet",
+    "email": "janet.weaver@reqres.in"
+  },
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+ 
+16:45:39.595 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "last_name": "Lawson",
+      "id": 7,
+      "avatar": "https://reqres.in/img/faces/7-image.jpg",
+      "first_name": "Michael",
+      "email": "michael.lawson@reqres.in"
+    },
+    {
+      "last_name": "Ferguson",
+      "id": 8,
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "Lindsay",
+      "email": "lindsay.ferguson@reqres.in"
+    },
+    {
+      "last_name": "Funke",
+      "id": 9,
+      "avatar": "https://reqres.in/img/faces/9-image.jpg",
+      "first_name": "Tobias",
+      "email": "tobias.funke@reqres.in"
+    },
+    {
+      "last_name": "Fields",
+      "id": 10,
+      "avatar": "https://reqres.in/img/faces/10-image.jpg",
+      "first_name": "Byron",
+      "email": "byron.fields@reqres.in"
+    },
+    {
+      "last_name": "Edwards",
+      "id": 11,
+      "avatar": "https://reqres.in/img/faces/11-image.jpg",
+      "first_name": "George",
+      "email": "george.edwards@reqres.in"
+    },
+    {
+      "last_name": "Howell",
+      "id": 12,
+      "avatar": "https://reqres.in/img/faces/12-image.jpg",
+      "first_name": "Rachel",
+      "email": "rachel.howell@reqres.in"
+    }
+  ],
+  "page": 2,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+ 
+16:45:39.596 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 13 Apr 2022 11:15:39 GMT"
+  ],
+  "Content-Type": [
+    "application/json; charset=utf-8"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "X-Powered-By": [
+    "Express"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "Etag": [
+    "W/\"118-pbdwwFo9SKNhD3Lx5iHJyngpq00\""
+  ],
+  "Via": [
+    "1.1 vegur"
+  ],
+  "Cache-Control": [
+    "max-age=14400"
+  ],
+  "CF-Cache-Status": [
+    "HIT"
+  ],
+  "Age": [
+    "1487"
+  ],
+  "Expect-CT": [
+    "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZHqFUUt6dwBrpM7%2FUNAyWF3AWgBT3K%2BT9QnXt%2F%2BPYdJnFplPRQlzUGZdOOElNk5%2Ffu%2FvksplDjPXJH1JPqFMghlEkKzetm5HuWLdTpm2m7SSt3Pv4PCm3YPmbrE%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "6fb3c8fc3a842e88-BOM"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+  ]
+}
+ 
+16:45:39.601 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "last_name": "Lawson",
+  "id": 7,
+  "avatar": "https://reqres.in/img/faces/7-image.jpg",
+  "first_name": "Michael",
+  "email": "michael.lawson@reqres.in"
+}
+ 
+16:45:39.627 [pool-1-thread-15] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Clinton","job":"Marketing Director"}
+
+16:45:39.629 [pool-1-thread-19] DEBUG com.intuit.karate - response time in milliseconds: 244
+1 < 200
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1487
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=s4qfYCI5qdAGEaHIfvtp8U3N7yethc4zU%2F7YoIELS2PN6Z9%2BR2JM0Byoqv1j5n5U5TVLmkgR5eIId%2FfUJE75y6RQWqdVxuaiHIZpZ14WpzMehtVlkqEhaSlE5%2B4%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc7dbb0e38-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+16:45:39.630 [pool-1-thread-17] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Rick","job":"Forward IT Associate"}
+
+16:45:39.635 [pool-1-thread-18] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Kenny","job":"Internal Real-Estate Officer"}
+
+16:45:39.636 [pool-1-thread-16] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Shannon","job":"Marketing Assistant"}
+
+16:45:39.856 [pool-1-thread-6] DEBUG com.intuit.karate - response time in milliseconds: 482
 1 < 201
-1 < Date: Wed, 13 Apr 2022 09:59:35 GMT
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-y+i4RhTE+upwPFbBeeb3pCounLs"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MfSpK5mOCOrS1VJ9ObQlAB5th4YVFBpiJYDlh9k67XEc%2BgVM9yBuOme85d1lNnpRBEggv9%2FSgi%2B%2FrE9HWA2l67DOPK6rVuS%2BzDrzdwaXLPb0kI1B13B3%2BgOeSvQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc3bd18525-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"createdAt":"2022-04-13T11:15:39.761Z","name":"morpheus","id":"752","job":"leader"}
+16:45:39.861 [pool-1-thread-6] INFO  com.intuit.karate - [print] {
+  "createdAt": "2022-04-13T11:15:39.761Z",
+  "name": "morpheus",
+  "id": "752",
+  "job": "leader"
+}
+ 
+16:45:39.869 [pool-1-thread-13] DEBUG com.intuit.karate - response time in milliseconds: 479
+1 < 201
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 76
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"4c-v0XgCiQxayOiF0LR96hrept+3ME"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=IIbKjRVok9PnF4CTv3dv6tzdMZk%2FP9xNku2Mkyjsn9uckB8oUTJ7%2BfoLMES4J4xfVITX6lDZSOAeDhICL61pq5IvL4q6QLWzqiAPyb%2Fvt9mCqiMEwFDzXBKI7Qw%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc4e302e47-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"createdAt":"2022-04-13T11:15:39.770Z","name":"tony","id":"71","job":"dev"}
+16:45:39.872 [pool-1-thread-13] INFO  com.intuit.karate - [print] {
+  "createdAt": "2022-04-13T11:15:39.770Z",
+  "name": "tony",
+  "id": "71",
+  "job": "dev"
+}
+ 
+16:45:39.885 [pool-1-thread-9] DEBUG com.intuit.karate - response time in milliseconds: 509
+1 < 200
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-6TNNb7P8UKU0eZVuuYnAwp1L8zQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=d1MY58nSXxFsdj9PC6gyDgeuqP7dkc82JkUxUdxFrSPiqfUUkw0QATXXao%2B6Ln%2FDmOhAycYQISFoFMHbAC2YQ4t2fQUvc1E%2BIJOKW%2B6P5ZEwuHs1vkSfaNoNJw8%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc5c3e6efe-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"name":"morpheus","job":"zion resident","updatedAt":"2022-04-13T11:15:39.783Z"}
+16:45:39.889 [pool-1-thread-9] INFO  com.intuit.karate - [print] {
+  "name": "morpheus",
+  "job": "zion resident",
+  "updatedAt": "2022-04-13T11:15:39.783Z"
+}
+ 
+16:45:39.894 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 509
+1 < 201
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-ExnMwDn42JehxhwSROegE2h6NRI"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=L7reA0GcAdO0E9gmIPehL0YU%2FiecCAzCI6vekGwIs%2FpyGVIFv768fbzfiKIrODAOIPzMqqvrp8K3%2FY%2B3nJ0mnbH39rVvAUBqZW0rZHy5Vb9fYZgmJFTZ4Ll6z3o%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc7e168495-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"createdAt":"2022-04-13T11:15:39.796Z","name":"morpheus","id":"377","job":"leader"}
+16:45:39.897 [pool-1-thread-5] INFO  com.intuit.karate - [print] {
+  "createdAt": "2022-04-13T11:15:39.796Z",
+  "name": "morpheus",
+  "id": "377",
+  "job": "leader"
+}
+ 
+16:45:39.914 [pool-1-thread-12] DEBUG com.intuit.karate - response time in milliseconds: 539
+1 < 201
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 77
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"4d-rmx04bf79dMSmxTZKutGgOeGevw"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=k8%2F%2BIUiySZcifvdBp%2B8fwvVdWFrnfksdFaalQg4oByYu3OMoZW%2FtoDldiMj2fb1yUEO9aAwCHOLoth4HZQw66XS4jU3DxaMjUef%2B48xd%2FX%2FnnGQFW9Uqu98IBGI%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc4beb860f-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"createdAt":"2022-04-13T11:15:39.815Z","name":"cyril","id":"889","job":"qa"}
+16:45:39.917 [pool-1-thread-12] INFO  com.intuit.karate - [print] {
+  "createdAt": "2022-04-13T11:15:39.815Z",
+  "name": "cyril",
+  "id": "889",
+  "job": "qa"
+}
+ 
+16:45:39.922 [pool-1-thread-8] DEBUG com.intuit.karate - response time in milliseconds: 552
+1 < 200
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-B8ocG85zfouRiUklnBqlPEpmb+w"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=iCH21oiZya7IkkA8vWcoCDxPt8RYm4BV9SQ4TdAnRWfhs%2BICI2sHZlqTXpPcJObJOyxr%2Fw0naKAkoyL7zSTUYUtjKWdZv1IvOf3ITt3FGkrmVpAoBPHd9RXOM7s%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc394b8492-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"name":"morpheus","job":"zion resident","updatedAt":"2022-04-13T11:15:39.829Z"}
+16:45:39.925 [pool-1-thread-8] INFO  com.intuit.karate - [print] {
+  "name": "morpheus",
+  "job": "zion resident",
+  "updatedAt": "2022-04-13T11:15:39.829Z"
+}
+ 
+16:45:39.934 [pool-1-thread-10] DEBUG com.intuit.karate - response time in milliseconds: 545
+1 < 204
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=eaFs5kXE8DQ7FAb%2F55NOdDUBiRi5LAVF%2FyR40MdhJPH%2BrIaUN9XgzKdeyKvl9LyuBgQNDCSjv7db6LMmusnNZ9YO%2BxU82S5aIcBoPH2lHMDVyut0bta7J8W6VbM%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc5d1b85c9-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+16:45:39.936 [pool-1-thread-14] DEBUG com.intuit.karate - response time in milliseconds: 562
+1 < 201
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 78
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"4e-cEH0Yi/Zm1PPKJSX5iXjXL2fyOY"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MDoEvGj60xtyyDVXGhHqZbI0H3OhePa735k%2BxxrxDYhk7pvwkLjgHK89ucXYnvBI4eaTwlBTeaBHL%2Fzs%2BZKc5bNBJ%2BTrwvygj1Fv6EWkFzdHUjXw7eHxpvvic48%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc4b46848f-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"createdAt":"2022-04-13T11:15:39.835Z","name":"ferran","id":"423","job":"ba"}
+16:45:39.937 [pool-1-thread-10] INFO  com.intuit.karate - [print]  
+16:45:39.940 [pool-1-thread-14] INFO  com.intuit.karate - [print] {
+  "createdAt": "2022-04-13T11:15:39.835Z",
+  "name": "ferran",
+  "id": "423",
+  "job": "ba"
+}
+ 
+16:45:39.967 [pool-1-thread-7] DEBUG com.intuit.karate - response time in milliseconds: 589
+1 < 200
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-6j1j8kC4+XDysRPlt76t24iUtFc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3lbqlAOC5%2FtjWQr6lAEgN1a9hQZfsRcWCJvWOXzusSyTZSzT0nIy8%2FNKu58WRCW3nMr4PZbezCFVb8lUIiOVMgatVVFrDEGm5%2FX6TeEmQySCV%2Bzx9Z4clr1GzFA%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fc5d058583-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"name":"morpheus","job":"zion resident","updatedAt":"2022-04-13T11:15:39.854Z"}
+16:45:39.970 [pool-1-thread-7] INFO  com.intuit.karate - [print] {
+  "name": "morpheus",
+  "job": "zion resident",
+  "updatedAt": "2022-04-13T11:15:39.854Z"
+}
+ 
+16:45:40.014 [pool-1-thread-18] DEBUG com.intuit.karate - response time in milliseconds: 378
+1 < 201
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 103
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"67-l0ulhKblzZ+Vmt3YJUoyaJuyddQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=b3epcLtHQ5rDYjlEdI%2BZgq34UrpaYvxJmiTqoRrghn%2BSKz4%2FkXJcqCH9gnLxTVfX3KIng8d9XwvQ5UhhNLYGkvLaUUMXrVi8JlKoZ%2B8Tq00hmo8cn%2BMMJhA9rWk%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fd3f6685a1-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"createdAt":"2022-04-13T11:15:39.919Z","name":"Kenny","id":"930","job":"Internal Real-Estate Officer"}
+16:45:40.022 [pool-1-thread-18] INFO  com.intuit.karate - [print] {
+  "createdAt": "2022-04-13T11:15:39.919Z",
+  "name": "Kenny",
+  "id": "930",
+  "job": "Internal Real-Estate Officer"
+}
+ 
+16:45:40.041 [pool-1-thread-17] DEBUG com.intuit.karate - response time in milliseconds: 410
+1 < 201
+1 < Date: Wed, 13 Apr 2022 11:15:40 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 94
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"5e-6kooIee72SJyxJoY3c/CQo+m64c"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KqS%2B1d%2FX8T05NAv9asq1QWIhniPl85vxxDpER2NVOHchNwWUSR%2BcicO%2FOQRo2fJ4v3TNAm3aIzBg3uwLgpA6fMyb1%2FZj2HRHR%2FMmi%2BZiMCHPKSwM8mGEfODMSlw%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fd38968596-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"createdAt":"2022-04-13T11:15:39.939Z","name":"Rick","id":"217","job":"Forward IT Associate"}
+16:45:40.045 [pool-1-thread-17] INFO  com.intuit.karate - [print] {
+  "createdAt": "2022-04-13T11:15:39.939Z",
+  "name": "Rick",
+  "id": "217",
+  "job": "Forward IT Associate"
+}
+ 
+16:45:40.117 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 704
+1 < 201
+1 < Date: Wed, 13 Apr 2022 11:15:40 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Content-Length: 95
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < X-Ratelimit-Limit: 1000
 1 < X-Ratelimit-Remaining: 999
-1 < X-Ratelimit-Reset: 1649844018
+1 < X-Ratelimit-Reset: 1649848578
 1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 < Access-Control-Allow-Credentials: true
 1 < Cache-Control: no-cache
@@ -82,41 +774,54 @@
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0Zp6fIDlk7g4S%2Bn7OAzN4Yydxza9snyFJE0JvX7cLRv7xktz%2Bubpgn%2BHCjilEihP%2FmjZ3UmLnflfyCSTtodVUFr2kd5pKQhNhQvQ72UVquxsTeebf993EEMfTTy5YdOzQdANXKTBxz1ZtoTcJcr8"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tH0Rh9fONqrgauI2MkQZG1gSOlqrNdx%2FiZoPeftGci7lbQtB%2FkYHTSX1%2B5fDTPy78frq%2F7%2Fq1iG284%2FDeNs7cAvUDa20p%2FF7Ve88VkbFpokFbEVMTwVf89QEeLU5iGqcmfgnfu6RBA1rj6m3QA4N"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 6fb35989fbe68575-BOM
+1 < CF-RAY: 6fb3c8fc6ff0846b-BOM
 1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 {"id":101,"title":"Java Feature File","body":"Karate Framework","userId":"50"}
-15:29:35.194 [main] INFO  com.intuit.karate - [print] Response is:  {
+16:45:40.120 [pool-1-thread-1] INFO  com.intuit.karate - [print] Response is:  {
   "id": 101,
   "title": "Java Feature File",
   "body": "Karate Framework",
   "userId": "50"
 }
  
-15:29:35.223 [main] INFO  com.intuit.karate - karate.env system property was: null 
-15:29:35.235 [main] INFO  com.intuit.karate - [print] {"title":"Welcome","body":"Karate Framework","userId":"10"} 
-15:29:35.239 [main] DEBUG com.intuit.karate - request:
-1 > POST https://jsonplaceholder.typicode.com/posts
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 59
-1 > Host: jsonplaceholder.typicode.com
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
-1 > Accept-Encoding: gzip,deflate
-{"title":"Welcome","body":"Karate Framework","userId":"10"}
-
-15:29:35.898 [main] DEBUG com.intuit.karate - response time in milliseconds: 659
+16:45:40.123 [pool-1-thread-15] DEBUG com.intuit.karate - response time in milliseconds: 496
 1 < 201
-1 < Date: Wed, 13 Apr 2022 09:59:35 GMT
+1 < Date: Wed, 13 Apr 2022 11:15:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 95
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"5f-NZG1K2Wm0yhfDtrJQus5GVZ7o5s"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sPchmUQpwRf7xilG%2BysiqmvCJTZyC%2FX02NuvDvfFbe0ZFAk49u79RULLl7PB7PG9kVjcS%2FzprB4NGfFEifp4zXYXYOamWP0s94qnP%2Bmr3%2BUQwKHMg2UQBGF%2BjNE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fd4a0285c5-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"createdAt":"2022-04-13T11:15:39.922Z","name":"Clinton","id":"295","job":"Marketing Director"}
+16:45:40.125 [pool-1-thread-15] INFO  com.intuit.karate - [print] {
+  "createdAt": "2022-04-13T11:15:39.922Z",
+  "name": "Clinton",
+  "id": "295",
+  "job": "Marketing Director"
+}
+ 
+16:45:40.159 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 752
+1 < 201
+1 < Date: Wed, 13 Apr 2022 11:15:40 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Content-Length: 85
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < X-Ratelimit-Limit: 1000
 1 < X-Ratelimit-Remaining: 998
-1 < X-Ratelimit-Reset: 1649844018
+1 < X-Ratelimit-Reset: 1649848578
 1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 < Access-Control-Allow-Credentials: true
 1 < Cache-Control: no-cache
@@ -129,16 +834,178 @@
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=q7Q8Bdrep7sGEsoKkAu2aEQbm%2B4HzFrVydUoQMuGeaEGvRqXw0M6XdyIgS%2BrGLTUgmjNeHLtHln%2BRXlkPVa2uugRwvrUgVnz%2FxqtgPzXgejkdVD2T71H6mBp3wRjuE4Qqh0S2WbeEw5OenZagnjt"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LL%2FDRmLAQ%2Bfbv5Kw9FmkMDrnIfuVhkdU4nnYIXmDRH3QjnUXNZXD%2F5qFtv4iWxkUwG1V4vejsw5F%2Br6opbVz8SXhLO4SgAdFgjz7XS3OKhw4MvHT0MCXd7xnV3eXwSedukl0rF%2Bhtwxr02J152Gh"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 6fb3598e283e84bf-BOM
+1 < CF-RAY: 6fb3c8fc6bc1857d-BOM
 1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 {"id":101,"title":"Welcome","body":"Karate Framework","userId":"10"}
-15:29:35.903 [main] INFO  com.intuit.karate - [print] Response is:  {
+16:45:40.165 [pool-1-thread-2] INFO  com.intuit.karate - [print] Response is:  {
   "id": 101,
   "title": "Welcome",
   "body": "Karate Framework",
   "userId": "10"
 }
  
+16:45:40.285 [pool-1-thread-16] DEBUG com.intuit.karate - response time in milliseconds: 649
+1 < 201
+1 < Date: Wed, 13 Apr 2022 11:15:40 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 96
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"60-n1lJMZPztKLX0tUTg4xjXiq3v34"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nAiN3wGoa8cfTHPfe%2FLQqvDpuXh29LmbJ0DkTqFzT9i1xFa6resPzetQfnphUFahM5d9S8WyqZ%2FGfWB%2FO9tfdSEfPEvgtUQ1zCacrBg%2BkNynGU85Mop4Z2lndd4%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6fb3c8fd5f8685e4-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"createdAt":"2022-04-13T11:15:39.947Z","name":"Shannon","id":"928","job":"Marketing Assistant"}
+16:45:40.287 [pool-1-thread-16] INFO  com.intuit.karate - [print] {
+  "createdAt": "2022-04-13T11:15:39.947Z",
+  "name": "Shannon",
+  "id": "928",
+  "job": "Marketing Assistant"
+}
+ 
+16:45:40.559 [pool-1-thread-22] DEBUG com.intuit.karate - response time in milliseconds: 1151
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 195
+1 < Etag: W/"c3-tBopoS1jM5QO6zJTHRgUeBXRaa0"
+1 < Date: Wed, 13 Apr 2022 11:15:40 GMT
+1 < Via: 1.1 vegur
+{"booking":{"firstname":"Jim","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Brown"},"bookingid":35}
+16:45:40.560 [pool-1-thread-22] DEBUG com.intuit.karate - over-writing existing variable 'booking_id' with new value: response.bookingid
+16:45:40.563 [pool-1-thread-22] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:examples/preconditions/presteps_booking_id.feature')
+16:45:40.564 [pool-1-thread-20] WARN  com.intuit.karate - this thread waited 1180 milliseconds for callonce lock: read('classpath:examples/preconditions/presteps_booking_id.feature')
+16:45:40.569 [pool-1-thread-21] WARN  com.intuit.karate - this thread waited 1189 milliseconds for callonce lock: read('classpath:examples/preconditions/presteps_booking_id.feature')
+16:45:40.571 [pool-1-thread-22] DEBUG com.intuit.karate - request:
+1 > PUT https://restful-booker.herokuapp.com/booking/35
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Cookie: token=f465d8aec7b645d
+1 > Content-Length: 171
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"firstname":"James","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"George"}
+
+16:45:40.573 [pool-1-thread-20] DEBUG com.intuit.karate - request:
+1 > GET https://restful-booker.herokuapp.com/booking/35
+1 > Accept: application/json
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:45:40.577 [pool-1-thread-21] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/booking
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 169
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 > Accept-Encoding: gzip,deflate
+{"firstname":"Tom","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Mathew"}
+
+16:45:40.589 [pool-1-thread-11] DEBUG com.intuit.karate - response time in milliseconds: 1160
+1 < 200
+1 < Date: Wed, 13 Apr 2022 11:15:40 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 22
+1 < Connection: keep-alive
+1 < ETag: W/"16-sJz8uwjdDv0wvm7//BYdNw8vMbU"
+1 < Vary: Accept-Encoding
+1 < Set-Cookie: sails.sid=s%3ALNGH1WG0C_U9nQBECx5izSCVy7OW6UsK.nY38g6gBGw8VDi0Jh2UjjpktQNuPCs%2BNq65Ptz9WCSA; Domain=postman-echo.com
+{"authenticated":true}
+16:45:40.593 [pool-1-thread-11] INFO  com.intuit.karate - [print] {
+  "authenticated": true
+}
+ 
+16:45:40.594 [pool-1-thread-11] INFO  com.intuit.karate - [print] true 
+16:45:40.779 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 6 (5 remaining) classpath:examples/calljava/calljavaclass.feature
+16:45:41.159 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:examples/reqres/reqres.feature
+16:45:41.996 [pool-1-thread-22] DEBUG com.intuit.karate - response time in milliseconds: 1423
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 171
+1 < Etag: W/"ab-Sm2CcTtcN2Z2Sya0o1Aq+HMLavc"
+1 < Date: Wed, 13 Apr 2022 11:15:41 GMT
+1 < Via: 1.1 vegur
+{"firstname":"James","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"George"}
+16:45:41.999 [pool-1-thread-22] INFO  com.intuit.karate - [print] {
+  "firstname": "James",
+  "additionalneeds": "Breakfast",
+  "bookingdates": {
+    "checkin": "2018-01-01",
+    "checkout": "2019-01-01"
+  },
+  "totalprice": 111,
+  "depositpaid": true,
+  "lastname": "George"
+}
+ 
+16:45:42.000 [pool-1-thread-20] DEBUG com.intuit.karate - response time in milliseconds: 1426
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 168
+1 < Etag: W/"a8-p5uB2C7mxZA3HXJZF+tJCDJr8VE"
+1 < Date: Wed, 13 Apr 2022 11:15:41 GMT
+1 < Via: 1.1 vegur
+{"firstname":"Jim","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Brown"}
+16:45:42.002 [pool-1-thread-20] INFO  com.intuit.karate - [print] {
+  "firstname": "Jim",
+  "additionalneeds": "Breakfast",
+  "bookingdates": {
+    "checkin": "2018-01-01",
+    "checkout": "2019-01-01"
+  },
+  "totalprice": 111,
+  "depositpaid": true,
+  "lastname": "Brown"
+}
+ 
+16:45:42.198 [pool-1-thread-21] DEBUG com.intuit.karate - response time in milliseconds: 1619
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 196
+1 < Etag: W/"c4-omukiNdieRVUl3iOVlPnEDM2ZOE"
+1 < Date: Wed, 13 Apr 2022 11:15:42 GMT
+1 < Via: 1.1 vegur
+{"booking":{"firstname":"Tom","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Mathew"},"bookingid":36}
+16:45:42.201 [pool-1-thread-21] INFO  com.intuit.karate - [print] {
+  "booking": {
+    "firstname": "Tom",
+    "additionalneeds": "Breakfast",
+    "bookingdates": {
+      "checkin": "2018-01-01",
+      "checkout": "2019-01-01"
+    },
+    "totalprice": 111,
+    "depositpaid": true,
+    "lastname": "Mathew"
+  },
+  "bookingid": 36
+}
+ 
+16:45:42.303 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:examples/restfulbooker/restfulbooker.feature
