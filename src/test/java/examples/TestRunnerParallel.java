@@ -16,7 +16,7 @@ class TestRunnerParallel {
         Results results = Runner.path("classpath:examples")
                 .tags("~@ignore")
                 //.outputCucumberJson(true)
-                .parallel(21);
+                .parallel(22);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     @AfterAll

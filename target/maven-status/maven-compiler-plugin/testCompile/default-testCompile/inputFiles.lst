@@ -1,8 +1,7 @@
-C:\Users\cyril\IdeaProjects\KarateApi\src\test\java\examples\restfulbooker\RestfulBookerTestRunner.java
-C:\Users\cyril\IdeaProjects\KarateApi\src\test\java\examples\reqres\ReqresTestRunner.java
-C:\Users\cyril\IdeaProjects\KarateApi\src\test\java\examples\TestRunnerParallel.java
-C:\Users\cyril\IdeaProjects\KarateApi\src\test\java\examples\data\faker.java
-C:\Users\cyril\IdeaProjects\KarateApi\src\test\java\examples\TestRunnerCucumberReporting.java
-C:\Users\cyril\IdeaProjects\KarateApi\src\test\java\examples\token\TokenTestRunner.java
-C:\Users\cyril\IdeaProjects\KarateApi\src\test\java\examples\calljava\JavaClassTestRunner.java
-C:\Users\cyril\IdeaProjects\KarateApi\src\test\java\examples\data\jsonbody.java
+/home/qbuser/eclipse-workspace/KarateApi/src/test/java/examples/data/jsonbody.java
+/home/qbuser/eclipse-workspace/KarateApi/src/test/java/examples/reqres/ReqresTestRunner.java
+/home/qbuser/eclipse-workspace/KarateApi/src/test/java/examples/data/faker.java
+/home/qbuser/eclipse-workspace/KarateApi/src/test/java/examples/restfulbooker/RestfulBookerTestRunner.java
+/home/qbuser/eclipse-workspace/KarateApi/src/test/java/examples/TestRunnerCucumberReporting.java
+/home/qbuser/eclipse-workspace/KarateApi/src/test/java/examples/calljava/JavaClassTestRunner.java
+/home/qbuser/eclipse-workspace/KarateApi/src/test/java/examples/TestRunnerParallel.java

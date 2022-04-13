@@ -1,8 +1,7 @@
-examples\data\faker.class
-examples\calljava\JavaClassTestRunner.class
-examples\reqres\ReqresTestRunner.class
-examples\TestRunnerCucumberReporting.class
-examples\data\jsonbody.class
-examples\TestRunnerParallel.class
-examples\restfulbooker\RestfulBookerTestRunner.class
-examples\token\TokenTestRunner.class
+examples/TestRunnerParallel.class
+examples/TestRunnerCucumberReporting.class
+examples/reqres/ReqresTestRunner.class
+examples/data/jsonbody.class
+examples/restfulbooker/RestfulBookerTestRunner.class
+examples/calljava/JavaClassTestRunner.class
+examples/data/faker.class

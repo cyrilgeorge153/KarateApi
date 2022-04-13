@@ -63,7 +63,6 @@ Feature: reqres api test cases
     And match response.name == "morpheus"
     And match response.job == "leader"
 
-
   Scenario: update user using put and inline json payload
     * def path = '/users'
     Given path path
@@ -95,7 +94,6 @@ Feature: reqres api test cases
     And match response.name == "morpheus"
     And match response.job == "zion resident"
 
-
   Scenario: delete user using delete http method
     * def path = '/users/2'
     Given path path
@@ -115,43 +113,45 @@ Feature: reqres api test cases
     * def path = '/users'
     Given path path
     And def payload =
-    """
-    {
-    "name": "<name>",
-    "job": "<job>"
-    }
-    """
+      """
+      {
+      "name": "<name>",
+      "job": "<job>"
+      }
+      """
     And request payload
     When method post
     Then print response
     And status 201
     And match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
-    Examples:
+
+    Examples: 
       | name   | job |
       | cyril  | qa  |
       | tony   | dev |
       | ferran | ba  |
 
- Scenario Outline: create user post -data driven test using faker api
+  Scenario Outline: create user post -data driven test using faker api
     * def test_data = Java.type('examples.data.faker')
     * def fake_name = test_data.fakeName()
     * def fake_job = test_data.fakeJob()
     * def path = '/users'
     Given path path
     And def payload =
-    """
-    {
-    "name": "<name>",
-    "job": "<job>"
-    }
-    """
+      """
+      {
+      "name": "<name>",
+      "job": "<job>"
+      }
+      """
     And request payload
     When method post
     Then print response
     And status 201
     And match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
     And match response == {"createdAt": "#notnull","name":  #(fake_name),"id": "#notnull","job": #(fake_job)}
-    Examples:
+
+    Examples: 
       | name         | job         |
       | #(fake_name) | #(fake_job) |
       | #(fake_name) | #(fake_job) |
@@ -170,5 +170,24 @@ Feature: reqres api test cases
     And match response.name == fake_name
     And match response.job == fake_job
 
-
-
+  Scenario: list single user get request json schema test
+    Given path single_user_path
+    When method get
+    Then match response == '#object'
+    * def jsonSchemaExpected =
+      """
+          {
+          "data": {
+              "id": '#number',
+              "email": "#string",
+              "first_name": "#string",
+              "last_name": "#string",
+              "avatar": "#string"
+          },
+          "support": {
+              "url": "#string",
+              "text": "#string"
+          }
+      }
+      """
+    * match response == jsonSchemaExpected
