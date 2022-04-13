@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2022-04-13 12:30:32 PM</div>
+    <div>2022-04-13 03:29:35 PM</div>
   </div>        
 </div>
 
@@ -65,7 +65,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>867</span>
+              <span>ms:</span>&nbsp;<span>718</span>
             </div>
           </div>
           
@@ -91,11 +91,491 @@
 
   
 
-  <div class="preformatted" data-parent="1.4">12:30:27.815 karate.env system property was: null 
-12:30:31.154 this thread waited 3337 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+  <div class="preformatted" data-parent="1.4">15:29:34.472 &lt;&lt; lock released, cached callSingle: classpath:examples/preconditions/presteps.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.4.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.preconditions.presteps</div>
+      </div>
+      <div class="time-cell passed">3247</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.5">15:29:31.169 karate.env system property was: null 
+15:29:31.175 &gt;&gt; lock acquired, begin callSingle: classpath:examples/preconditions/presteps.feature
 </div>   
 
   
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;username&quot; : &quot;admin&quot;,&quot;password&quot; : &quot;password123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">27</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1782</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.7">15:29:31.476 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;password123&quot;,&quot;username&quot;:&quot;admin&quot;}
+
+15:29:33.028 response time in milliseconds: 1548
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-z2IPABG9GfcsOcxRPAWOh4PILtU&quot;
+1 &lt; Date: Wed, 13 Apr 2022 09:59:32 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;d0f6f1df04977f5&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.8">15:29:33.042 [print] {
+  &quot;token&quot;: &quot;d0f6f1df04977f5&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $.token == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $.token == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.token == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.token == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;firstname&quot; : &quot;Jim&quot;,&quot;lastname&quot; : &quot;Brown&quot;,&quot;totalprice&quot; : 111,&quot;depositpaid&quot; : true,&quot;bookingdates&quot; : {&quot;checkin&quot; : &quot;2018-01-01&quot;,&quot;checkout&quot; : &quot;2019-01-01&quot;},&quot;additionalneeds&quot; : &quot;Breakfast&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1406</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.18">15:29:33.065 request:
+2 &gt; POST https://restful-booker.herokuapp.com/booking
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Accept: application/json
+2 &gt; Content-Length: 168
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;}
+
+15:29:34.465 response time in milliseconds: 1399
+2 &lt; 200
+2 &lt; Server: Cowboy
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 195
+2 &lt; Etag: W/&quot;c3-/kzt77KAy68ZAPHE9dOUjf8aioE&quot;
+2 &lt; Date: Wed, 13 Apr 2022 09:59:34 GMT
+2 &lt; Via: 1.1 vegur
+{&quot;booking&quot;:{&quot;firstname&quot;:&quot;Jim&quot;,&quot;additionalneeds&quot;:&quot;Breakfast&quot;,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;lastname&quot;:&quot;Brown&quot;},&quot;bookingid&quot;:47}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def booking_id = response.bookingid</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
 
 </div>
 </div>
@@ -112,7 +592,7 @@
         <span>*</span>&nbsp;<span>def JavaDemo = Java.type(&#39;examples.data.jsonbody&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">43</div>
+    <div class="time-cell passed">12</div>
   </div>
 
    
@@ -140,7 +620,7 @@
         <span>*</span>&nbsp;<span>def result = JavaDemo.bodyis(&#39;Java Feature File&#39; , &#39;Karate Framework&#39; , 50)</span>
       </div>
     </div>
-    <div class="time-cell passed">20</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -168,7 +648,7 @@
         <span>And</span>&nbsp;<span>print result</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -177,7 +657,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.7">12:30:31.234 [print] {&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;} 
+  <div class="preformatted" data-parent="1.7">15:29:34.507 [print] {&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;} 
 </div>   
 
   
@@ -253,7 +733,7 @@
         <span>And</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">784</div>
+    <div class="time-cell passed">676</div>
   </div>
 
    
@@ -262,7 +742,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.10">12:30:31.251 request:
+  <div class="preformatted" data-parent="1.10">15:29:34.510 request:
 1 &gt; POST https://jsonplaceholder.typicode.com/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 69
@@ -272,16 +752,16 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;}
 
-12:30:32.018 response time in milliseconds: 766
+15:29:35.182 response time in milliseconds: 670
 1 &lt; 201
-1 &lt; Date: Wed, 13 Apr 2022 07:00:32 GMT
+1 &lt; Date: Wed, 13 Apr 2022 09:59:35 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 95
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; X-Ratelimit-Limit: 1000
-1 &lt; X-Ratelimit-Remaining: 998
-1 &lt; X-Ratelimit-Reset: 1649833278
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1649844018
 1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Cache-Control: no-cache
@@ -294,10 +774,10 @@
 1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=zTu86f98lxSI3M%2FzDOEkSudYW90M9kO5YBnXuaU7BdYEiN84neF%2BZu680AyEc0mSuBqTA%2FPLY%2Fl%2BRiWKuW%2B6Q6yL9L311Z5vpklXPVOC9sKDUy5fOYFyDUKiLqwubU5ViXZB6P1NvoTk%2Bzx6binG&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=0Zp6fIDlk7g4S%2Bn7OAzN4Yydxza9snyFJE0JvX7cLRv7xktz%2Bubpgn%2BHCjilEihP%2FmjZ3UmLnflfyCSTtodVUFr2kd5pKQhNhQvQ72UVquxsTeebf993EEMfTTy5YdOzQdANXKTBxz1ZtoTcJcr8&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 6fb2534119632dff-BOM
+1 &lt; CF-RAY: 6fb35989fbe68575-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
 {&quot;id&quot;:101,&quot;title&quot;:&quot;Java Feature File&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;50&quot;}
 </div>   
@@ -319,7 +799,7 @@
         <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -347,7 +827,7 @@
         <span>And</span>&nbsp;<span>assert responseTime &lt; 3000</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -412,7 +892,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.14">12:30:32.026 [print] Response is:  {
+  <div class="preformatted" data-parent="1.14">15:29:35.195 [print] Response is:  {
   &quot;id&quot;: 101,
   &quot;title&quot;: &quot;Java Feature File&quot;,
   &quot;body&quot;: &quot;Karate Framework&quot;,
@@ -523,7 +1003,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>755</span>
+              <span>ms:</span>&nbsp;<span>674</span>
             </div>
           </div>
           
@@ -540,7 +1020,7 @@
         <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/posts&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">22</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -549,8 +1029,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.4">12:30:27.811 karate.env system property was: null 
-12:30:31.160 this thread waited 3348 milliseconds for callSingle lock: classpath:examples/preconditions/presteps.feature
+  <div class="preformatted" data-parent="2.4">15:29:35.224 karate.env system property was: null 
 </div>   
 
   
@@ -570,7 +1049,7 @@
         <span>*</span>&nbsp;<span>def JavaDemo = Java.type(&#39;examples.data.jsonbody&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -598,7 +1077,7 @@
         <span>*</span>&nbsp;<span>def result = JavaDemo.bodyis(&#39;Welcome&#39; , &#39;Karate Framework&#39; , 10)</span>
       </div>
     </div>
-    <div class="time-cell passed">19</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -626,7 +1105,7 @@
         <span>And</span>&nbsp;<span>print result</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -635,7 +1114,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.7">12:30:31.242 [print] {&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;} 
+  <div class="preformatted" data-parent="2.7">15:29:35.236 [print] {&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;} 
 </div>   
 
   
@@ -655,7 +1134,7 @@
         <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json; charset=UTF-8&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -711,7 +1190,7 @@
         <span>And</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">701</div>
+    <div class="time-cell passed">664</div>
   </div>
 
    
@@ -720,7 +1199,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.10">12:30:31.251 request:
+  <div class="preformatted" data-parent="2.10">15:29:35.239 request:
 1 &gt; POST https://jsonplaceholder.typicode.com/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 59
@@ -730,16 +1209,16 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;}
 
-12:30:31.943 response time in milliseconds: 691
+15:29:35.899 response time in milliseconds: 659
 1 &lt; 201
-1 &lt; Date: Wed, 13 Apr 2022 07:00:32 GMT
+1 &lt; Date: Wed, 13 Apr 2022 09:59:35 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 85
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; X-Ratelimit-Limit: 1000
-1 &lt; X-Ratelimit-Remaining: 999
-1 &lt; X-Ratelimit-Reset: 1649833278
+1 &lt; X-Ratelimit-Remaining: 998
+1 &lt; X-Ratelimit-Reset: 1649844018
 1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Cache-Control: no-cache
@@ -752,10 +1231,10 @@
 1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=U4b%2B6nofQUpyr3TZfnXpgKiUO1kFwMyppzxqykk8VBhe2Tt2E05WXDlFkQO98v5%2BrLjoVBW2EIqsyf5xAnz6sgd8IkSV%2FZMxxaygkxtKhq%2F1EE2URf4c%2FxI89ZFkII7mra3j1h%2B444lHc8WZpL3C&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=q7Q8Bdrep7sGEsoKkAu2aEQbm%2B4HzFrVydUoQMuGeaEGvRqXw0M6XdyIgS%2BrGLTUgmjNeHLtHln%2BRXlkPVa2uugRwvrUgVnz%2FxqtgPzXgejkdVD2T71H6mBp3wRjuE4Qqh0S2WbeEw5OenZagnjt&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 6fb25340fad184a1-BOM
+1 &lt; CF-RAY: 6fb3598e283e84bf-BOM
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
 {&quot;id&quot;:101,&quot;title&quot;:&quot;Welcome&quot;,&quot;body&quot;:&quot;Karate Framework&quot;,&quot;userId&quot;:&quot;10&quot;}
 </div>   
@@ -805,7 +1284,7 @@
         <span>And</span>&nbsp;<span>assert responseTime &lt; 3000</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -833,7 +1312,7 @@
         <span>And</span>&nbsp;<span>match responseType == &#39;json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -861,7 +1340,7 @@
         <span>And</span>&nbsp;<span>print &#39;Response is: &#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -870,7 +1349,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.14">12:30:31.951 [print] Response is:  {
+  <div class="preformatted" data-parent="2.14">15:29:35.903 [print] Response is:  {
   &quot;id&quot;: 101,
   &quot;title&quot;: &quot;Welcome&quot;,
   &quot;body&quot;: &quot;Karate Framework&quot;,
@@ -952,7 +1431,7 @@
         <span>Then</span>&nbsp;<span>match response.userId == &#39;10&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
