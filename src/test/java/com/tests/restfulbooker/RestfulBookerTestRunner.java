@@ -1,4 +1,4 @@
-package examples.restfulbooker;
+package com.tests.restfulbooker;
 
 import com.intuit.karate.junit5.Karate;
 

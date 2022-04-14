@@ -18,7 +18,7 @@ function fn() {
   } else if (env == 'e2e') {
     // customize
   }
-  var result = karate.callSingle('classpath:examples/preconditions/presteps.feature', config);
+  var result = karate.callSingle('classpath:com/tests/preconditions/presteps.feature', config);
   config.token = result.token; // assuming you did 'def token'
   config.booking_id=result.booking_id
   return config;

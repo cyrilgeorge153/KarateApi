@@ -1,4 +1,4 @@
-package examples;
+package com.tests;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
@@ -13,7 +13,7 @@ class TestRunnerParallel {
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:examples")
+        Results results = Runner.path("classpath:com/tests")
                 .tags("~@ignore")
                 //.outputCucumberJson(true)
                 .parallel(22);

@@ -1,4 +1,4 @@
-package examples.reqres;
+package com.tests.reqres;
 
 import com.intuit.karate.junit5.Karate;
 

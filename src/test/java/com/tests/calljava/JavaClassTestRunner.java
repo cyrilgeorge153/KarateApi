@@ -1,4 +1,4 @@
-package examples.calljava;
+package com.tests.calljava;
 
 import com.intuit.karate.junit5.Karate;
 
