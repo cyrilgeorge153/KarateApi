@@ -35,7 +35,7 @@ Feature: Reqres api test cases
     #And match responseType == 'json'
     #And assert responseTime < 4000
     * validateResponse()
-    
+
   Scenario: list all users get request
     Given path all_users_path
     And param page = 2
@@ -142,8 +142,9 @@ Feature: Reqres api test cases
       """
     And request payload
     When method post
-    * status 201
+    Then status 201
     * match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
+    * validateResponse()
 
     Examples: 
       | name   | job |
@@ -169,7 +170,8 @@ Feature: Reqres api test cases
     Then status 201
     * match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
     * match response == {"createdAt": "#notnull","name":  #(fake_name),"id": "#notnull","job": #(fake_job)}
-
+		* validateResponse()
+		
     Examples: 
       | name         | job         |
       | #(fake_name) | #(fake_job) |
@@ -187,6 +189,7 @@ Feature: Reqres api test cases
     Then status 201
     * match response.name == fake_name
     * match response.job == fake_job
+    * validateResponse()
 
   Scenario: list single user get request json schema test
     Given path single_user_path
@@ -210,3 +213,4 @@ Feature: Reqres api test cases
       }
       """
     * match response == jsonSchemaExpected
+    * validateResponse()
