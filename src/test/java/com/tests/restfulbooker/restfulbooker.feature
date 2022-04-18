@@ -17,7 +17,7 @@ Feature: Restful booker api testing
     * request {"firstname" : "Tom","lastname" : "Mathew","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2018-01-01","checkout" : "2019-01-01"},"additionalneeds" : "Breakfast"}
     When method post
     Then status 200
-    * match response  == {"bookingid": #number,"booking": {"firstname": "Tom","lastname": "Mathew","totalprice": 111,"depositpaid": true,"bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"additionalneeds": "Breakfast"}}
+    * match response  == {"bookingid": "#number","booking": {"firstname": "Tom","lastname": "Mathew","totalprice": 111,"depositpaid": true,"bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"additionalneeds": "Breakfast"}}
 
   Scenario: update booking details
     Given header Content-Type = 'application/json'

@@ -16818,3 +16818,156 @@ match failed: EQUALS
 
 
 classpath:com/tests/reqres/reqres.feature:233
+12:48:06.451 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:48:06.454 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1650266286454
+12:48:07.114 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:48:07.119 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:com/tests/preconditions/presteps.feature
+12:48:07.408 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 > Accept-Encoding: gzip,deflate
+{"password":"password123","username":"admin"}
+
+12:48:14.879 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:48:15.500 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:48:15.507 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:com/tests/preconditions/presteps.feature
+12:48:15.809 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 > Accept-Encoding: gzip,deflate
+{"password":"password123","username":"admin"}
+
+12:48:17.737 [main] DEBUG com.intuit.karate - response time in milliseconds: 1925
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-4Oq2ASFd1dFiyfoQZwWSbU1iPoI"
+1 < Date: Mon, 18 Apr 2022 07:18:17 GMT
+1 < Via: 1.1 vegur
+{"token":"95e364f1ec3757f"}
+12:48:17.767 [main] DEBUG com.intuit.karate - request:
+2 > POST https://restful-booker.herokuapp.com/booking
+2 > Content-Type: application/json; charset=UTF-8
+2 > Accept: application/json
+2 > Content-Length: 168
+2 > Host: restful-booker.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+2 > Accept-Encoding: gzip,deflate
+{"firstname":"Jim","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Brown"}
+
+12:48:19.294 [main] DEBUG com.intuit.karate - response time in milliseconds: 1526
+2 < 200
+2 < Server: Cowboy
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 195
+2 < Etag: W/"c3-3ZE9WEwaPf1Mdcab+1jAnEekESo"
+2 < Date: Mon, 18 Apr 2022 07:18:19 GMT
+2 < Via: 1.1 vegur
+{"booking":{"firstname":"Jim","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Brown"},"bookingid":46}
+12:48:19.301 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:com/tests/preconditions/presteps.feature
+12:48:19.319 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:com/tests/preconditions/presteps_booking_id.feature')
+12:48:19.334 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/booking
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 168
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 > Accept-Encoding: gzip,deflate
+{"firstname":"Jim","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Brown"}
+
+12:48:20.502 [main] DEBUG com.intuit.karate - response time in milliseconds: 1167
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 195
+1 < Etag: W/"c3-XVpFsCzgmQN6Lw9c6elq84AwCJk"
+1 < Date: Mon, 18 Apr 2022 07:18:20 GMT
+1 < Via: 1.1 vegur
+{"booking":{"firstname":"Jim","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Brown"},"bookingid":48}
+12:48:20.505 [main] DEBUG com.intuit.karate - over-writing existing variable 'booking_id' with new value: response.bookingid
+12:48:20.510 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:com/tests/preconditions/presteps_booking_id.feature')
+12:48:20.531 [main] DEBUG com.intuit.karate - request:
+1 > GET https://restful-booker.herokuapp.com/booking/48
+1 > Accept: application/json
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:48:21.611 [main] DEBUG com.intuit.karate - response time in milliseconds: 1080
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 168
+1 < Etag: W/"a8-p5uB2C7mxZA3HXJZF+tJCDJr8VE"
+1 < Date: Mon, 18 Apr 2022 07:18:21 GMT
+1 < Via: 1.1 vegur
+{"firstname":"Jim","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Brown"}
+12:48:21.645 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:48:21.667 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/booking
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 169
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 > Accept-Encoding: gzip,deflate
+{"firstname":"Tom","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Mathew"}
+
+12:48:22.840 [main] DEBUG com.intuit.karate - response time in milliseconds: 1172
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 196
+1 < Etag: W/"c4-M7h38+9ZGHVqj+aL9V4HlskG+lc"
+1 < Date: Mon, 18 Apr 2022 07:18:22 GMT
+1 < Via: 1.1 vegur
+{"booking":{"firstname":"Tom","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"Mathew"},"bookingid":51}
+12:48:22.853 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:48:22.877 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://restful-booker.herokuapp.com/booking/48
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Cookie: token=95e364f1ec3757f
+1 > Content-Length: 171
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 > Accept-Encoding: gzip,deflate
+{"firstname":"James","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"George"}
+
+12:48:24.034 [main] DEBUG com.intuit.karate - response time in milliseconds: 1155
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 171
+1 < Etag: W/"ab-Sm2CcTtcN2Z2Sya0o1Aq+HMLavc"
+1 < Date: Mon, 18 Apr 2022 07:18:23 GMT
+1 < Via: 1.1 vegur
+{"firstname":"James","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111,"depositpaid":true,"lastname":"George"}
