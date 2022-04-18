@@ -1,7 +1,8 @@
 Feature: Restful booker api testing
-  Background: storing booking id value in variable
-    #* callonce read('classpath:com/tests/preconditions/presteps.feature')
 
+  Background: storing booking id value in variable
+  #* callonce read('classpath:com/tests/preconditions/presteps.feature')
+  
   Scenario: get booking details
     Given header Accept = 'application/json'
     And url restful_booker_base_url
@@ -30,3 +31,14 @@ Feature: Restful booker api testing
     Then status 200
     * match response == {"firstname": "James","additionalneeds": "Breakfast","bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"totalprice": 111,"depositpaid": true,"lastname": "George"}
 
+  Scenario: update booking details using accessing variables of another feature file
+    * def presStep = call read('classpath:com/tests/preconditions/presteps.feature')
+    Given header Content-Type = 'application/json'
+    And header Accept = 'application/json'
+    * cookie token = presStep.token
+    * url restful_booker_base_url
+    * request {"firstname" : "James","lastname" : "George","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2018-01-01","checkout" : "2019-01-01"},"additionalneeds" : "Breakfast"}
+    * path presStep.booking_id
+    When method put
+    Then status 200
+    * match response == {"firstname": "James","additionalneeds": "Breakfast","bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"totalprice": 111,"depositpaid": true,"lastname": "George"}
