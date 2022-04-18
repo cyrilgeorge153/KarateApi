@@ -19,6 +19,7 @@ Feature: Reqres api test cases
         }
       }
       """
+    * def testData = read('test_data.csv')
 
   Scenario: list single user get request
     Given path single_user_path
@@ -170,8 +171,8 @@ Feature: Reqres api test cases
     Then status 201
     * match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
     * match response == {"createdAt": "#notnull","name":  "#(fake_name)","id": "#notnull","job": "#(fake_job)"}
-		* validateResponse()
-		
+    * validateResponse()
+
     Examples: 
       | name         | job         |
       | #(fake_name) | #(fake_job) |
@@ -197,20 +198,39 @@ Feature: Reqres api test cases
     Then status 200
     * match response == '#object'
     * def jsonSchemaExpected =
-   """
-   {
-          "data": {
-              "id": '#number',
-              "email": "#string",
-              "first_name": "#string",
-              "last_name": "#string",
-              "avatar": "#string"
-          },
-          "support": {
-              "url": "#string",
-              "text": "#string"
-          }
-      }
-   """
+      """
+      {
+             "data": {
+                 "id": '#number',
+                 "email": "#string",
+                 "first_name": "#string",
+                 "last_name": "#string",
+                 "avatar": "#string"
+             },
+             "support": {
+                 "url": "#string",
+                 "text": "#string"
+             }
+         }
+      """
     * match response == jsonSchemaExpected
     * validateResponse()
+
+  Scenario Outline: create user post -data driven test using payload from csv 
+    * def path = '/users'
+    Given path path
+    And def payload =
+      """
+      {
+      "name": "<name>",
+      "job": "<job>"
+      }
+      """
+    And request payload
+    When method post
+    Then status 201
+    * match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
+    * validateResponse()
+
+    Examples: 
+      | testData |
