@@ -230,6 +230,7 @@ Feature: Reqres api test cases
     When method post
     Then status 201
     * match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
+    * match response == {"createdAt": "#notnull","name": "#(response.name)","id": "#notnull","job": "#(response.job)"}
     * validateResponse()
 
     Examples: 

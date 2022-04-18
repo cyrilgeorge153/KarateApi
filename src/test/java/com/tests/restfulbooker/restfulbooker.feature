@@ -1,6 +1,6 @@
 Feature: Restful booker api testing
   Background: storing booking id value in variable
-    * callonce read('classpath:com/tests/preconditions/presteps_booking_id.feature')
+    * callonce read('classpath:com/tests/preconditions/presteps.feature')
 
   Scenario: get booking details
     Given header Accept = 'application/json'

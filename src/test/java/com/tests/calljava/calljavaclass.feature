@@ -9,7 +9,7 @@ Feature: Call a Java Method From Feature File
     * request result
     When method post
     Then status 201
-    * assert responseTime < 3000
+    * assert responseTime < 5000
     * match responseType == 'json'
     * print 'Response is: ', response
     * match response.title == '<Title>'
