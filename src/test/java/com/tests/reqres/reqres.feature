@@ -31,9 +31,9 @@ Feature: Reqres api test cases
     * match $.data.id == 2
     #complex fuzzy matcher
     * match response.data.id == '#? _ == 2'
-    #And match header Content-Type == 'application/json; charset=utf-8'
-    #And match responseType == 'json'
-    #And assert responseTime < 4000
+    And match header Content-Type == 'application/json; charset=utf-8'
+    And match responseType == 'json'
+    And assert responseTime < 4000
     * validateResponse()
 
   Scenario: list all users get request
@@ -130,7 +130,7 @@ Feature: Reqres api test cases
     * match response.authenticated == true
     * validateResponse()
 
-  Scenario Outline: create user post -data driven test
+  Scenario Outline: create user post -data driven test using payload <name> and <job>
     * def path = '/users'
     Given path path
     And def payload =
@@ -152,7 +152,7 @@ Feature: Reqres api test cases
       | tony   | dev |
       | ferran | ba  |
 
-  Scenario Outline: create user post -data driven test using faker api
+  Scenario Outline: create user post data driven test using faker api
     * def test_data = Java.type('com.tests.data.faker')
     * def fake_name = test_data.fakeName()
     * def fake_job = test_data.fakeJob()
@@ -169,7 +169,7 @@ Feature: Reqres api test cases
     When method post
     Then status 201
     * match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
-    * match response == {"createdAt": "#notnull","name":  #(fake_name),"id": "#notnull","job": #(fake_job)}
+    * match response == {"createdAt": "#notnull","name":  "#(fake_name)","id": "#notnull","job": "#(fake_job)"}
 		* validateResponse()
 		
     Examples: 
@@ -178,13 +178,13 @@ Feature: Reqres api test cases
       | #(fake_name) | #(fake_job) |
       | #(fake_name) | #(fake_job) |
 
-  Scenario: create user using post , faker api
+  Scenario: create user using post method and faker api
     * def test_data = Java.type('com.tests.data.faker')
     * def fake_name = test_data.fakeName()
     * def fake_job = test_data.fakeJob()
     * def path = '/users'
     Given path path
-    And request {"name": #(fake_name),"job": #(fake_job)}
+    And request {"name": '#(fake_name)',"job": '#(fake_job)'}
     When method post
     Then status 201
     * match response.name == fake_name
@@ -197,8 +197,8 @@ Feature: Reqres api test cases
     Then status 200
     * match response == '#object'
     * def jsonSchemaExpected =
-      """
-          {
+   """
+   {
           "data": {
               "id": '#number',
               "email": "#string",
@@ -211,6 +211,6 @@ Feature: Reqres api test cases
               "text": "#string"
           }
       }
-      """
+   """
     * match response == jsonSchemaExpected
     * validateResponse()
