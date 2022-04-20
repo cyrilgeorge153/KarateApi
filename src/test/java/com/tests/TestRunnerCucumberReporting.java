@@ -14,7 +14,9 @@ import org.apache.commons.io.FileUtils;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
+
 public class TestRunnerCucumberReporting {
+	
     @Test
     public void testParallel() {
         Results results = Runner.path("classpath:com/tests")

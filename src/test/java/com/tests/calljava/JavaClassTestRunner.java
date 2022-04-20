@@ -6,7 +6,6 @@ class JavaClassTestRunner {
     
     @Karate.Test
     Karate testUsers() {
-
         return Karate.run("calljavaclass").relativeTo(getClass());
     }
 }
