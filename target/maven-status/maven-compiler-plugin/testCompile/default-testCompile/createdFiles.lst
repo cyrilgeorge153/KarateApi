@@ -1,7 +1,7 @@
+com/tests/jsonbody.class
 com/tests/calljava/JavaClassTestRunner.class
 com/tests/TestRunnerParallel.class
 com/tests/reqres/ReqresTestRunner.class
-com/tests/data/jsonbody.class
+com/tests/faker.class
 com/tests/restfulbooker/RestfulBookerTestRunner.class
 com/tests/TestRunnerCucumberReporting.class
-com/tests/data/faker.class

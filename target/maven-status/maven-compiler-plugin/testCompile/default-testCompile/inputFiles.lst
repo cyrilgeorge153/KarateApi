@@ -1,7 +1,7 @@
 /home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/reqres/ReqresTestRunner.java
 /home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/TestRunnerParallel.java
-/home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/data/jsonbody.java
 /home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/TestRunnerCucumberReporting.java
+/home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/faker.java
 /home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/calljava/JavaClassTestRunner.java
-/home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/data/faker.java
+/home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/jsonbody.java
 /home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/restfulbooker/RestfulBookerTestRunner.java

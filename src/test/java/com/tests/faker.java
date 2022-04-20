@@ -1,4 +1,4 @@
-package com.tests.data;
+package com.tests;
 
 
 import com.github.javafaker.Faker;
@@ -10,7 +10,6 @@ public class faker {
         Faker faker = new Faker();
         return faker.name().firstName();
     }
-
     public static String fakeJob()
     {
         Faker faker = new Faker();

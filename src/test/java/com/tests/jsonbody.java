@@ -1,4 +1,4 @@
-package com.tests.data;
+package com.tests;
 
 public class jsonbody {
 

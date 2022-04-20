@@ -154,7 +154,7 @@ Feature: Reqres api test cases
       | ferran | ba  |
 
   Scenario Outline: create user post data driven test using faker api
-    * def test_data = Java.type('com.tests.data.faker')
+    * def test_data = Java.type('com.tests.faker')
     * def fake_name = test_data.fakeName()
     * def fake_job = test_data.fakeJob()
     * def path = '/users'
@@ -180,7 +180,7 @@ Feature: Reqres api test cases
       | #(fake_name) | #(fake_job) |
 
   Scenario: create user using post method and faker api
-    * def test_data = Java.type('com.tests.data.faker')
+    * def test_data = Java.type('com.tests.faker')
     * def fake_name = test_data.fakeName()
     * def fake_job = test_data.fakeJob()
     * def path = '/users'
