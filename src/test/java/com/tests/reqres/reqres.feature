@@ -19,7 +19,7 @@ Feature: Reqres api test cases
         }
       }
       """
-    * def testData = read('test_data.csv')
+    * def testData = read('classpath:com/tests/test_data.csv')
 
   Scenario: list single user get request
     Given path single_user_path
@@ -67,7 +67,7 @@ Feature: Reqres api test cases
 
   Scenario: create user using post and external json file
     * def path = '/users'
-    * def payload = read('../data/user.json')
+    * def payload = read('classpath:com/tests/user.json')
     Given path path
     And request payload
     When method post
@@ -124,7 +124,7 @@ Feature: Reqres api test cases
     Then status 204
 
   Scenario: basic auth test
-    * header Authorization = call read('../data/basic-auth.js') { username: 'postman', password: 'password' }
+    * header Authorization = call read('classpath:com/tests/basic-auth.js') { username: 'postman', password: 'password' }
     Given url postman_basic_auth_url
     When method get
     Then status 200
