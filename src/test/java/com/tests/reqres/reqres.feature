@@ -2,7 +2,6 @@ Feature: Reqres api test cases
 
   Background: base url
     Given url base_url
-    * def testData = read('classpath:helpers/test_data.csv')
     * def validateResponse = read('classpath:helpers/common_assertions.js')
 
   Scenario: list single user get request
@@ -197,7 +196,7 @@ Feature: Reqres api test cases
     * match response == jsonSchemaExpected
     * validateResponse()
 
-  Scenario Outline: create user post -data driven test using payload from csv 
+  Scenario Outline: create user post -data driven test using payload from csv
     * def path = '/users'
     Given path path
     And def payload =
@@ -215,4 +214,4 @@ Feature: Reqres api test cases
     * validateResponse()
 
     Examples: 
-      | testData |
+      | read('classpath:helpers/test_data.csv') |
