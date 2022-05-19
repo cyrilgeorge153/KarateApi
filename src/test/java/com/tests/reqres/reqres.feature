@@ -2,24 +2,8 @@ Feature: Reqres api test cases
 
   Background: base url
     Given url base_url
-    * def validateResponse =
-      """
-      function() {
-        var contentType = karate.get("responseHeaders['Content-Type'][0]");
-        if (contentType !== 'application/json; charset=utf-8') {
-          karate.fail('content type is not json');
-        }
-        var responseType = karate.get('responseType');
-        if (responseType !== 'json') {
-          karate.fail('response type is not json');
-        }
-        var responseTime = karate.get('responseTime');
-        if (responseTime > 5000) {
-          karate.fail('response is too slow');
-        }
-      }
-      """
-    * def testData = read('classpath:com/tests/test_data.csv')
+    * def testData = read('classpath:helpers/test_data.csv')
+    * def validateResponse = read('classpath:helpers/common_assertions.js')
 
   Scenario: list single user get request
     Given path single_user_path
@@ -67,7 +51,7 @@ Feature: Reqres api test cases
 
   Scenario: create user using post and external json file
     * def path = '/users'
-    * def payload = read('classpath:com/tests/user.json')
+    * def payload = read('classpath:helpers/user.json')
     Given path path
     And request payload
     When method post
@@ -124,7 +108,7 @@ Feature: Reqres api test cases
     Then status 204
 
   Scenario: basic auth test
-    * header Authorization = call read('classpath:com/tests/basic-auth.js') { username: 'postman', password: 'password' }
+    * header Authorization = call read('classpath:helpers/basic-auth.js') { username: 'postman', password: 'password' }
     Given url postman_basic_auth_url
     When method get
     Then status 200
@@ -154,7 +138,7 @@ Feature: Reqres api test cases
       | ferran | ba  |
 
   Scenario Outline: create user post data driven test using faker api
-    * def test_data = Java.type('com.tests.faker')
+    * def test_data = Java.type('helpers.faker')
     * def fake_name = test_data.fakeName()
     * def fake_job = test_data.fakeJob()
     * def path = '/users'
@@ -180,7 +164,7 @@ Feature: Reqres api test cases
       | #(fake_name) | #(fake_job) |
 
   Scenario: create user using post method and faker api
-    * def test_data = Java.type('com.tests.faker')
+    * def test_data = Java.type('helpers.faker')
     * def fake_name = test_data.fakeName()
     * def fake_job = test_data.fakeJob()
     * def path = '/users'

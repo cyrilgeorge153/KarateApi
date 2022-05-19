@@ -11,4 +11,4 @@ window.onload = function () {
   });
   $("table.features-table").tablesorter();
   $("table.tags-table").tablesorter();
-}
+};

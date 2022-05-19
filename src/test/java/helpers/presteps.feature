@@ -1,4 +1,3 @@
-@ignore
 Feature: pre steps of restful booker api
 
   Scenario: pre steps

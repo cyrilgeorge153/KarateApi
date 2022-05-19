@@ -2,7 +2,7 @@
 Feature: Dynamic Scenario Outline
 
   Background:
-    * def kittens = read('classpath:com/tests/test.json')
+    * def kittens = read('classpath:helpers/test.json')
     
   Scenario Outline: cat name : <name>
     * print "<name>"

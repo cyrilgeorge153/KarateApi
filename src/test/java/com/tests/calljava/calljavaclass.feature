@@ -2,7 +2,7 @@ Feature: Call a Java Method From Feature File
 
   Scenario Outline: Verify that a new employee is successfully getting created
     * url 'https://jsonplaceholder.typicode.com/posts'
-    * def JavaDemo = Java.type('com.tests.jsonbody')
+    * def JavaDemo = Java.type('helpers.jsonbody')
     * def result = JavaDemo.bodyis('<Title>' , '<Body>' , <UserId>)
     * print result
     Given header Content-Type = 'application/json; charset=UTF-8'

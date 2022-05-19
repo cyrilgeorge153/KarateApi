@@ -1,9 +1,9 @@
-com/tests/jsonbody.class
+helpers/faker.class
 com/tests/calljava/JavaClassTestRunner.class
 com/tests/TestRunnerParallel.class
 com/tests/TestRunnerExtentReport.class
+helpers/jsonbody.class
 com/tests/reqres/ReqresTestRunner.class
-com/tests/faker.class
 com/tests/restfulbooker/RestfulBookerTestRunner.class
 com/tests/extentreport/CustomExtentReport.class
 com/tests/TestRunnerCucumberReporting.class
