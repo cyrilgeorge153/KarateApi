@@ -14,8 +14,8 @@ Feature: Restful booker api testing
   Scenario: create booking
     Given header Content-Type = 'application/json'
     And header Accept = 'application/json'
-    * url restful_booker_base_url
-    * request {"firstname" : "Tom","lastname" : "Mathew","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2018-01-01","checkout" : "2019-01-01"},"additionalneeds" : "Breakfast"}
+    And url restful_booker_base_url
+    And request {"firstname" : "Tom","lastname" : "Mathew","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2018-01-01","checkout" : "2019-01-01"},"additionalneeds" : "Breakfast"}
     When method post
     Then status 200
     * match response  == {"bookingid": "#number","booking": {"firstname": "Tom","lastname": "Mathew","totalprice": 111,"depositpaid": true,"bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"additionalneeds": "Breakfast"}}
@@ -23,10 +23,10 @@ Feature: Restful booker api testing
   Scenario: update booking details
     Given header Content-Type = 'application/json'
     And header Accept = 'application/json'
-    * cookie token = token
-    * url restful_booker_base_url
-    * request {"firstname" : "James","lastname" : "George","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2018-01-01","checkout" : "2019-01-01"},"additionalneeds" : "Breakfast"}
-    * path booking_id
+    And cookie token = token
+    And url restful_booker_base_url
+    And request {"firstname" : "James","lastname" : "George","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2018-01-01","checkout" : "2019-01-01"},"additionalneeds" : "Breakfast"}
+    And path booking_id
     When method put
     Then status 200
     * match response == {"firstname": "James","additionalneeds": "Breakfast","bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"totalprice": 111,"depositpaid": true,"lastname": "George"}
@@ -35,10 +35,10 @@ Feature: Restful booker api testing
     * def presStep = call read('classpath:helpers/presteps.feature')
     Given header Content-Type = 'application/json'
     And header Accept = 'application/json'
-    * cookie token = presStep.token
-    * url restful_booker_base_url
-    * request {"firstname" : "James","lastname" : "George","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2018-01-01","checkout" : "2019-01-01"},"additionalneeds" : "Breakfast"}
-    * path presStep.booking_id
+    And cookie token = presStep.token
+    And url restful_booker_base_url
+    And request {"firstname" : "James","lastname" : "George","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2018-01-01","checkout" : "2019-01-01"},"additionalneeds" : "Breakfast"}
+    And path presStep.booking_id
     When method put
     Then status 200
     * match response == {"firstname": "James","additionalneeds": "Breakfast","bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"totalprice": 111,"depositpaid": true,"lastname": "George"}

@@ -16,9 +16,6 @@ Feature: Reqres api test cases
     * match $.data.id == 2
     #complex fuzzy matcher
     * match response.data.id == '#? _ == 2'
-    And match header Content-Type == 'application/json; charset=utf-8'
-    And match responseType == 'json'
-    And assert responseTime < 4000
     * validateResponse()
 
   Scenario: list all users get request
