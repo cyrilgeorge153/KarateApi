@@ -82,31 +82,18 @@
 	<profiles>
 		<profile>
 			<id>parallel</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 			<build>
 				<plugins>
 					<plugin>
 						<artifactId>maven-surefire-plugin</artifactId>
-						<version>2.22.2</version>
+						<version>${maven.surefire.version}</version>
 						<configuration>
 							<includes>
 								<!--								<include>**/TestRunnerParallel.java</include>-->
-								<include>examples.TestRunnerParallel</include>
-							</includes>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>sequential</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<version>2.22.2</version>
-						<configuration>
-							<includes>
-								<include>examples.TestRunner</include>
+								<include>com.tests.TestRunnerCucumberReporting</include>
 							</includes>
 						</configuration>
 					</plugin>
