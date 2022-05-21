@@ -1,7 +1,7 @@
 Feature: Reqres api test cases
 
   Background: base url
-    Given url base_url
+    * url base_url
     * def validateResponse = read('classpath:helpers/common_assertions.js')
 
   Scenario: list single user get request
@@ -46,9 +46,8 @@ Feature: Reqres api test cases
     * validateResponse()
 
   Scenario: create user using post and external json file
-    * def path = '/users'
     * def payload = read('classpath:helpers/user.json')
-    Given path path
+    Given path all_users_path
     And request payload
     When method post
     Then status 201
@@ -57,8 +56,7 @@ Feature: Reqres api test cases
     * validateResponse()
 
   Scenario: create user using post and inline json payload
-    * def path = '/users'
-    Given path path
+    Given path all_users_path
     And request {"name": "morpheus","job": "leader"}
     When method post
     Then status 201
@@ -67,8 +65,7 @@ Feature: Reqres api test cases
     * validateResponse()
 
   Scenario: update user using put and inline json payload
-    * def path = '/users'
-    Given path path
+    Given path all_users_path
     And request {"name": "morpheus","job": "zion resident"}
     When method put
     Then status 200
@@ -77,8 +74,7 @@ Feature: Reqres api test cases
     * validateResponse()
 
   Scenario: update user using patch and inline json payload
-    * def path = '/users'
-    Given path path
+    Given path all_users_path
     And request {"name": "morpheus","job": "zion resident"}
     When method put
     Then status 200
@@ -87,9 +83,8 @@ Feature: Reqres api test cases
     * validateResponse()
 
   Scenario: update user using patch and passing payload as a variable
-    * def path = '/users'
     * def payload = {"name": "morpheus","job": "zion resident"}
-    Given path path
+    Given path all_users_path
     And request payload
     When method put
     Then status 200
@@ -98,8 +93,7 @@ Feature: Reqres api test cases
     * validateResponse()
 
   Scenario: delete user using delete http method
-    * def path = '/users/2'
-    Given path path
+    Given path single_user_path
     When method delete
     Then status 204
 
@@ -112,8 +106,7 @@ Feature: Reqres api test cases
     * validateResponse()
 
   Scenario Outline: create user post -data driven test using payload <name> and <job>
-    * def path = '/users'
-    Given path path
+    Given path all_users_path
     And def payload =
       """
       {
@@ -137,8 +130,7 @@ Feature: Reqres api test cases
     * def test_data = Java.type('helpers.faker')
     * def fake_name = test_data.fakeName()
     * def fake_job = test_data.fakeJob()
-    * def path = '/users'
-    Given path path
+    Given path all_users_path
     And def payload =
       """
       {
@@ -163,8 +155,7 @@ Feature: Reqres api test cases
     * def test_data = Java.type('helpers.faker')
     * def fake_name = test_data.fakeName()
     * def fake_job = test_data.fakeJob()
-    * def path = '/users'
-    Given path path
+    Given path all_users_path
     And request {"name": '#(fake_name)',"job": '#(fake_job)'}
     When method post
     Then status 201
@@ -197,8 +188,7 @@ Feature: Reqres api test cases
     * validateResponse()
 
   Scenario Outline: create user post -data driven test using payload from csv
-    * def path = '/users'
-    Given path path
+    Given path all_users_path
     And def payload =
       """
       {
