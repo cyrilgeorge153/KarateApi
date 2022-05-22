@@ -1,7 +1,7 @@
 Feature: common assertions feature
 
   Scenario: common assertions scenario
-    * def validateResponse =
+    * def commonAssertions =
       """
       function() {
             var contentType = karate.get("responseHeaders['Content-Type'][0]");

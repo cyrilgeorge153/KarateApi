@@ -3,7 +3,7 @@ Feature: Reqres api test cases
   Background: base url
     * url base_url
     #* def validateResponse = read('classpath:helpers/common_assertions.js')
-    * callonce read('classpath:helpers/common_assertions.feature')
+    #* callonce read('classpath:helpers/common_assertions.feature')
 
   Scenario: list single user get request
     Given path single_user_path

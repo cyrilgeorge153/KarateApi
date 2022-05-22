@@ -21,5 +21,9 @@ function fn() {
 	//var result = karate.callSingle('classpath:com/tests/presteps.feature', config);
 	//config.token = result.token; // assuming you did 'def token'
 	//config.booking_id=result.booking_id
+	var result = karate.callSingle('classpath:helpers/common_assertions.feature', config);
+	config.validateResponse = result.commonAssertions;
+	//var result = karate.callSingle('classpath:helpers/presteps.feature', config);
+	//config.validateResponse = result.commonAssertions;
 	return config;
 }
