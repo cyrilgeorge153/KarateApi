@@ -1,8 +1,5 @@
 Feature: Restful booker api testing
 
-  Background: storing booking id value in variable
-  * callonce read('classpath:helpers/presteps.feature')
-  
   Scenario: get booking details
     Given header Accept = 'application/json'
     And url restful_booker_base_url
@@ -32,13 +29,12 @@ Feature: Restful booker api testing
     * match response == {"firstname": "James","additionalneeds": "Breakfast","bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"totalprice": 111,"depositpaid": true,"lastname": "George"}
 
   Scenario: update booking details using accessing variables of another feature file
-    * def presStep = call read('classpath:helpers/presteps.feature')
     Given header Content-Type = 'application/json'
     And header Accept = 'application/json'
-    And cookie token = presStep.token
+    And cookie token = token
     And url restful_booker_base_url
     And request {"firstname" : "James","lastname" : "George","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2018-01-01","checkout" : "2019-01-01"},"additionalneeds" : "Breakfast"}
-    And path presStep.booking_id
+    And path booking_id
     When method put
     Then status 200
     * match response == {"firstname": "James","additionalneeds": "Breakfast","bookingdates": {"checkin": "2018-01-01","checkout": "2019-01-01"},"totalprice": 111,"depositpaid": true,"lastname": "George"}

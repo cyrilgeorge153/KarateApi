@@ -1,45 +1,92 @@
-13:22:31.736 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-13:22:32.426 [main] INFO  com.intuit.karate - karate.env system property was: null 
-13:22:32.433 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/common_assertions.feature
-13:22:32.485 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/common_assertions.feature
-13:22:32.513 [main] INFO  com.intuit.karate - [print] {"title":"Java Feature File","body":"Karate Framework","userId":"50"} 
-13:22:32.797 [main] DEBUG com.intuit.karate - request:
-1 > POST https://jsonplaceholder.typicode.com/posts
+13:58:56.610 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:58:57.316 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:58:57.325 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/common_assertions.feature
+13:58:57.388 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/common_assertions.feature
+13:58:57.392 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/presteps.feature
+13:58:57.735 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
 1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 69
-1 > Host: jsonplaceholder.typicode.com
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
 1 > Accept-Encoding: gzip,deflate
-{"title":"Java Feature File","body":"Karate Framework","userId":"50"}
+{"username":"admin","password":"password123"}
 
-13:22:33.680 [main] DEBUG com.intuit.karate - response time in milliseconds: 879
-1 < 201
-1 < Date: Sun, 22 May 2022 07:52:33 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 95
+13:58:59.256 [main] DEBUG com.intuit.karate - response time in milliseconds: 1517
+1 < 200
+1 < Server: Cowboy
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
-1 < X-Ratelimit-Limit: 1000
-1 < X-Ratelimit-Remaining: 999
-1 < X-Ratelimit-Reset: 1653205993
-1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
-1 < Access-Control-Allow-Credentials: true
-1 < Cache-Control: no-cache
-1 < Pragma: no-cache
-1 < Expires: -1
-1 < Access-Control-Expose-Headers: Location
-1 < Location: http://jsonplaceholder.typicode.com/posts/101
-1 < X-Content-Type-Options: nosniff
-1 < Etag: W/"5f-NpfW6DXbP9s9XSk+igjjrlBe6t8"
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-bPLI+9Msp0NKS66IE3SulDeOoF0"
+1 < Date: Sun, 22 May 2022 08:28:59 GMT
 1 < Via: 1.1 vegur
-1 < CF-Cache-Status: DYNAMIC
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2Fv6YHXAEEoCAUJ%2FoqH8u2AqPv5oSQsywqe%2Fcg8%2BkPXtHGmsx9hMAOxnvQm4OnObcoFUhu6rrXvChmD%2BxaPmq18%2Fc6QBkm%2Bhdw2SNNQth5JH2JhDRSR0Bmb38nB%2BDblStfwiSDR9O7z8%2BTs5mhYOn"}],"group":"cf-nel","max_age":604800}
-1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Server: cloudflare
-1 < CF-RAY: 70f3f9172ab184ef-BOM
-1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"token":"2f14b01cd4e9df5"}
+
+13:58:59.286 [main] DEBUG com.intuit.karate - request:
+2 > POST https://restful-booker.herokuapp.com/booking
+2 > Content-Type: application/json; charset=UTF-8
+2 > Accept: application/json
+2 > Content-Length: 168
+2 > Host: restful-booker.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+2 > Accept-Encoding: gzip,deflate
+{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+
+13:59:00.528 [main] DEBUG com.intuit.karate - response time in milliseconds: 1242
+2 < 200
+2 < Server: Cowboy
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 197
+2 < Etag: W/"c5-VDrylwPGzIKGjUb64PYNHBBB3q0"
+2 < Date: Sun, 22 May 2022 08:29:00 GMT
+2 < Via: 1.1 vegur
+{"bookingid":1022,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+
+13:59:00.538 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/presteps.feature
+13:59:00.566 [main] INFO  com.intuit.karate - [print] {"title":"Java Feature File","body":"Karate Framework","userId":"50"} 
+13:59:00.569 [main] DEBUG com.intuit.karate - request:
+3 > POST https://jsonplaceholder.typicode.com/posts
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 69
+3 > Host: jsonplaceholder.typicode.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_312)
+3 > Accept-Encoding: gzip,deflate
+{"title":"Java Feature File","body":"Karate Framework","userId":"50"}
+
+13:59:01.344 [main] DEBUG com.intuit.karate - response time in milliseconds: 774
+3 < 201
+3 < Date: Sun, 22 May 2022 08:29:01 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 95
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < X-Ratelimit-Limit: 1000
+3 < X-Ratelimit-Remaining: 999
+3 < X-Ratelimit-Reset: 1653208153
+3 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+3 < Access-Control-Allow-Credentials: true
+3 < Cache-Control: no-cache
+3 < Pragma: no-cache
+3 < Expires: -1
+3 < Access-Control-Expose-Headers: Location
+3 < Location: http://jsonplaceholder.typicode.com/posts/101
+3 < X-Content-Type-Options: nosniff
+3 < Etag: W/"5f-NpfW6DXbP9s9XSk+igjjrlBe6t8"
+3 < Via: 1.1 vegur
+3 < CF-Cache-Status: DYNAMIC
+3 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Tqd%2BfZ4k%2BbWh6DVNcIYgn7RRPhfjBsQOlYlWWonpanoPPuphl7yL0Su3MpzA3cO0uwrzFnGljb7DwuJYzhlSo%2B6t7z%2BZ70JrPtnwc5hPboBBi4gaB2uGNpqRe9OMXIiYJLbX%2Bgj8cqqdrzkIItUL"}],"group":"cf-nel","max_age":604800}
+3 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < CF-RAY: 70f42e801a2e4cbf-SIN
+3 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 {
   "title": "Java Feature File",
   "body": "Karate Framework",
@@ -47,16 +94,16 @@
   "id": 101
 }
 
-13:22:33.726 [main] INFO  com.intuit.karate - [print] Response is:  {
+13:59:01.356 [main] INFO  com.intuit.karate - [print] Response is:  {
   "title": "Java Feature File",
   "body": "Karate Framework",
   "userId": "50",
   "id": 101
 }
  
-13:22:33.758 [main] INFO  com.intuit.karate - karate.env system property was: null 
-13:22:33.767 [main] INFO  com.intuit.karate - [print] {"title":"Welcome","body":"Karate Framework","userId":"10"} 
-13:22:33.769 [main] DEBUG com.intuit.karate - request:
+13:59:01.394 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:59:01.407 [main] INFO  com.intuit.karate - [print] {"title":"Welcome","body":"Karate Framework","userId":"10"} 
+13:59:01.411 [main] DEBUG com.intuit.karate - request:
 1 > POST https://jsonplaceholder.typicode.com/posts
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 59
@@ -66,16 +113,16 @@
 1 > Accept-Encoding: gzip,deflate
 {"title":"Welcome","body":"Karate Framework","userId":"10"}
 
-13:22:34.582 [main] DEBUG com.intuit.karate - response time in milliseconds: 812
+13:59:02.268 [main] DEBUG com.intuit.karate - response time in milliseconds: 856
 1 < 201
-1 < Date: Sun, 22 May 2022 07:52:34 GMT
+1 < Date: Sun, 22 May 2022 08:29:02 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Content-Length: 85
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < X-Ratelimit-Limit: 1000
 1 < X-Ratelimit-Remaining: 998
-1 < X-Ratelimit-Reset: 1653205993
+1 < X-Ratelimit-Reset: 1653208153
 1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 < Access-Control-Allow-Credentials: true
 1 < Cache-Control: no-cache
@@ -88,10 +135,10 @@
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7%2BdxFR8CdXEKL9VBJ5fPjmG47%2F3RXkt1Gk3ym4RNnxL2nFQ3Y7%2FwhO8Bn0kbqgxyxOIP%2FiKSFBfCOp5rkKtpk422inU0nf8zQZinDtaZ2j0RreNz2GTdzRAueYFaLQ9isM7CO5Qga3nsCFLwJV%2Fs"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ARwM%2FEm90GzpxJsZoZehKVBJ7i23GUI0xEZyNDf0nXOqbn8iEij9LHUYwN3iXd67%2BUQRs2Ued25GaZg4ZfcmEau8DRlEw0vytfBy%2FvTHOc5NkfxpbbJNo9OE8UGHt%2Bf3vlubFMLm6AW0WtfrlwUe"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 70f3f91c496c84ce-BOM
+1 < CF-RAY: 70f42e8539ad882c-SIN
 1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 {
   "title": "Welcome",
@@ -100,7 +147,7 @@
   "id": 101
 }
 
-13:22:34.587 [main] INFO  com.intuit.karate - [print] Response is:  {
+13:59:02.274 [main] INFO  com.intuit.karate - [print] Response is:  {
   "title": "Welcome",
   "body": "Karate Framework",
   "userId": "10",
