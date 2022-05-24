@@ -206,3 +206,22 @@ Feature: Reqres api test cases
 
     Examples: 
       | read('classpath:helpers/test_data.csv') |
+      Scenario Outline: create user post -data driven test using payload from json
+    Given path all_users_path
+    And def payload =
+      """
+      {
+      "name": "<name>",
+      "job": "<job>"
+      }
+      """
+    And request payload
+    When method post
+    Then status 201
+    * match $ == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
+    * match $ == {"createdAt": "#notnull","name": "#(response.name)","id": "#notnull","job": "#(response.job)"}
+    * validateResponse()
+
+    Examples: 
+      | read('classpath:helpers/test_data.json') |
+      

@@ -15,7 +15,7 @@ public class TestRunnerExtentReport {
 	public void executeKarateTest() {
 		Builder aRunner = new Builder();
 		aRunner.path("classpath:com/tests").tags("~@ignore");
-		Results result = aRunner.parallel(26);
+		Results result = aRunner.parallel(29);
 		// Extent Report
 		CustomExtentReport extentReport = new CustomExtentReport().withKarateResult(result)
 				.withReportDir(result.getReportDir()).withReportTitle("Karate Test Execution Report");
