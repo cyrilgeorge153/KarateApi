@@ -18,8 +18,8 @@ function fn() {
 	} else if (env == 'e2e') {
 		// customize
 	}
-	var result = karate.callSingle('classpath:helpers/common_assertions.feature', config);
-	config.validateResponse = result.commonAssertions;
+	//var result = karate.callSingle('classpath:helpers/common_assertions.feature', config);
+	//config.validateResponse = result.commonAssertions;
 	var result = karate.callSingle('classpath:helpers/presteps.feature', config);
 	config.booking_id = result.booking_idValue;
 	config.token = result.tokenValue;
