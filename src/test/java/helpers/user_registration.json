@@ -1,0 +1,44 @@
+[
+	{
+		"email": null,
+		"password": null,
+		"errorResponse": {
+			"error": "Missing email or username"
+		}
+	},
+	{
+		"email": "",
+		"password": "",
+		"errorResponse": {
+			"error": "Missing email or username"
+		}
+	},
+	{
+		"email": "",
+		"password": "pistol",
+		"errorResponse": {
+			"error": "Missing email or username"
+		}
+	},
+	{
+		"email": "eve.holt@reqres.in",
+		"password": "",
+		"errorResponse": {
+			"error": "Missing password"
+		}
+	},
+	{
+		"email": true,
+		"password": false,
+		"errorResponse": {
+			"error": "Missing password"
+		}
+	},
+	{
+		"email": 1,
+		"password": 2,
+		"errorResponse": {
+			"error": "Note: Only defined users succeed registration"
+		}
+	}
+]
