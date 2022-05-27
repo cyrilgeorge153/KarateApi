@@ -143,6 +143,8 @@ Feature: Reqres api test cases
   Then status 201
   * match response == {"createdAt": "#notnull","name": "#string","id": "#notnull","job": "#string"}
   * match response == {"createdAt": "#notnull","name":  "#(fake_name)","id": "#notnull","job": "#(fake_job)"}
+  * match response.name == name 
+  * match response.job == job
   * validateResponse() 
   Examples:
   | name         | job         |
