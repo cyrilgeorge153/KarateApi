@@ -76,14 +76,14 @@ Feature: Reqres api test cases
   
   Scenario: update user using patch and inline json payload
   Given path all_users_path
-  And request {"name": "morpheus","job": "zion resident"}
-  When method put
+  And request {"name": "morpheus","job": "tester"}
+  When method patch
   Then status 200
   * match response.name == "morpheus"
-  * match response.job == "zion resident"
+  * match $.job == "tester"
   * validateResponse()
   
-  Scenario: update user using patch and passing payload as a variable
+  Scenario: update user using put and passing payload as a variable
   * def payload = {"name": "morpheus","job": "zion resident"}
   Given path all_users_path
   And request payload
