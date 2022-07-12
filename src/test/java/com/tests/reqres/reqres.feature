@@ -66,7 +66,7 @@ Feature: Reqres api test cases
   * validateResponse()
   
   Scenario: update user using put and inline json payload
-  Given path all_users_path
+  Given path single_user_path
   And request {"name": "morpheus","job": "zion resident"}
   When method put
   Then status 200
@@ -75,7 +75,7 @@ Feature: Reqres api test cases
   * validateResponse()
   
   Scenario: update user using patch and inline json payload
-  Given path all_users_path
+  Given path single_user_path
   And request {"name": "morpheus","job": "tester"}
   When method patch
   Then status 200
@@ -85,7 +85,7 @@ Feature: Reqres api test cases
   
   Scenario: update user using put and passing payload as a variable
   * def payload = {"name": "morpheus","job": "zion resident"}
-  Given path all_users_path
+  Given path single_user_path
   And request payload
   When method put
   Then status 200
