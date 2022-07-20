@@ -31,5 +31,7 @@ To execute test cases use the following commands from pom.xml location.
 
 2.Maven should be present and environment variable should be set in the local system.
 
+If you find this repository useful, don't forget to give it a ⭐ on GitHub.
+
 
 
