@@ -1,6 +1,6 @@
 helpers/faker.class
-com/tests/calljava/JavaClassTestRunner.class
 com/tests/TestRunnerParallel.class
+com/tests/calljava/JavaClassTestRunner.class
 com/tests/TestRunnerExtentReport.class
 helpers/jsonbody.class
 com/tests/reqres/ReqresTestRunner.class

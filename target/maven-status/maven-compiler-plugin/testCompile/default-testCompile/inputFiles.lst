@@ -1,8 +1,8 @@
 /home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/reqres/ReqresTestRunner.java
 /home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/TestRunnerExtentReport.java
-/home/qbuser/eclipse-workspace/KarateApi/src/test/java/helpers/faker.java
-/home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/TestRunnerParallel.java
 /home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/TestRunnerCucumberReporting.java
+/home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/TestRunnerParallel.java
+/home/qbuser/eclipse-workspace/KarateApi/src/test/java/helpers/faker.java
 /home/qbuser/eclipse-workspace/KarateApi/src/test/java/helpers/jsonbody.java
 /home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/extentreport/CustomExtentReport.java
 /home/qbuser/eclipse-workspace/KarateApi/src/test/java/com/tests/calljava/JavaClassTestRunner.java
