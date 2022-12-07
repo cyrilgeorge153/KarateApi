@@ -1057,3 +1057,405 @@
 
 13:59:20.182 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 4 (1 remaining) classpath:com/tests/reqres/reqres.feature
 13:59:20.220 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:com/tests/restfulbooker/restfulbooker.feature
+23:31:13.982 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:31:13.984 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1670436073984
+23:31:14.668 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:31:14.676 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/presteps.feature
+23:31:15.013 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"password123"}
+
+23:31:16.574 [main] DEBUG com.intuit.karate - response time in milliseconds: 1559
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-LmO+Wer/aaMUeVMnWQOCWJB4wYI"
+1 < Date: Wed, 07 Dec 2022 18:01:16 GMT
+1 < Via: 1.1 vegur
+{"token":"65dc65cf7f4b22b"}
+
+23:31:16.590 [main] DEBUG com.intuit.karate - request:
+2 > POST https://restful-booker.herokuapp.com/booking
+2 > Content-Type: application/json; charset=UTF-8
+2 > Accept: application/json
+2 > Content-Length: 168
+2 > Host: restful-booker.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+2 > Accept-Encoding: gzip,deflate
+{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+
+23:31:17.725 [main] DEBUG com.intuit.karate - response time in milliseconds: 1134
+2 < 200
+2 < Server: Cowboy
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 198
+2 < Etag: W/"c6-RwfJU+9lsNhqtC16LDp9h/E7bIo"
+2 < Date: Wed, 07 Dec 2022 18:01:17 GMT
+2 < Via: 1.1 vegur
+{"bookingid":46674,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+
+23:31:17.730 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/presteps.feature
+23:31:18.225 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/com/tests/reqres/dynamic_scenario_outline.feature
+23:34:47.285 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:34:47.287 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1670436287287
+23:34:47.723 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:34:47.729 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/presteps.feature
+23:34:47.954 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"password123"}
+
+23:34:49.567 [main] DEBUG com.intuit.karate - response time in milliseconds: 1608
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-KVQUSmV0m8XY/gSXaobfJByLU14"
+1 < Date: Wed, 07 Dec 2022 18:04:49 GMT
+1 < Via: 1.1 vegur
+{"token":"aae5cecc2118886"}
+
+23:34:49.581 [main] DEBUG com.intuit.karate - request:
+2 > POST https://restful-booker.herokuapp.com/booking
+2 > Content-Type: application/json; charset=UTF-8
+2 > Accept: application/json
+2 > Content-Length: 168
+2 > Host: restful-booker.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+2 > Accept-Encoding: gzip,deflate
+{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+
+23:34:50.785 [main] DEBUG com.intuit.karate - response time in milliseconds: 1203
+2 < 200
+2 < Server: Cowboy
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 198
+2 < Etag: W/"c6-YK5ATxNumrCdyB8AQtd8rDeMDLg"
+2 < Date: Wed, 07 Dec 2022 18:04:50 GMT
+2 < Via: 1.1 vegur
+{"bookingid":46953,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+
+23:34:50.789 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/presteps.feature
+23:34:50.807 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:34:50.809 [main] INFO  com.intuit.karate - [print] Bob 
+23:34:50.813 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:34:50.815 [main] INFO  com.intuit.karate - [print] Wild 
+23:34:50.819 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:34:50.821 [main] INFO  com.intuit.karate - [print] Nyan 
+23:34:50.824 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:34:50.826 [main] INFO  com.intuit.karate - [print] Keyboard 
+23:34:50.830 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:34:50.832 [main] INFO  com.intuit.karate - [print] LOL 
+23:34:50.835 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:34:50.837 [main] INFO  com.intuit.karate - [print] Ceiling 
+23:34:51.246 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/com/tests/reqres/dynamic_scenario_outline.feature
+23:37:49.359 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:37:49.361 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1670436469361
+23:37:49.824 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:37:49.831 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/presteps.feature
+23:37:50.036 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"password123"}
+
+23:37:51.628 [main] DEBUG com.intuit.karate - response time in milliseconds: 1591
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-C/j8a4KpkKLOEeQ9TWBbicDVvMA"
+1 < Date: Wed, 07 Dec 2022 18:07:51 GMT
+1 < Via: 1.1 vegur
+{"token":"7a8e1710ad26983"}
+
+23:37:51.639 [main] DEBUG com.intuit.karate - request:
+2 > POST https://restful-booker.herokuapp.com/booking
+2 > Content-Type: application/json; charset=UTF-8
+2 > Accept: application/json
+2 > Content-Length: 168
+2 > Host: restful-booker.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+2 > Accept-Encoding: gzip,deflate
+{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+
+23:37:52.853 [main] DEBUG com.intuit.karate - response time in milliseconds: 1213
+2 < 200
+2 < Server: Cowboy
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 198
+2 < Etag: W/"c6-uwMU+2iqxszfyXL2WftViE1mwbc"
+2 < Date: Wed, 07 Dec 2022 18:07:52 GMT
+2 < Via: 1.1 vegur
+{"bookingid":47146,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+
+23:37:52.857 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/presteps.feature
+23:37:52.867 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:37:52.868 [main] INFO  com.intuit.karate - [print] Bob 
+23:37:52.871 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:37:52.873 [main] INFO  com.intuit.karate - [print] Wild 
+23:37:52.876 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:37:52.877 [main] INFO  com.intuit.karate - [print] Nyan 
+23:37:52.880 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:37:52.881 [main] INFO  com.intuit.karate - [print] Keyboard 
+23:37:52.884 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:37:52.885 [main] INFO  com.intuit.karate - [print] LOL 
+23:37:52.888 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:37:52.889 [main] INFO  com.intuit.karate - [print] Ceiling 
+23:37:53.309 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/com/tests/reqres/dynamic_scenario_outline.feature
+23:41:34.250 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:41:34.253 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1670436694253
+23:41:34.703 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:34.710 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/presteps.feature
+23:41:34.948 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"password123"}
+
+23:41:36.598 [main] DEBUG com.intuit.karate - response time in milliseconds: 1646
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-pza/jXBRle+shHXudbWV6vBEvjk"
+1 < Date: Wed, 07 Dec 2022 18:11:36 GMT
+1 < Via: 1.1 vegur
+{"token":"551b4b136282157"}
+
+23:41:36.615 [main] DEBUG com.intuit.karate - request:
+2 > POST https://restful-booker.herokuapp.com/booking
+2 > Content-Type: application/json; charset=UTF-8
+2 > Accept: application/json
+2 > Content-Length: 168
+2 > Host: restful-booker.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+2 > Accept-Encoding: gzip,deflate
+{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+
+23:41:37.822 [main] DEBUG com.intuit.karate - response time in milliseconds: 1207
+2 < 200
+2 < Server: Cowboy
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 198
+2 < Etag: W/"c6-EZ7RyV2cvu6LRmSzQQCAmYSmU5Y"
+2 < Date: Wed, 07 Dec 2022 18:11:37 GMT
+2 < Via: 1.1 vegur
+{"bookingid":47382,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+
+23:41:37.828 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/presteps.feature
+23:41:37.841 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:37.843 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* tabke kittens
+no step-definition method match found for: tabke kittens
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:37.846 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:37.847 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* tabke kittens
+no step-definition method match found for: tabke kittens
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:37.849 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:37.850 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* tabke kittens
+no step-definition method match found for: tabke kittens
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:37.852 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:37.853 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* tabke kittens
+no step-definition method match found for: tabke kittens
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:37.855 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:37.856 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* tabke kittens
+no step-definition method match found for: tabke kittens
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:37.858 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:37.859 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* tabke kittens
+no step-definition method match found for: tabke kittens
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:38.322 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/com/tests/reqres/dynamic_scenario_outline.feature
+23:41:50.991 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:41:50.993 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1670436710993
+23:41:51.446 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:51.453 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/presteps.feature
+23:41:51.656 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"password123"}
+
+23:41:53.091 [main] DEBUG com.intuit.karate - response time in milliseconds: 1432
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-zmaaRDsSRZ+b0MrQbJSVRAoezpg"
+1 < Date: Wed, 07 Dec 2022 18:11:53 GMT
+1 < Via: 1.1 vegur
+{"token":"c3c30a3f7e4d50c"}
+
+23:41:53.105 [main] DEBUG com.intuit.karate - request:
+2 > POST https://restful-booker.herokuapp.com/booking
+2 > Content-Type: application/json; charset=UTF-8
+2 > Accept: application/json
+2 > Content-Length: 168
+2 > Host: restful-booker.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+2 > Accept-Encoding: gzip,deflate
+{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+
+23:41:54.411 [main] DEBUG com.intuit.karate - response time in milliseconds: 1305
+2 < 200
+2 < Server: Cowboy
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 198
+2 < Etag: W/"c6-Z72jz2KyjZU+FvpO68W/hls6KlY"
+2 < Date: Wed, 07 Dec 2022 18:11:54 GMT
+2 < Via: 1.1 vegur
+{"bookingid":47392,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+
+23:41:54.416 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/presteps.feature
+23:41:54.426 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:54.427 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* table kittens
+Cannot invoke "java.util.List.size()" because "rows" is null
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:54.430 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:54.432 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* table kittens
+Cannot invoke "java.util.List.size()" because "rows" is null
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:54.436 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:54.437 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* table kittens
+Cannot invoke "java.util.List.size()" because "rows" is null
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:54.439 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:54.440 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* table kittens
+Cannot invoke "java.util.List.size()" because "rows" is null
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:54.442 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:54.444 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* table kittens
+Cannot invoke "java.util.List.size()" because "rows" is null
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:54.446 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:54.447 [main] ERROR com.intuit.karate - src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+* table kittens
+Cannot invoke "java.util.List.size()" because "rows" is null
+src/test/java/com/tests/reqres/dynamic_scenario_outline.feature:11
+23:41:54.892 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/com/tests/reqres/dynamic_scenario_outline.feature
+23:43:23.407 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:43:23.409 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1670436803409
+23:43:23.854 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:43:23.858 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/presteps.feature
+23:43:24.072 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"password123"}
+
+23:43:25.556 [main] DEBUG com.intuit.karate - response time in milliseconds: 1481
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-nKM5zrdcbWiDh97xsyp9aOEx5b4"
+1 < Date: Wed, 07 Dec 2022 18:13:25 GMT
+1 < Via: 1.1 vegur
+{"token":"4a60f0206dcded1"}
+
+23:43:25.570 [main] DEBUG com.intuit.karate - request:
+2 > POST https://restful-booker.herokuapp.com/booking
+2 > Content-Type: application/json; charset=UTF-8
+2 > Accept: application/json
+2 > Content-Length: 168
+2 > Host: restful-booker.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+2 > Accept-Encoding: gzip,deflate
+{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+
+23:43:26.853 [main] DEBUG com.intuit.karate - response time in milliseconds: 1283
+2 < 200
+2 < Server: Cowboy
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 198
+2 < Etag: W/"c6-qD8HKQKfHiq7z3zyfrcMTIXMcT0"
+2 < Date: Wed, 07 Dec 2022 18:13:26 GMT
+2 < Via: 1.1 vegur
+{"bookingid":47500,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+
+23:43:26.858 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/presteps.feature
+23:43:26.875 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:43:26.878 [main] INFO  com.intuit.karate - [print] Bob 
+23:43:26.881 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:43:26.883 [main] INFO  com.intuit.karate - [print] Wild 
+23:43:26.885 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:43:26.886 [main] INFO  com.intuit.karate - [print] Nyan 
+23:43:26.888 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:43:26.890 [main] INFO  com.intuit.karate - [print] Keyboard 
+23:43:26.892 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:43:26.893 [main] INFO  com.intuit.karate - [print] LOL 
+23:43:26.897 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:43:26.898 [main] INFO  com.intuit.karate - [print] Ceiling 
+23:43:27.357 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/com/tests/reqres/dynamic_scenario_outline.feature

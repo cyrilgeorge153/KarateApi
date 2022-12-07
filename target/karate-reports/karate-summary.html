@@ -20,33 +20,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
     posthog.identify("18d46ef4-2d04-419e-b3ef-6c92cce521bc",{name:"qbuser"});
-    posthog.capture("report_summary",{karate_version:"1.3.0",karate_meta:null});
+    posthog.capture("report_summary",{karate_version:"1.3.1",karate_meta:null});
   }
 });
 </script>
 
-    <title>Karate Summary Report</title>  
+    <title>Karate Summary Report</title>
   </head>
-  <body>   
+  <body>
     <div id="root-container">
       <div id="leftnav">
-                
+        
         <div>
   <div class="nav-logo">
     <a href="https://karatelabs.io">
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-pass" class="bg-success">1</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
   <div id="nav-type">
     <div>Features</div>
-  </div>         
+  </div>
   <div id="nav-date">
-    <div>2022-11-19 01:59:20 PM</div>
-  </div>        
+    <div>2022-12-07 11:43:27 pm</div>
+  </div>
 </div>
 
       </div>
@@ -54,7 +57,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="page-heading alert alert-primary">
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <a href="karate-timeline.html">Timeline</a>
-        </div>       
+        </div>
         <table class="features-table table table-sm">
           <thead>
             <tr>
@@ -67,46 +70,16 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
             </tr>
           </thead>
           <tbody>
-            <tr class="passed">              
+            <tr class="passed">
               <td>
-                <a href="com.tests.calljava.calljavaclass.html">com/tests/calljava/calljavaclass.feature</a>
-              </td>
-              <td>Call a Java Method From Feature File</td>
-              <td class="num">2</td>
-              <td class="num">0</td>
-              <td class="num">2</td>
-              <td class="num">2154</td>            
-            </tr>
-            <tr class="passed">              
-              <td>
-                <a href="com.tests.reqres.dynamic_scenario_outline.html">com/tests/reqres/dynamic_scenario_outline.feature</a>
+                <a href="src.test.java.com.tests.reqres.dynamic_scenario_outline.html">src/test/java/com/tests/reqres/dynamic_scenario_outline.feature</a>
               </td>
               <td>Dynamic Scenario Outline</td>
-              <td class="num">1</td>
+              <td class="num">6</td>
               <td class="num">0</td>
-              <td class="num">1</td>
-              <td class="num">4</td>            
+              <td class="num">6</td>
+              <td class="num">5</td>
             </tr>
-            <tr class="passed">              
-              <td>
-                <a href="com.tests.reqres.reqres.html">com/tests/reqres/reqres.feature</a>
-              </td>
-              <td>Reqres api test cases</td>
-              <td class="num">29</td>
-              <td class="num">0</td>
-              <td class="num">29</td>
-              <td class="num">21821</td>            
-            </tr>
-            <tr class="passed">              
-              <td>
-                <a href="com.tests.restfulbooker.restfulbooker.html">com/tests/restfulbooker/restfulbooker.feature</a>
-              </td>
-              <td>Restful booker api testing</td>
-              <td class="num">4</td>
-              <td class="num">0</td>
-              <td class="num">4</td>
-              <td class="num">4336</td>            
-            </tr>            
           </tbody>
         </table>
       </div>
