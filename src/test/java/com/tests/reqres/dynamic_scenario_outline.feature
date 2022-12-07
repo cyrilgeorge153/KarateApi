@@ -1,4 +1,4 @@
-#@ignore
+@ignore
 Feature: Dynamic Scenario Outline
 
   #Background:not applicable for 1.3.0 version
