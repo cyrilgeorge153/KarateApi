@@ -1,5 +1,6 @@
 Feature: pre steps of restful booker api
 
+  @report=false
   Scenario: pre steps
     Given url 'https://restful-booker.herokuapp.com/auth'
     And request {"username" : "admin","password" : "password123"}
